@@ -1,4 +1,4 @@
-##setup
+## setup
 
 you need node and npm installed.
 
@@ -6,7 +6,7 @@ you need node and npm installed.
 2. run `npm install`
 3. put fonts files in src/fonts
 
-##development
+## development
 
 start webpack dev server:
 
@@ -17,7 +17,7 @@ for more information look at webpack/dev.config.js
 
 
 
-##build
+## build
 `npm run build`
 
 this will create a js and css bundle from `src/` in the `dist` directory.
