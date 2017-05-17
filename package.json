@@ -1,0 +1,35 @@
+{
+  "name": "text-analyis-kabk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config ./webpack/dev.config.js",
+    "build": "mkdir -p dist && rm dist/* && webpack -p --progress --profile --colors --config ./webpack/prod.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "3.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.7.7",
+    "babel-core": "6.23.1",
+    "babel-loader": "6.3.2",
+    "babel-preset-es2015": "6.24.0",
+    "babel-preset-es2016": "6.22.0",
+    "babel-preset-stage-0": "6.22.0",
+    "css-loader": "0.26.1",
+    "extract-text-webpack-plugin": "2.1.0",
+    "file-loader": "0.10.1",
+    "file-saver": "1.3.3",
+    "postcss-loader": "1.3.3",
+    "style-loader": "0.13.1",
+    "uglifyjs": "2.4.10",
+    "uglifyjs-webpack-plugin": "0.3.1",
+    "url-loader": "0.5.8",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.3.0"
+  }
+}

@@ -1,0 +1,306 @@
+@font-face {
+    font-family: AtlasGrotesk-Reg;
+    src: url(./fonts/AtlasGrotesk-Regular.otf);
+}
+
+@font-face {
+    font-family: AtlasType-Reg;
+    src: url(./fonts/Atlas-Typewriter-Regular.otf);
+}
+
+@font-face {
+    font-family: AtlasType-Italic;
+    src: url(./fonts/Atlas-Typewriter-Italic.otf);
+}
+
+@font-face {
+    font-family: AtlasType-Medium;
+    src: url(./fonts/Atlas-Typewriter-Medium.otf);
+}
+
+body {
+	font-family: AtlasGrotesk-Reg;
+	margin: 0px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+canvas {
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+
+.shadow {
+	box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+	border-bottom: 1px solid white;
+	moz-transition: opacity 2.2s ease;
+}
+
+#page-wrapper { /*wtf why this doesnt work */
+/*	margin-left: 70px
+	margin-right: 70px;*/
+}
+
+
+#wrap {
+/*	background: magenta;*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	top: 50px; /*height of header*/
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+
+.text {
+	padding: 20px; /*little margin on the sides*/
+	overflow: scroll;
+	line-height: 15pt;
+	color: black;
+	flex: 4;
+}
+
+#wikiText {
+/*	background-color: red;*/
+}
+
+#encyText {
+/*	background-color: green;*/
+}
+
+.log {
+	font-size: 12px;
+	padding: 10px;
+}
+
+#encyLog {
+}
+
+#wikiLog {
+}
+
+
+#menu-wrapper {
+}
+
+#menu {
+	background-color: lightgrey;
+	font-size: 60px;
+	font-family: AtlasType-Reg;
+	cursor: pointer;
+	text-align: center;
+	z-index: 30;
+}
+
+/* unvisited link */
+#menu a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+#menu a:visited {
+    color: black;
+}
+
+/* mouse over link */
+#menu a:hover {
+    color: blue;
+    font-family: AtlasType-Italic;
+}
+
+/* selected link */
+#menu a:active {
+    color: blue;
+    font-family: AtlasType-Italic;
+}
+
+#selectArtcileText {
+	font-family: AtlasType-Reg;
+}
+
+#header {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	height: 50px;
+/*	border-bottom: 1px solid black;*/
+	align-content: center;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    -webkit-flex-flow: row wrap;
+    padding-left: 20px;
+    transition: box-shadow 250ms ease
+}
+
+.header-title {
+	font-family: AtlasType-Medium;
+/*	font-family: serif;
+	font-weight: bold;*/
+	font-size: 20px;
+	width: 400px;
+	position: fixed;
+	border: 1px solid red;
+}
+
+
+.ency-header-title {
+	/*padding-right: 50%; there must be a better way to do this*/
+}
+
+.wiki-header-title {
+	left: calc(50% + 20px);
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden{
+	display: none;
+}
+
+
+.encyhl0{
+	background-color: #F558E0;
+	color: white;
+}
+
+.encyhl1{
+	background-color: #61ff23;
+	color: black;
+}
+
+.encyhl2{
+	background-color: blue;
+	color: white;
+}
+
+.encyhl3{
+	background-color: black;
+	color: white;
+}
+
+.encyhl4{
+	background-color: cyan;
+	color: black;
+}
+
+.encyhl5{
+	background-color: #FFA100;
+	color: black;
+}
+
+.encyhl6{
+	background-color: #0000FF;
+	color: white;
+}
+
+.encyhl7{
+	background-color: #2afcba;
+	color: black;
+}
+
+.encyhl8{
+	background-color: yellow;
+	color: black;
+}
+
+.encyhl9{
+	background-color: #ff2ba3;
+	color: white;
+}
+
+.encyhl10{
+	background-color: lightgray;
+	color: black;
+}
+
+.encyhl11{
+	background-color: lime;
+	color: black;
+}
+
+.wikihl0{
+	background-color: cyan;
+	color: black;
+}
+
+.wikihl1{
+	background-color: #FF926E;
+	color: black;
+}
+
+.wikihl2{
+	background-color: yellow;
+	color: black;
+}
+
+.wikihl3{
+	background-color: #DA6EFF;
+	color: black;
+}
+
+.wikihl4{
+	background-color: #93FF6E;
+	color: black;
+}
+
+.wikihl5{
+	background-color: #6EFFE4;
+	color: black;
+}
+
+.wikihl6{
+	background-color: #9C6EFF;
+	color: black;
+}
+
+.wikihl7{
+	background-color: #FF6E88;
+	color: black;
+}
+
+.wikihl8{
+	background-color: #FFFF6E;
+	color: black;
+}
+
+.wikihl9{
+	background-color: #85FF8C;
+	color: black;
+}
+
+.wikihl10{
+	background-color: #ff4c00;
+	color: white;
+}
+
+.wikihl11{
+	background-color: #93FF6E;
+	color: black;
+}
