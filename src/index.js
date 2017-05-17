@@ -4,12 +4,22 @@ import $ from 'jquery';
 import './style.css';
 import articles from './articles';
 
+
+
 $("#wrap").hide();
+$("#header").hide();
+
 
 for (var i = 0; i < articles.length; i++) {
 	$("#menu").append("<a id='link"+articles[i].title+"' href='#'>"+articles[i].title+"</a><br>");
 	menuClickExecute(articles[i].title, i);
 }
+
+$( "#back-button" ).click(function() {
+  $("#wrap").hide();
+  $("#header").hide();
+  $("#menu-wrapper").removeClass("hidden");
+});
 
 var eArticle;
 var wArticle;
@@ -20,6 +30,7 @@ var currentTitle;
 function menuClickExecute(link, index){
 	$( "#link"+link ).click(function() {
 		$("#wrap").show();
+		$("#header").show();
 
 		eArticle = articles[index].eArt;
 		wArticle = articles[index].wArt;
@@ -102,8 +113,6 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	for (var i = 0; i < wordArray.length; i++) {
 		wordCount += wordArray[i].length;
 	}
-
-
 	// $(logDest).append(`<br>Word count: ${wordCount} will fix word count soon...`);
 }
 
@@ -163,9 +172,7 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 			}
 		}, 20);
 	}
-
 	animateText();
-
 }
 
 

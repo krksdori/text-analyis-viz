@@ -134,6 +134,7 @@ canvas {
 	z-index: 2;
 	width: 100%;
 	height: 50px;
+	background-color: white;
 /*	border-bottom: 1px solid black;*/
 	align-content: center;
     display: flex;
@@ -151,8 +152,21 @@ canvas {
 	font-size: 20px;
 	width: 400px;
 	position: fixed;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
+
+#back-button {
+	color: black;
+	font-size: 17px;
+	position: absolute;
+	right: calc(5% + 2px);
+	cursor: pointer;
+}
+
+#back-button:hover {
+	color:blue;
+}
+
 
 
 .ency-header-title {
@@ -172,67 +186,59 @@ canvas {
 
 
 
-
-
-
-
-
-
-
-
 .hidden{
 	display: none;
 }
 
 
 .encyhl0{
-	background-color: #F558E0;
-	color: white;
+	background-color: rgb(229,229,229);
+	color: black;
 }
 
 .encyhl1{
-	background-color: #61ff23;
+	background-color: rgb(254,228,204);
 	color: black;
 }
 
 .encyhl2{
-	background-color: blue;
-	color: white;
+	background-color: rgb(204,252,203);
+	color: black;
 }
 
 .encyhl3{
-	background-color: black;
-	color: white;
+	background-color: rgb(243,252,202);
+	color: black;
 }
 
 .encyhl4{
-	background-color: cyan;
+	background-color: rgb(243,204,249);
 	color: black;
 }
 
 .encyhl5{
-	background-color: #FFA100;
+	background-color: rgb(206,253,243);
 	color: black;
 }
 
 .encyhl6{
-	background-color: #0000FF;
-	color: white;
+	background-color: rgb(254,206,205);
+	color: black;
 }
 
 .encyhl7{
-	background-color: #2afcba;
+	background-color: rgb(204,203,252);
 	color: black;
 }
 
 .encyhl8{
-	background-color: yellow;
+	background-color: rgb(252,244,205);
 	color: black;
 }
 
 .encyhl9{
-	background-color: #ff2ba3;
-	color: white;
+	background-color: rgb(207,236,253);
+	color: black;
 }
 
 .encyhl10{
@@ -246,57 +252,57 @@ canvas {
 }
 
 .wikihl0{
-	background-color: cyan;
+	background-color: rgb(255,115,0);
 	color: black;
 }
 
 .wikihl1{
-	background-color: #FF926E;
+	background-color: rgb(0,255,194);
 	color: black;
 }
 
 .wikihl2{
-	background-color: yellow;
+	background-color: rgb(218,255,0);
 	color: black;
 }
 
 .wikihl3{
-	background-color: #DA6EFF;
+	background-color: rgb(255,0,0);
 	color: black;
 }
 
 .wikihl4{
-	background-color: #93FF6E;
-	color: black;
+	background-color: rgb(86,86,86);
+	color: white;
 }
 
 .wikihl5{
-	background-color: #6EFFE4;
+	background-color: rgb(211,0,255);
 	color: black;
 }
 
 .wikihl6{
-	background-color: #9C6EFF;
+	background-color: rgb(255,206,0);
 	color: black;
 }
 
 .wikihl7{
-	background-color: #FF6E88;
+	background-color: rgb(0,170,255);
 	color: black;
 }
 
 .wikihl8{
-	background-color: #FFFF6E;
+	background-color: rgb(7,255,0);
 	color: black;
 }
 
 .wikihl9{
-	background-color: #85FF8C;
-	color: black;
+	background-color: rgb(0,0,255);
+	color: white;
 }
 
 .wikihl10{
-	background-color: #ff4c00;
+	background-color: rgb(218,255,0);
 	color: white;
 }
 
