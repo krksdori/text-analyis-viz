@@ -4,10 +4,9 @@ you need node and npm installed.
 
 1. clone this repository.
 2. run `npm install`
-
+3. put fonts files in src/fonts
 
 ##development
-
 
 start webpack dev server:
 
