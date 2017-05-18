@@ -6,8 +6,9 @@ import articles from './articles';
 
 
 
-$("#wrap").hide();
-$("#header").hide();
+$("#article-page-container").hide();
+$("#menu-wrapper").show();
+
 
 
 for (var i = 0; i < articles.length; i++) {
@@ -16,9 +17,8 @@ for (var i = 0; i < articles.length; i++) {
 }
 
 $( "#back-button" ).click(function() {
-  $("#wrap").hide();
-  $("#header").hide();
-  $("#menu-wrapper").removeClass("hidden");
+	$("#article-page-container").hide();
+	$("#menu-wrapper").show();
 });
 
 var eArticle;
@@ -29,8 +29,8 @@ var currentTitle;
 
 function menuClickExecute(link, index){
 	$( "#link"+link ).click(function() {
-		$("#wrap").show();
-		$("#header").show();
+		$("#article-page-container").show();
+		$("#menu-wrapper").hide();
 
 		eArticle = articles[index].eArt;
 		wArticle = articles[index].wArt;
@@ -44,10 +44,10 @@ function menuClickExecute(link, index){
 		// mainF(eArticle,eConn,"#encyText","#encyLog","ency");
 		// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
 
-		$("#menu-wrapper").addClass("hidden");
+		// $("#menu-wrapper").addClass("hidden");
 	
-		$("#wrap").removeClass("hidden");
-		$("#header").removeClass("hidden");
+		// $("#wrap").removeClass("hidden");
+		// $("#header").removeClass("hidden");
 
 		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title").text("Encyclopedia – " + currentTitle);
 		var $wikiTitleDiv = $('<div>').addClass("wiki-header-title header-title").text("Wikipedia – " + currentTitle);
