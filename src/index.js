@@ -148,7 +148,7 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 
 	//append connection log
 	for (var i = 0; i < 10; i++) {
-		$("#"+logDiv).append(`<span class='${wikiOrEncy}hl${i}'>${conn[i*2]} + ${conn[(i*2)+1]} </span>&nbsp;<span id='${wikiOrEncy}ConnCount${i}'></span><br>`);
+		$("#"+logDiv).append(`<span id='${wikiOrEncy}ConnCount${i}'></span>&nbsp;<span class='${wikiOrEncy}hl${i}'>${conn[i*2]} - ${conn[(i*2)+1]} </span><br>`);
 	}
 	
 

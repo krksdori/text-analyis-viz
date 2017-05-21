@@ -80,7 +80,7 @@ canvas {
 	line-height: 15pt;
 	font-size: 12pt;
 	color: black;
-	flex: 4;
+	flex: 2;
 }
  h2{
  	font-size: 20px;
@@ -97,6 +97,7 @@ canvas {
 .log {
 	font-size: 12px;
 	padding: 21px;
+	flex: 2;
 }
 
 #encyLog {
