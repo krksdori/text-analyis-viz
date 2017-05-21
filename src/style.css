@@ -96,7 +96,7 @@ canvas {
 
 .log {
 	font-size: 12px;
-	padding: 10px;
+	padding: 21px;
 }
 
 #encyLog {
@@ -171,6 +171,21 @@ canvas {
 	/*border: 1px solid red;*/
 }
 
+.artYear {
+/*	color: red;
+	font-size: 30px;*/
+}
+
+.wikiYear {
+	left: calc(70% + 0px);
+
+}
+
+.encyYear {
+	left: calc(22% + 0px);
+
+}
+
 #back-button {
 	color: black;
 	font-size: 17px;
@@ -190,7 +205,7 @@ canvas {
 }
 
 .wiki-header-title {
-	left: calc(50% + 20px);
+	left: calc(52% + 4px);
 }
 
 ::-webkit-scrollbar { 

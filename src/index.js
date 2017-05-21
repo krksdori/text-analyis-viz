@@ -17,6 +17,7 @@ for (var i = 0; i < articles.length; i++) {
 }
 
 $( "#back-button" ).click(function() {
+	$(".reset").empty();
 	$("#article-page-container").hide();
 	$("#menu-wrapper").show();
 });
@@ -38,6 +39,12 @@ function menuClickExecute(link, index){
 		wConn = articles[index].wConn;
 		currentTitle = articles[index].title;
 
+		var wYear = articles[index].wYear;
+		var eYear = articles[index].eYear;
+
+		console.log(wYear);
+		console.log(eYear);
+
 		appendArt(eArticle,eConn,"encyText","encyLog","ency");
 		appendArt(wArticle,wConn,"wikiText","wikiLog","wiki");
 
@@ -49,11 +56,16 @@ function menuClickExecute(link, index){
 		// $("#wrap").removeClass("hidden");
 		// $("#header").removeClass("hidden");
 
-		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title").text("Encyclopedia – " + currentTitle);
-		var $wikiTitleDiv = $('<div>').addClass("wiki-header-title header-title").text("Wikipedia – " + currentTitle);
+		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").text("Encyclopedia – " + currentTitle);
+		var $wikiTitleDiv = $('<div>').addClass("wiki-header-title header-title reset").text("Wikipedia – " + currentTitle);
+
+		var $wYearDiv = $('<div>').addClass("wikiYear artYear header-title reset").text(wYear);
+		var $eYearDiv = $('<div>').addClass("encyYear artYear header-title reset").text(eYear);
 
     	$('#header').append($encyTitleDiv);
     	$('#header').append($wikiTitleDiv);
+    	$('#header').append($wYearDiv);
+    	$('#header').append($eYearDiv);
 
 	});
 }
@@ -63,7 +75,7 @@ let encyConnIndex = [];
 let wikiConnIndex = [];
 
 function mainF(art,conn,textDest,logDest, wikiOrEncy){
-	console.log("a");
+
 	let lowerCaseArt = art.toLowerCase();
 	let splArt = lowerCaseArt.split(".");
 	let wordArray = [];
@@ -79,8 +91,6 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	for (let i = 0; i < splArt.length; i++) {
 		wordArray.push(splArt[i].split(" "));
 	}
-
-	// console.log(wordArray);
 
 	function findConn(index,searchNo,search1,search2){
 		let indof0 = wordArray[index].indexOf(search1);
@@ -180,7 +190,6 @@ $(".text").scroll(function() {
     var y = $(this).scrollTop();
     var $header = $("#header");
     var articlesHolderHeight = $(".text").height();
-    // console.log(articlesHolderHeight);
     if (y >= 1) {
         $header.addClass('shadow');
     } else {
