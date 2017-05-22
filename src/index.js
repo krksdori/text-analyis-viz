@@ -82,11 +82,6 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	let count = [];
 	let wordCount = 0;
 
-
-	// console.log(convertToPercentages2(nums)+" lalll");
-
-
-
 	for (var i = 0; i < numConn; i++) {
 		count.push(0);
 	}
@@ -108,29 +103,19 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 			if (wikiOrEncy == "ency") {
 				encyConnIndex[searchNo].push(index+"_"+indof0);
 				encyConnIndex[searchNo].push(index+"_"+indof1);
-				// console.log(searchNo+" /ency/ "+encyConnIndex[searchNo]);
 			} else {
 				wikiConnIndex[searchNo].push(index+"_"+indof0);
 				wikiConnIndex[searchNo].push(index+"_"+indof1);
-				// console.log(searchNo+" /wiki/ "+wikiConnIndex[searchNo]);
 			}	
 		}
-	}
-	
-	// $(logDest).empty();
-
-	function pad(number) {
-	     return (number < 10 ? '0' : '') + number
 	}
 
 	for (let j = 0; j < numConn; j++) {
 		for (let i = 0; i < wordArray.length; i++) {
 			findConn(i,j,conn[j*2],conn[(j*2)+1]);
 		}
-		// $("#"+wikiOrEncy+"ConnCount"+j).text(`${count[j]}`);
 
 		$("#"+wikiOrEncy+"ConnCount"+j).text(`${pad(count[j])}`);
-		// console.log(j);
 	}
 
 	for (var i = 0; i < wordArray.length; i++) {
@@ -138,17 +123,9 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	}
 
 	$("#wordCount"+wikiOrEncy).text(`Word count: ${wordCount}`);
-
-  //$("#wordCountWiki").text
 	
 	$("#percentages"+wikiOrEncy).text(`%: ${getPercentage(count)}`);
 }
-
-
-
-
-
-
 
 function appendArt(art,conn,div,logDiv,wikiOrEncy){
 	var article = art;
@@ -176,10 +153,10 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 
 	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>`);
 
-	$("#"+logDiv).append(`<br><span id="source${wikiOrEncy}"></span>`);
+	$("#"+logDiv).append(`<br><span id="source${wikiOrEncy} class="source"></span>`);
 
 	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>
-		<br><span id="percentages${wikiOrEncy}"></span>
+		<span id="percentages${wikiOrEncy}"></span>
 		<br><br><span id="source${wikiOrEncy}" class="source"></span>`);
 	
 	$("#"+div).empty();
@@ -222,6 +199,10 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 	animateText();
 }
 
+function pad(number) {
+     return (number < 10 ? '0' : '') + number;
+}
+
 function getPercentage(arr){
 	let percentages = [];
 	var sum = arr.reduce(add, 0);
@@ -229,13 +210,9 @@ function getPercentage(arr){
 	function add(a, b) {
 	    return a + b;
 	}
-	// console.log(sum); // 6
 	for (var i = 0; i < arr.length; i++) {
 		percentages.push(Math.ceil((arr[i]/sum)*100));
 	}
-	// var fr1 = Math.ceil((nums[0]/sum)*100);
-	// var fr2 = Math.ceil((nums[1]/sum)*100);
-	// var fr3 = Math.ceil((nums[2]/sum)*100);
 	return percentages;
 }
 function pad(n){
@@ -256,7 +233,8 @@ $(".text").scroll(function() {
 
 
 // import './canvas.js';
-
+////////////////////LINES//////////////////////////
+//-----------------------------------------------//
 
 $("#wrap").mousemove(function( event ) {
 	$( ".hl" ).hover(
@@ -266,7 +244,6 @@ $("#wrap").mousemove(function( event ) {
 	    activeHover = lastClass;
 
 	  }, function() {
-	    // $( this ).find( "span:last" ).remove();
 	    activeHover = null;
 	  }
 	);
@@ -275,11 +252,9 @@ $("#wrap").mousemove(function( event ) {
 });
 
 function canvasLines() {
-	// console.log(searchNo+" /ency/ "+encyConnIndex[searchNo]);
     var canvas = document.getElementById('canvas'),
     	ctx = canvas.getContext('2d');
 
-    // resize the canvas to fill browser window dynamically
     window.addEventListener('resize', resizeCanvas, false);
 
     function resizeCanvas() {
@@ -291,32 +266,10 @@ function canvasLines() {
 
     resizeCanvas();
 
-        // console.log(numConn+"kk");
-
     function drawStuff() {
-    	// console.log(getPos("#ency1_5"));
-    	
-    	// var hoverSwitches = [];
-    	// for (var i = 0; i < numConn; i++) {
-    	// 	hoverSwitches[i] = false;
-    	// }
-
-
     	
 		$("#wrap").mousemove(function( event ) {
-			// console.log(hoverSwitches);
-			// displayLines(0, "red", "ency");
-			// displayLines(1,"red", "ency");
-			// displayLines(2,"blue", "ency");
 
-
-			// if (activeHover == "encyhl0") {
-			// 	displayLines(0,"red", "ency");
-			// }
-
-			// if (activeHover == "encyhl1") {
-			// 	displayLines(1,"red", "ency");
-			// }
 			for (var i = 0; i < numConn; i++) {
 				conch(i,"ency");
 				conch(i,"wiki");
@@ -329,13 +282,6 @@ function canvasLines() {
 				}
 			}
 
-			// displayLines(1,"lime", "ency");
-			// displayLines(2,"blue", "ency");
-
-
-			
-			// displayLines("#ency9_1","#ency1_38","blue");
-
 			function displayLines(index, color, encyOrWiki){
 				var activeConnIndex;
 
@@ -346,26 +292,11 @@ function canvasLines() {
 					activeConnIndex = wikiConnIndex;
 				}
 
-
-
-
-				// $("."+encyOrWiki+"hl"+index).mouseenter(function() {
-				// 	hoverSwitches[index] = true;
-				// 	// console.log("s");
-				// });
-				// $("."+encyOrWiki+"hl"+index).mouseleave(function() {
-				// 	hoverSwitches[index] = false;
-				// });
-
-
-					// console.log(encyConnIndex);
-
 				var compX = 26;
 				var compY = 60;
 				if (activeHover !== null) {
 					var positions1=[];
 					var positions2=[];
-
 
 					ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -393,8 +324,5 @@ function canvasLines() {
 				}
 			}
 		});
-
-
     }
 }
-
