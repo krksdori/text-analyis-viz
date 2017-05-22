@@ -34,6 +34,7 @@ let numConn = 10;
 let encyConnIndex = [];
 let wikiConnIndex = [];
 
+
 for (var i = 0; i < numConn; i++) {
 	encyConnIndex[i]=[];
 	wikiConnIndex[i]=[];
@@ -137,7 +138,7 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 		wordCount += wordArray[i].length;
 	}
 
-	// $(logDest).append(`<br>Word count: ${wordCount} will fix word count soon...`);
+	$("#wordCount"+wikiOrEncy).text(`Word count: ${wordCount}`);
 }
 
 
@@ -164,7 +165,9 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 	for (var i = 0; i < 10; i++) {
 		$("#"+logDiv).append(`<span id='${wikiOrEncy}ConnCount${i}'></span>&nbsp;<span class='logcon hl ${wikiOrEncy}hl${i}'>${conn[i*2]} - ${conn[(i*2)+1]}</span><br>`);
 	}
-	console.log(conn[1]);
+
+	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>`);
+	
 	
 
 	$("#"+div).empty();
