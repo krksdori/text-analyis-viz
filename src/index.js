@@ -23,6 +23,16 @@ $( "#back-button" ).click(function() {
 	$("#menu-wrapper").show();
 });
 
+
+$( "#about-button" ).click(function() {
+	$("#about-page-wrap").removeClass("hidden");
+	
+});
+
+$('#x-button').click(function(){
+	$("#about-page-wrap").addClass("hidden");
+});
+
 var eArticle;
 var wArticle;
 var eConn;
@@ -221,14 +231,25 @@ function pad(n){
 
 
 $(".text").scroll(function() {	
-    var y = $(this).scrollTop();
+	var encyHeight = $(encyText).scrollTop();
+	var wikiHeight = $(wikiText).scrollTop();
+    // var y = $(this).scrollTop();
     var $header = $("#header");
     var articlesHolderHeight = $(".text").height();
-    if (y >= 1) {
+
+    if ( encyHeight>= 1 || wikiHeight>= 1) {
         $header.addClass('shadow');
     } else {
         $header.removeClass('shadow'); 
     }
+
+
+
+    // if ( >= 1) {
+    //     $header.addClass('shadow');
+    // } else {
+    //     $header.removeClass('shadow'); 
+    // }
 });
 
 
