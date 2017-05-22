@@ -92,6 +92,19 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	let count = [];
 	let wordCount = 0;
 
+
+
+
+
+
+
+
+
+
+	// console.log(convertToPercentages2(nums)+" lalll");
+
+
+
 	for (var i = 0; i < numConn; i++) {
 		count.push(0);
 	}
@@ -139,6 +152,7 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	}
 
 	$("#wordCount"+wikiOrEncy).text(`Word count: ${wordCount}`);
+	$("#percentages"+wikiOrEncy).text(`%: ${getPercentage(count)}`);
 }
 
 
@@ -166,7 +180,8 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 		$("#"+logDiv).append(`<span id='${wikiOrEncy}ConnCount${i}'></span>&nbsp;<span class='logcon hl ${wikiOrEncy}hl${i}'>${conn[i*2]} - ${conn[(i*2)+1]}</span><br>`);
 	}
 
-	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>`);
+	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>
+		<br><span id="percentages${wikiOrEncy}"></span>`);
 	
 	
 
@@ -202,6 +217,25 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 		}, 20);
 	}
 	animateText();
+}
+
+
+
+function getPercentage(arr){
+	let percentages = [];
+	var sum = arr.reduce(add, 0);
+
+	function add(a, b) {
+	    return a + b;
+	}
+	// console.log(sum); // 6
+	for (var i = 0; i < arr.length; i++) {
+		percentages.push(Math.ceil((arr[i]/sum)*100));
+	}
+	// var fr1 = Math.ceil((nums[0]/sum)*100);
+	// var fr2 = Math.ceil((nums[1]/sum)*100);
+	// var fr3 = Math.ceil((nums[2]/sum)*100);
+	return percentages;
 }
 
 
