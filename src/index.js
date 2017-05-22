@@ -1,8 +1,9 @@
 // var eArticle = getHtmlContent("wikiText");
-
+//
 import $ from 'jquery';
 import './style.css';
 import articles from './articles';
+
 
 
 
@@ -28,6 +29,15 @@ var eConn;
 var wConn;
 var currentTitle;
 
+let numConn = 10;
+let encyConnIndex = [];
+let wikiConnIndex = [];
+
+for (var i = 0; i < numConn; i++) {
+	encyConnIndex[i]=[];
+	wikiConnIndex[i]=[];
+}
+
 function menuClickExecute(link, index){
 	$( "#link"+link ).click(function() {
 		$("#article-page-container").show();
@@ -48,8 +58,9 @@ function menuClickExecute(link, index){
 		appendArt(eArticle,eConn,"encyText","encyLog","ency");
 		appendArt(wArticle,wConn,"wikiText","wikiLog","wiki");
 
-		// mainF(eArticle,eConn,"#encyText","#encyLog","ency");
-		// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
+		mainF(eArticle,eConn,"#encyText","#encyLog","ency");
+		mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
+		canvasLines();
 
 		// $("#menu-wrapper").addClass("hidden");
 	
@@ -70,12 +81,9 @@ function menuClickExecute(link, index){
 	});
 }
 
-let numConn = 10;
-let encyConnIndex = [];
-let wikiConnIndex = [];
+
 
 function mainF(art,conn,textDest,logDest, wikiOrEncy){
-
 	let lowerCaseArt = art.toLowerCase();
 	let splArt = lowerCaseArt.split(".");
 	let wordArray = [];
@@ -84,8 +92,6 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 
 	for (var i = 0; i < numConn; i++) {
 		count.push(0);
-		encyConnIndex[i]=[];
-		wikiConnIndex[i]=[];
 	}
 
 	for (let i = 0; i < splArt.length; i++) {
@@ -99,16 +105,22 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 		if(indof0 !== -1 && indof1 !== -1){
 			$("#"+wikiOrEncy+index+"_"+indof0).addClass(wikiOrEncy+"hl"+searchNo);
 			$("#"+wikiOrEncy+index+"_"+indof1).addClass(wikiOrEncy+"hl"+searchNo);
+
 			count[searchNo] += 1;
 
 			if (wikiOrEncy == "ency") {
 				encyConnIndex[searchNo].push(index+"_"+indof0);
 				encyConnIndex[searchNo].push(index+"_"+indof1);
+				// console.log(searchNo+" /ency/ "+encyConnIndex[searchNo]);
 			} else {
 				wikiConnIndex[searchNo].push(index+"_"+indof0);
 				wikiConnIndex[searchNo].push(index+"_"+indof1);
+				// console.log(searchNo+" /wiki/ "+wikiConnIndex[searchNo]);
 			}	
 		}
+
+
+		
 	}
 	
 	// $(logDest).empty();
@@ -123,6 +135,7 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	for (var i = 0; i < wordArray.length; i++) {
 		wordCount += wordArray[i].length;
 	}
+
 	// $(logDest).append(`<br>Word count: ${wordCount} will fix word count soon...`);
 }
 
@@ -196,3 +209,114 @@ $(".text").scroll(function() {
         $header.removeClass('shadow'); 
     }
 });
+
+
+// import './canvas.js';
+
+
+
+
+
+function canvasLines() {
+	// console.log(searchNo+" /ency/ "+encyConnIndex[searchNo]);
+	console.log(encyConnIndex[1]);
+    var canvas = document.getElementById('canvas'),
+    	ctx = canvas.getContext('2d');
+
+    // resize the canvas to fill browser window dynamically
+    window.addEventListener('resize', resizeCanvas, false);
+
+    function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            drawStuff(); 
+    }
+
+    resizeCanvas();
+
+        // console.log(numConn+"kk");
+
+    function drawStuff() {
+    	// console.log(getPos("#ency1_5"));
+    	
+    	var hoverSwitches = [];
+    	for (var i = 0; i < numConn; i++) {
+    		hoverSwitches[i] = false;
+    	}
+
+
+    	
+		$("#wrap").mousemove(function( event ) {
+			displayLines(0, "red", "ency");
+			// displayLines(1,"red", "ency");
+			displayLines(2,"blue", "ency");
+
+			// displayLines(0,"cyan", "wiki");
+			// displayLines(1,"lime", "ency");
+			// displayLines(2,"blue", "ency");
+
+
+			
+			// displayLines("#ency9_1","#ency1_38","blue");
+
+			function displayLines(index, color, encyOrWiki){
+				var activeConnIndex;
+
+				if (encyOrWiki == "ency") {
+					activeConnIndex = encyConnIndex;
+
+				} else {
+					activeConnIndex = wikiConnIndex;
+				}
+
+
+
+
+				$("."+encyOrWiki+"hl"+index).mouseenter(function() {
+					hoverSwitches[index] = true;
+					// console.log("s");
+				});
+				$("."+encyOrWiki+"hl"+index).mouseleave(function() {
+					hoverSwitches[index] = false;
+				});
+
+
+					// console.log(encyConnIndex);
+
+				var comp = 56;
+				if (hoverSwitches[index] == true) {
+					var positions1=[];
+					var positions2=[];
+
+					ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+					function getPosDrawLine(index,span1,span2){
+						positions1[index] = $("#"+encyOrWiki+span1).position();
+						positions2[index] = $("#"+encyOrWiki+span2).position();
+
+						ctx.strokeStyle = color;
+						ctx.lineWidth=1;
+						ctx.beginPath();
+						ctx.moveTo(positions1[index].left+comp,positions1[index].top+comp);
+						ctx.lineTo(positions2[index].left+comp,positions2[index].top+comp);
+						ctx.closePath();
+						ctx.stroke();
+
+					}
+
+
+					for (var i = 0; i < (activeConnIndex[index].length)/2; i++) {
+						getPosDrawLine(i,activeConnIndex[index][i*2],activeConnIndex[index][i*2+1]);
+					}
+
+					
+				} else {
+					ctx.clearRect(0, 0, canvas.width, canvas.height);
+				}
+			}
+		});
+
+
+    }
+}
