@@ -54,20 +54,12 @@ function menuClickExecute(link, index){
 		var wYear = articles[index].wYear;
 		var eYear = articles[index].eYear;
 
-		// console.log(wYear);
-		// console.log(eYear);
-
 		appendArt(eArticle,eConn,"encyText","encyLog","ency");
 		appendArt(wArticle,wConn,"wikiText","wikiLog","wiki");
 
 		// mainF(eArticle,eConn,"#encyText","#encyLog","ency");
 		// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
 		canvasLines();//should run after animation is done, but bug runs several times after, for some reason
-
-		// $("#menu-wrapper").addClass("hidden");
-	
-		// $("#wrap").removeClass("hidden");
-		// $("#header").removeClass("hidden");
 
 		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").text("Encyclopédie – " + currentTitle);
 		var $wikiTitleDiv = $('<div>').addClass("wiki-header-title header-title reset").text("Wikipedia – " + currentTitle);
@@ -82,8 +74,6 @@ function menuClickExecute(link, index){
 
 	});
 }
-
-
 
 function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	let lowerCaseArt = art.toLowerCase();
@@ -120,19 +110,20 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 				// console.log(searchNo+" /wiki/ "+wikiConnIndex[searchNo]);
 			}	
 		}
-
-
-		
 	}
 	
 	// $(logDest).empty();
+
+	function pad(number) {
+	     return (number < 10 ? '0' : '') + number
+	}
 
 	for (let j = 0; j < numConn; j++) {
 		for (let i = 0; i < wordArray.length; i++) {
 			findConn(i,j,conn[j*2],conn[(j*2)+1]);
 		}
 		$("#"+wikiOrEncy+"ConnCount"+j).text(`${count[j]}`);
-		console.log(j);
+		console.log(pad(j));
 	}
 
 	for (var i = 0; i < wordArray.length; i++) {
@@ -140,7 +131,13 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	}
 
 	$("#wordCount"+wikiOrEncy).text(`Word count: ${wordCount}`);
+	$("#wordCount"+wikiOrEncy).text(`Word count: ${wordCount}`);
 }
+
+
+
+
+
 
 
 function appendArt(art,conn,div,logDiv,wikiOrEncy){
@@ -168,8 +165,8 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 	}
 
 	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>`);
-	
-	
+
+	$("#"+logDiv).append(`<br><span id="source${wikiOrEncy}"></span>`);
 
 	$("#"+div).empty();
  
