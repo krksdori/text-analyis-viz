@@ -82,6 +82,11 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	let count = [];
 	let wordCount = 0;
 
+
+	// console.log(convertToPercentages2(nums)+" lalll");
+
+
+
 	for (var i = 0; i < numConn; i++) {
 		count.push(0);
 	}
@@ -122,8 +127,10 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 		for (let i = 0; i < wordArray.length; i++) {
 			findConn(i,j,conn[j*2],conn[(j*2)+1]);
 		}
-		$("#"+wikiOrEncy+"ConnCount"+j).text(`${count[j]}`);
-		console.log(pad(j));
+		// $("#"+wikiOrEncy+"ConnCount"+j).text(`${count[j]}`);
+
+		$("#"+wikiOrEncy+"ConnCount"+j).text(`${pad(count[j])}`);
+		// console.log(j);
 	}
 
 	for (var i = 0; i < wordArray.length; i++) {
@@ -131,7 +138,10 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	}
 
 	$("#wordCount"+wikiOrEncy).text(`Word count: ${wordCount}`);
-	$("#wordCount"+wikiOrEncy).text(`Word count: ${wordCount}`);
+
+  //$("#wordCountWiki").text
+	
+	$("#percentages"+wikiOrEncy).text(`%: ${getPercentage(count)}`);
 }
 
 
@@ -161,14 +171,24 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 
 	//append connection log
 	for (var i = 0; i < 10; i++) {
-		$("#"+logDiv).append(`<span id='${wikiOrEncy}ConnCount${i}'></span>&nbsp;<span class='logcon hl ${wikiOrEncy}hl${i}'>${conn[i*2]} - ${conn[(i*2)+1]}</span><br>`);
+		$("#"+logDiv).append(`<span id='${wikiOrEncy}ConnCount${i}'>00</span>&nbsp;<span class='logcon hl ${wikiOrEncy}hl${i}'>${conn[i*2]} - ${conn[(i*2)+1]}</span><br>`);
 	}
 
 	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>`);
 
 	$("#"+logDiv).append(`<br><span id="source${wikiOrEncy}"></span>`);
 
+	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>
+		<br><span id="percentages${wikiOrEncy}"></span>
+		<br><br><span id="source${wikiOrEncy}" class="source"></span>`);
+	
 	$("#"+div).empty();
+
+	if (wikiOrEncy == "wiki") {
+		$("#source"+wikiOrEncy).html(`<a href="${articles[0].wSource}">Source</a>`);
+	}else{
+		$("#source"+wikiOrEncy).html(`<a href="${articles[0].eSource}">Source</a>`);
+	} /////////////FIXFIXFIXFIXFIXFIXFIXFIXFIXFIX
  
  	// old append without animation
 	// for (let j = 0; j < wordArray.length; j++) {
@@ -200,6 +220,26 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 		}, 20);
 	}
 	animateText();
+}
+
+function getPercentage(arr){
+	let percentages = [];
+	var sum = arr.reduce(add, 0);
+
+	function add(a, b) {
+	    return a + b;
+	}
+	// console.log(sum); // 6
+	for (var i = 0; i < arr.length; i++) {
+		percentages.push(Math.ceil((arr[i]/sum)*100));
+	}
+	// var fr1 = Math.ceil((nums[0]/sum)*100);
+	// var fr2 = Math.ceil((nums[1]/sum)*100);
+	// var fr3 = Math.ceil((nums[2]/sum)*100);
+	return percentages;
+}
+function pad(n){
+	return(n < 10 ? '0' : '') + n;
 }
 
 

@@ -177,6 +177,7 @@ canvas {
 	font-size: 20px;
 	width: 400px;
 	position: fixed;
+	padding-top: 15px;
 	/*border: 1px solid red;*/
 }
 
@@ -203,6 +204,7 @@ canvas {
 	cursor: pointer;
 /*	background-color: red;*/
 	z-index: 3;
+	padding-top: 15px;
 }
 
 #back-button:hover {
@@ -226,6 +228,16 @@ canvas {
 
 ::-webkit-scrollbar { 
     display: none; 
+}
+
+.source a, .source:visited a{
+	color: black;
+	text-decoration: none;
+}
+
+.source:hover a{
+	color: blue;
+	font-family: AtlasType-Italic;
 }
 
 /*.underline {
