@@ -56,7 +56,7 @@ function menuClickExecute(link, index){
 		// $("#wrap").removeClass("hidden");
 		// $("#header").removeClass("hidden");
 
-		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").text("Encyclopedia – " + currentTitle);
+		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").text("Encyclopédie – " + currentTitle);
 		var $wikiTitleDiv = $('<div>').addClass("wiki-header-title header-title reset").text("Wikipedia – " + currentTitle);
 
 		var $wYearDiv = $('<div>').addClass("wikiYear artYear header-title reset").text(wYear);
@@ -148,8 +148,9 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 
 	//append connection log
 	for (var i = 0; i < 10; i++) {
-		$("#"+logDiv).append(`<span id='${wikiOrEncy}ConnCount${i}'></span>&nbsp;<span class='${wikiOrEncy}hl${i}'>${conn[i*2]} - ${conn[(i*2)+1]} </span><br>`);
+		$("#"+logDiv).append(`<span id='${wikiOrEncy}ConnCount${i}'></span>&nbsp;<span class='logcon ${wikiOrEncy}hl${i}'>${conn[i*2]} - ${conn[(i*2)+1]}</span><br>`);
 	}
+	console.log(conn[1]);
 	
 
 	$("#"+div).empty();

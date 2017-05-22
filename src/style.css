@@ -76,11 +76,12 @@ canvas {
 
 .text {
 	padding: 20px; /*little margin on the sides*/
+	
 	overflow: scroll;
 	line-height: 15pt;
 	font-size: 12pt;
 	color: black;
-	flex: 2;
+	flex: 4;
 }
  h2{
  	font-size: 20px;
@@ -95,9 +96,15 @@ canvas {
 }
 
 .log {
+	font-family: AtlasType-Reg;
 	font-size: 12px;
 	padding: 21px;
 	flex: 2;
+}
+
+.logcon {
+	font-family: AtlasGrotesk-Reg;
+
 }
 
 #encyLog {
@@ -193,30 +200,39 @@ canvas {
 	position: absolute;
 	right: calc(5% + 2px);
 	cursor: pointer;
+/*	background-color: red;*/
+	z-index: 3;
 }
 
 #back-button:hover {
 	color:blue;
+
 }
-
-
 
 .ency-header-title {
-	/*padding-right: 50%; there must be a better way to do this*/
+/*	padding-right: 50%; there must be a better way to do this
+	background-color: blue*/
 }
 
+/*.artYear{
+	background-color: red;
+
+}*/
+
 .wiki-header-title {
-	left: calc(52% + 4px);
+	left: calc(51% + 4px);
 }
 
 ::-webkit-scrollbar { 
     display: none; 
 }
 
-
-
-
-
+/*.underline {
+  border-bottom: 1px solid rgb(0, 0, 255);
+  display: inline-block;
+  line-height: 0.93;
+}
+*/
 
 .hidden{
 	display: none;
