@@ -53,8 +53,8 @@ function menuClickExecute(link, index){
 		var wYear = articles[index].wYear;
 		var eYear = articles[index].eYear;
 
-		console.log(wYear);
-		console.log(eYear);
+		// console.log(wYear);
+		// console.log(eYear);
 
 		appendArt(eArticle,eConn,"encyText","encyLog","ency");
 		appendArt(wArticle,wConn,"wikiText","wikiLog","wiki");
@@ -131,6 +131,7 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 			findConn(i,j,conn[j*2],conn[(j*2)+1]);
 		}
 		$("#"+wikiOrEncy+"ConnCount"+j).text(`${count[j]}`);
+		console.log(j);
 	}
 
 	for (var i = 0; i < wordArray.length; i++) {
@@ -284,7 +285,7 @@ function canvasLines() {
 
 			function conch(i, encyOrWiki){
 				if (activeHover == encyOrWiki+"hl"+i) {
-					displayLines(i,"red", encyOrWiki);
+					displayLines(i,"blue", encyOrWiki);
 				}
 			}
 
