@@ -194,7 +194,577 @@ export default [
 		<p> The second most popular religion is Islam (6%) concentrated mainly in the Balkans and eastern Europe (Bosnia and Herzegovina, Albania, Kosovo, Kazakhstan, North Cyprus, Turkey, Azerbaijan, North Caucasus, and the Volga-Ural region). Other religions, including Judaism, Hinduism, and Buddhism are minority religions (though Tibetan Buddhism is the majority religion of Russia's Republic of Kalmykia). The 20th century saw the revival of Neopaganism through movements such as Wicca and Druidry.</p>
 		<p> Europe has become a relatively secular continent, with an increasing number and proportion of irreligious, atheist and agnostic people, who make up about 18.2% of Europe's population, actually the largest secular population in the Western world. There are a particularly high number of self-described non-religious people in the Czech Republic, Estonia, Sweden, former East Germany, and France.</p>
 		`
-	}, {
+	},{
+		title: "Slavery",
+		eYear: 1755,
+		wYear: 2017,
+		eSource: "https://quod.lib.umich.edu/cgi/t/text/text-idx?c=did;cc=did;rgn=main;view=text;idno=did2222.0000.667",
+		wSource: "",
+		eConn: ["civil","law","master","slave","slavery","law","master","life","slavery","nature","man","life","slaves","land","servitude","master","law","master","countries","slavery"],
+		wConn: ["slave","trade","forced","marriage","labour","slavery","forced","labour","arab","slave","unfree","labour","slavery","europe","african","slaves","were","sold","slave","empire","million","slaves","labour","against"],
+		eArt: `Slavery is the establishment of a right founded on force which renders one man property to another man, who is absolute master of his life, his goods, and his liberty.
+
+<p> This definition applies almost equally to civil slavery , and to political slavery : in order to sketch its origin, nature, and foundation, I will borrow many things from the author of l’Esprit des lois, without stopping at borrowing the sturdiness of his principles, because I can add nothing to his glory.</p>
+
+<p> All men are born free; in the beginning they only had one name, one condition. In the times of Saturn and of Rhea, according to Plutarch, there were neither masters nor slaves, nature made them all equal. But this natural equality was gradually set aside and servitude was introduced by degrees, probably founded originally on free contracts, although necessity must have been its source and origin.
+</p>
+<p> When, as a necessary result of the multiplication of the human race, we began to leave behind the simplicity of previous centuries, we sought new means of increasing leisure, and of acquiring surplus goods. There is much evidence that rich men hired the poor to work for them in exchange for a fixed wage. This resource having appeared very useful to both of them, several among them resolved to ensure their state and to enter permanently on the same footing into another’s family, on condition that he furnish food and all other necessities of life. Thus servitude was originally formed by free consent, and by a contract of labor in exchange for goods: do ut fascias . This arrangement was limited to certain things, according to the laws of each country, and the contracts of the interested parties. In essence, such slaves were only properly servitors or mercenaries, similar enough to our domestic servants.
+</p>
+<p> But we didn’t stay that way for long; we found too much advantage in having someone else do that which we would have been obliged to do ourselves. As we sought to expand forces under arms, we established the custom of granting to prisoners of war life and bodily liberty, on condition that they serve forever in the capacity of slaves those into whose hands they had fallen.
+</p>
+<p> As one maintains some residual animosity toward the unfortunates whom one reduced to slavery through force of arms, they were ordinarily treated with much rigor. Cruelty seemed excusable toward people at whose hands one had risked the same fate; it is thus easy to imagine being able to kill such slaves with impunity, as a result of anger or for the slightest error.
+</p>
+<p> This license having once been authorized, it was extended under an even less plausible pretext to those who were born from these slaves, and even to those purchased or acquired in some other manner. Thus servitude came to be naturalized, so to speak, through the lot of war. Those whom fortune favored, and who were left in the state in which nature had created them, were called free. By contrast, those whom weakness and misfortune had subjected to the victors, were called slaves. The philosopher-judges of the merit of men’s actions regard as charitable the conduct of this victor who enslaves his vanquished instead of ending his life.
+</p>
+<p> Slavery was introduced by the law of the strongest, that law of war in offense of nature, and by ambition, thirst for conquest, love of domination and apathy. To the shame of humanity, it has been accepted by almost all of the world’s peoples. Indeed, we could hardly cast our eyes on sacred History without discovering the horrors of servitude. The profane histories of the Greeks, of the Romans, and of all the other peoples who are considered civilized, are all monuments to this ancient injustice exercised with more or less violence across the face of the world, in all times, places, and nations.
+</p>
+<p> There are two kinds of slavery or servitude, real and personal: real servitude includes the slave in the value of land; personal servitude concerns the care of the house, and relates more to the person of the master. The extreme abuse of slavery is when it is at once personal and real. Such was the servitude of foreigners among the Jews, against whom they practiced the harshest treatments. Moses cried in vain to them: “you will not have full dominion over your slaves; you will not oppress them.” His exhortations never succeeded in alleviating the hardness of his ferocious nation, so he strove through his laws to find a remedy.
+</p>
+<p> He began by fixing the term of enslavement, and by ordering that it could only endure until the Jubilee year for foreigners, and for Hebrews only for six years (Leviticus 25:39).
+</p>
+<p> One of the principle reasons for his institution of the Sabbath was to obtain relief for servants and slaves (Exodus 20 and 23, Deuteronomy 16).
+</p>
+<p> He then decreed that no one could sell his own liberty, unless he was reduced to absolutely no livelihood. He mandated that when slaves purchased themselves, their past service had to be accounted for, just as when revenues already realized from sold land were counted in the price of purchase, the former proprietor recovered them. Deuteronomy, chapter xv. Leviticus, chapter xxv.
+</p>
+<p> If a master put out an eye or broke a tooth of his slave (and even more so, of course, if he did something worse), the slave should have his freedom in restitution for this loss.
+</p>
+<p> Another of this legislator’s laws holds that if a master strikes his slave, and the slave dies under the rod, the master must be punished as guilty of homicide: although it is true that the law adds that if the slave lives one or two days, the master is exempt from the penalty. The reason for this law was perhaps that when the slave did not die in the field, one could presume that the master did not intend to kill him; and thus that he could be seen as punished enough in having lost the slave’s value or the service that he would have gotten from him: at least this is what we are led to believe by the commentary on the text, because the slave is his money.
+</p>
+<p> Anyway, it was a very unusual nation, according to M. de Montesquieu, where civil law loosened natural law. That’s not what Saint Paul thought about this issue, when, preaching the enlightenment of the Gospel, he offered this principle of nature and of religion that should be deeply engraved in the hearts of all men: Masters (Letter to Colossians, iv, 1), render to your slaves that which the law and equity demand of you, knowing that you have a master in heaven; that is to say a master that pays no mind to these distinctions of conditions, forged by pride and injustice.
+</p>
+<p> The Lacedemonians were the first in Greece who would introduce the use of slaves, or who first reduced to servitude the Greeks that they had made prisoners of war: they would go even further (and I regret very much that I cannot pull the curtain on this part of their history), they treated their Helots with every last barbarity. These peoples, inhabitants of Spartan territory, having been vanquished during their revolt by the Spartans, were condemned to perpetual slavery , with prohibitions against their masters freeing them or selling them outside the land: thus the Helots found themselves subjected to all of the work outside of the house, and all sorts of insults inside the house. Their misfortune extended to the point that they were not only the slaves of a citizen, but of also of the public. Many peoples only experienced real slavery , because their women and children did domestic work. Other peoples experienced personal slavery , because luxury demanded service of slaves in the house; but here we find in the same individuals both real and personal slavery .
+</p>
+<p> It was not the same among the other peoples of Greece; slavery there was extremely gentle, and even the slaves most rudely treated by their masters could ask to be sold to someone else. We learn this from Plutarch, De superstitione , p. 66. t. I., édition de Wechel.
+</p>
+<p> The Athenians in particular, reports Xenophon, dealt with their slaves with much gentleness: they punished severely, sometimes even with death, those who beat the slave of another. The law of Athens, rightly, did not want to add loss of security to that of liberty; likewise, we do not find that slaves disturbed this republic, as they shook Lacedaemon.
+</p>
+<p> It is easy to see that only humanity exercised toward slaves can prevent, in a moderate government, the dangers that one fears from their too great numbers. Men become accustomed to servitude, provided that their master is not harder than their servitude: nothing more fully confirms this truth, than the state of slaves among the Romans during the beautiful days of the republic; consideration of this state deserves our attention for a few moments.
+</p>
+<p> The first Romans treated their slaves with more goodness than had any other people: the masters regarded them as their companions; they lived, worked, and ate with them. The greatest chastisement that they inflicted on a slave who had committed some fault was to attach a forked rod to his back or his chest, to extend his arms to the two ends of the fork, and to lead him about in public places; this was an ignominious penalty, and nothing more so: morals sufficed to maintain the slaves’ fidelity.
+</p>
+<p> Far from preventing by the force of law the multiplication of these living, animated economic organs, on the contrary they favored it with all of their might, and joined them with a kind of marriage called contuberniis . In this manner they filled their houses with domestics of both sexes and populated the state with innumerable people. The children of slaves eventually composed the fortune of their master, born in trust around him; he alone was charged with their upkeep and their education. The fathers, freed from this burden, followed the inclinations of nature, and reproduced without fear of a large family. They saw without jealousy a happy society, of which they regarded themselves as members. They believed that their soul could be elevated like that of their master, and they did not sense the difference that existed between the condition of a slave and that of a free man. It was often the case that generous masters taught exercises, music, and Greek letters to those among their slaves who showed talents; Terence and Phaedra are very good examples of this kind of education.
+</p>
+<p> The republic created for itself an infinite advantage in this nation of slaves, or rather of subjects: each of them had their peculium , that is to say his small treasure, his small fund, that he possessed on conditions that his master determined. With this peculium he worked on the side according to his talents; this one established a bank, that one devoted himself to the sea trade; one sold retail merchandise, the other applied himself to some mechanical art, leasing or adding value to land. There were none who weren’t devoted to making grow their peculium , which simultaneously procured an easing of present servitude and the hope of future liberty. All these means spread abundance, animating the arts and industry.
+</p>
+<p> These slaves, once enriched, freed themselves and became citizens; the republic renewed itself ceaselessly, and received into its heart new families at the rate that the ancients destroyed each other. Such were the good days of slavery , as long as the Romans preserved their morals and their integrity.
+</p>
+<p> But when expanded through their conquests and their plunder, such that their slaves were no longer their companions in their works, and that they used them to become the instruments of their luxury and their pride, the condition of the slaves changed its complexion entirely. They came to be regarded as the most vile part of the nation, and in consequence no one had any scruples about treating them inhumanely. Because Romans no longer had any morals, they had recourse to laws, which had to be terrible to establish the safety of these cruel masters, living in the midst of their slaves as if in the middle of their enemies.
+</p>
+<p> Under Augustus, which is to say at the beginning of the tyranny, the Syllanien senatorial decree and several other laws were passed that ordained that if a master were to be killed, all of the slaves who were under the same roof or in a place close enough to the house to be able to hear a man’s voice, would be condemned to death. Those who in this case hid a slave to save him would be punished like the murderers. Even those whose master had ordered them to kill him and who had obeyed would be held culpable: he who had not prevented the murder himself would be punished. If a master were killed on a voyage, those who had remained with him were killed as well as those who had fled: we should add that this master, during his life, could kill with impunity his slaves and also torture them. It is true that subsequently there were emperors who mitigated this power. Claudius ordered that ill slaves who were abandoned by their masters would be free if they returned to health. This law assured their liberty in a rare case; it should as well have served to ensure their life, as M. de Montesquieu said so well.
+</p>
+<p> Furthermore, all of these cruel laws that we’ve just described were used even against slaves whose innocence was proven. The laws didn’t depend on civil government, they depended on a vice of civil government. They did not derive from the equity of civil laws, since they were contrary to their principles. They were properly founded on the principle of war, except that in this case the enemies were in the heart of the state. The Syllanien senatorial decree derived, it is said, from the law of nations, which intends that even an imperfect society preserve itself: but a prudent legislator foresees the ill consequences of rendering the legislature terrible. The slaves amongst the Romans could have no confidence in the laws; and therefore the laws could have none in them. In the end the barbarous treatment of the slaves was pushed so far, that it produced the civil war that Florus compared to the Punic wars, and which by its violence shook the Roman Empire to its foundations.
+</p>
+<p> I like to dream that there are still on the earth happy climes whose inhabitants are sweet, tender, and compassionate: such are the Indians of the sub-continent, on this side of the Ganges; they treat their slaves as they treat themselves; they take care of their infants; they marry them and easily give them liberty. In general the slaves of simple working peoples, among whom reigns simplicity of manners, are more happy than everywhere else; they only suffer real slavery , which is less hard for them and more useful for their masters: such were the slaves of the ancient Germans. These peoples, Tacitus said, did not hold them as we do in their houses to make them work there each at a certain task, on the contrary they assigned to each slave his own manor, in which he lived as the father of the family. The only servitude that the master imposed upon him was the obligation to pay a tax in grain, in livestock, in skins, or in fabric: in this manner, the historian adds, you could not distinguish the master from the slave by the pleasures of life.
+</p>
+<p> When they conquered the Gauls, under the name Franks, they would send their slaves to cultivate the lands that thus fell to them: the slaves were called the people of the poet, in Latin gentes potestatis , attached to the land, addicti gleboe [serfs of the land]; and it is from among these serfs that France was thereafter populated. Their multiplication created almost as many villages as there were cultivated farms, and these lands retain the city names that the Romans gave them, and from which came the names village and villains, in Latin villa and villani , to designate the people of the country and of low extraction. One thus sees in France two kinds of slaves, those of the Franks and those of the Gauls, and all went to war, as has been said by M. de Boulainvilliers.
+</p>
+<p> These slaves belonged to their patrons, of whom they were considered to be body men, as it was said then: they became in time subject to rough duties and so attached to the land of their masters that they seemed to be a part of it, such that they could not move elsewhere, nor marry onto the land of another lord without paying what one would call the right of fors-mariage  [1]; and even the children who came from the union of two slaves of different masters were shared, or one of the patrons, to avoid such division, would give another slave in exchange.
+</p>
+<p> A military government where authority is divided among several lords inevitably degenerates into tyranny. This did not fail to happen: the ecclesiastical patrons and the lay patrons everywhere abused their power over their slaves; they weakened theme with too much work, taxes, chores, and with too much ill-treatment. Eventually the unhappy serfs, no longer able to tolerate the heaviness of the yoke, in 1108 staged the famous revolt described by the historians, which ended finally in the attainment of their freedom. Our kings had previously tried without success to soften the state of slavery through their laws.
+</p>
+<p> Meanwhile Christianity, beginning to gain currency, embraced the most humane sentiments; then our sovereigns, determined to weaken the lords and to free the common people from the yoke of their power, took the side of freeing the slaves. Louis the Fat set the example and in freeing the serfs in 1135 he partly succeeded in reclaiming over his vassals the authority they had previously captured: Louis VIII signaled the beginning of his reign by a similar liberation in 1223; finally Louis X called Hutin [the Quarreler], delivered an edict on this subject that seems to us worthy of being reproduced here:
+</p>
+<p> “Louis, by the grace of God, king of France and of Navarre: to our beloved and loyal supporters... as according to the law of nature each must be born free.... We, considering that our kingdom is called and named the kingdom of the Franks, and desiring that the thing in truth should be recognized in name... by deliberation with our grand council, have ordained and do ordain that generally throughout our realm freedom be given in good and valid conditions and so that all the lords who have body men take our example to make them free, etc. Promulgated at Paris the third of July, year of grace 1315.”
+</p>
+<p> Nevertheless it was not until almost the fifteenth century that slavery was abolished in the majority of Europe: meanwhile it remains in much of Poland, in Hungary, in Bohemia, and in several places in lower Germany; see Les ouvrages de MM. Thomasius et Hertins: there are even some traces in our customs, see Coquille. In any case, practically in the space of the century that followed the abolition of slavery in Europe, the Christian powers having made conquests in lands where they believed it in their interest to have slaves, permitted them to be bought and sold, having forgotten the principles of Nature and of Christianity, which render all men equal.
+</p>
+<p> After having reviewed the history of slavery , from its origin to our days, we now will prove that it damages the liberty of man and that it is contrary to natural and civil law, that it offends the structures of the best governments, and that finally it is useless in and of itself.
+</p>
+<p> The liberty of man is a principle which had been recognized for a long time before the birth of J.C. by all of the nations which have practiced generosity. The natural liberty of man is to know no sovereign power on the earth, and to never be subjected to legislative authority of any kind, but to follow only the laws of Nature: liberty in society is to be submitted to a legislative power established by the consent of the community, and not to be subject to whim, to the inconstant, uncertain, and arbitrary will of a single man in particular.
+</p>
+<p> This liberty, by which one is never subjected to absolute power, is united so closely with the safekeeping of man, that it cannot be separated without destroying at the same time his safety and his life. Whoever attempts therefore to usurp absolute power over another, puts himself thereby in a state of war with him, such that the first can only regard the actions of the other as an obvious attempt upon his life. Indeed, from the moment that a man wants me to submit, despite myself, to his empire, I have reason to presume that if I fall into his hands, he will treat me according to his caprice and have no scruples against killing me when the whim takes him. Liberty is, so to speak, the bulwark of my safekeeping, and the foundation of all the other things that belong to me. Thus, he who, in the state of nature, wants to make me a slave authorizes me to resist by all means in order to ensure the security of my person and my goods.
+</p>
+<p> All men naturally having equal liberty and they cannot be stripped of it unless as a result of some criminal action. Certainly, if a man in the state of nature deserves death for something he has done to another man, who has as a result become the master of his life, the latter trade with him, and use him for service since he holds the guilty man’s life in his hands. In this he does no wrong, because in essence, when the criminal finds that his slavery is more heavy and more annoying than is the loss of his existence, he has it in his power to attain the death that he desires through resistance and disobedience to his master.
+</p>
+<p> What makes the death of a criminal in civil society a legitimate choice is that the law that punishes him has been made for his protection. A murderer, for example, has enjoyed the protection of the law that condemns him; it has protected his life in all instances; he can make no complaint against this law. It would not be the same with the law of slavery . The law that establishes slavery would in all cases be against the slave, without ever being for him, and is thus is contrary to the fundamental principle of all societies.
+</p>
+<p> The rights of property over men and over things are two very different rights. Although all lords say ‘this person here is mine’ of each who is submitted to his domination, the property he has in such a man is not the same as that which he can claim for himself when he says, ‘this thing here is mine.’ Property in a thing carries the full right to make use of it, to consume it, and to destroy it, whether for profit or by caprice; as a result, no matter in what manner one disposes of it, one does it no wrong. But the same expression applied to a person signifies only that the lord has a right, exclusive of others, to govern and to prescribe laws for that person, while at the same time he is himself is severally obligated to this same person; furthermore his power over that person is quite limited.
+</p>
+<p> However grand the injuries that one has received from a man, humanity does not permit, once one has reconciled with him, his reduction to a condition where there no longer remains any trace of the natural equality of all men and as a consequence his treatment as an animal of which one is the master to dispose of at one’s whim. Peoples who treated slaves as a goods which they could dispose of at will were nothing other than barbarians.
+</p>
+<p> Not only can one not have property as such in persons, but furthermore it offends reason that a man who has no power over his own life can give to another, either by his consent or by any convention, the right that he does not himself have. It is therefore not true that a free man can sell himself. A sale presupposes a price; when the slave sells himself, all his goods merge with the property of the master. Thus the master gives nothing, and the slave receives nothing. He would have a peculium , one might answer, but the peculium is attached to the person. The liberty of each citizen is a part of the public liberty: this quality, in a popular state is also a part of the sovereignty. If liberty has a price for the buyer, it is priceless for the seller.
+</p>
+<p> Civil law, which has allowed the division of goods among men, is not empowered to count among the number of goods a section of the men who take part in this division. Civil law, which makes restitution for contracts that contain injuries, cannot help but rectify an agreement that contains the most enormous injury of all. Slavery is therefore no less opposed to civil law than it is to natural law. What civil law could prevent a slave from saving himself from servitude, he who is not part of society and as a consequence is not bound by any civil law? He can only be detained by a law of the family, by the law of the master, that is to say by the law of the strongest.
+</p>
+<p> If slavery offends natural law and civil law, it injures as well the best forms of government: it is contrary to monarchical government, in which it is supremely important not to humble or debase human nature. In democracy, where everyone is equal and in aristocracy, where the laws must work so that everyone is as equal as the nature of government can permit, slaves are against the spirit of the constitution; they only serve to give citizens a power and a luxury which they should not have.
+</p>
+<p> Furthermore, in every government and in every country, no matter how punitive the work that the society there demands, everything can be done with free men by encouraging them through compensation and privileges, in apportioning their work to their capabilities, or in supplementing them with machines that art invents and applies according to needs and locales. See evidence in M. de Montesquieu.
+</p>
+<p> Finally we should further add with this illustrious author that slavery is not useful either for the master or for the slave: for the slave, because he can do nothing out of virtue; for the master, because he contracts with his slaves all kinds of vices and bad habits that are contrary to the laws of society. He unwittingly becomes accustomed to the lack of all moral virtues and he becomes proud, touchy, angry, hard, voluptuous, barbaric.
+</p>
+<p> Thus everything converges to leave to man the dignity which is natural to him. Everything cries out to us that one cannot deprive him of that natural dignity which is liberty. The rule of justice is not founded on power, but on that which conforms to nature. Slavery is not only a humiliating state for those who suffer it, but for humanity itself which is degraded by it.
+</p>
+<p> The principles just posed being unassailable, it will not be difficult to demonstrate that slavery can never be whitewashed on any reasonable grounds, not by the law of war, as thought the roman jurisconsults, by the law of acquisition, nor by that of birth, as some moderns have wanted to persuade us. In a word, nothing in the world can render slavery legitimate.
+</p>
+<p> In past centuries, the law of war was said to authorize that of slavery . According to it, prisoners were made slaves so that they would not be killed; but today we are disabused of this nicety, which consisted of making one’s vanquished one’s slave rather than massacring him. It is understood that this supposed charity is only that of a brigand, which glorifies him for having given life to those whom he has not killed. There is no longer anyone except the Tartars who put their prisoners of war to the sword, and who believe that they are pardoning them when they sell them or distribute them to their soldiers. Among all other peoples, those who have not been stripped of all generous sentiment, it is only permissible to kill in war in the case of necessity. From the time that one man makes another his prisoner, it can no longer be said that it is necessary to kill him since he did not do so originally. The only right that war can grant victors over captives is to be able to ensure that their own people are not in any danger.
+</p>
+<p> The acquisition of slaves by means of money can even less establish the right of slavery , because money and all it represents cannot grant the right to strip someone of his liberty. Furthermore, trafficking in slaves like brutal beasts in order to make a vile living is repulsive to our religion, which has emerged in order to efface all traces of tyranny.
+</p>
+<p> Slavery is certainly no better founded on birth. This claimed right falls with the other two, because if a man could not be bought or sold even less could he sell his unborn child. If a prisoner of war cannot be reduced to servitude, even less his child. In vain would one argue that if the children are conceived and put into the world by a slave mother, the master does them no wrong by claiming them and reducing them to the same condition, since the mother having nothing of her own, her children cannot be nourished except by means of the master before whom they are in a state of servitude and who supplies her with food and other necessities of life. These are only frivolous ideas.
+</p>
+<p> If it is absurd that a man could have over another man a right of property, all the more reason that he cannot have it over that man’s children. Moreover, nature gives milk to mothers and has provided sufficiently for their nourishment. The rest of their childhood is so close to the age when they are most capable of being useful, that one could say that he who feeds them in order to be their master gives them nothing. If he has furnished something for the support of the child, the object is so small that any man, however mediocre might be the faculties of his soul and his body, can in a small number of years earn enough to clear this debt. If slavery was founded on food, it would be reduced to those unable to earn their living, but we don’t find any slaves of that sort.
+</p>
+<p> There could be no justice in an agreement, overt or tacit, by which a slave mother would subject the children that she put into the world to the same condition in which she has fallen, because she cannot stipulate for her children.
+</p>
+<p> It has been said, in order to put this reason for enslaving children in a good light, that they would not exist if the master had wanted to use the right given him by war, to kill their mother. But this is to suppose that which is false, that all those who are taken in war (were it the most just in the world) above all the women in question, could legitimately be killed. Esprit des lois , liv. XV .
+</p>
+<p> It was a proud pretention of the Greeks to imagine that since the barbarians were slaves by nature (it was thus that they spoke of them), and the Greeks free, it was just that the first obey the latter. On these grounds, it would be easy to treat as barbarians all peoples whose morals and customs are different than ours and (without other pretext) to attack them in order to subject them to our laws. It is only prejudices of pride and of ignorance that make us renounce humanity.
+</p>
+<p> It is therefore to go directly against the law of nations and against nature to believe that the Christian religion gives those who profess it the right to reduce to servitude those who do not profess it, so as to work more easily for its propagation. It was however this manner of thinking that encouraged the destroyers of America in their crimes; and that is not the only time that religion has been utilized against its own maxims, which teach us that the status of fellow man applies universally.
+</p>
+<p> Finally, it is to play with words, or rather to mock them, to write as has one of our modern authors, that it is small-minded to imagine that it would degrade humanity to have slaves, because the liberty which each European is believed to enjoy is nothing other than the power to break his chain in order to take a new master; as if the chain of a European was the same as that of a slave in our colonies: we can well see that this author has never been put in chains.
+</p>
+<p> Nevertheless, are there no cases or locations where slavery derives from the nature of things? I respond 1) to this question, there are none; I respond next, with M. de Montesquieu, that if there are countries where slavery appears founded on a natural cause, it is those where heat enervates the body, and weakens courage so much that men are only brought to hard labor by fear of chastisement: in those countries, the master being as lax from the perspective of his prince as his slave is in his own view, civil slavery is still accompanied by political slavery .
+</p>
+<p> In arbitrary governments, it is easy to sell oneself, because there political slavery in some fashion annihilates civil liberty. At Achim, Dampier says, everyone seeks to sell himself: some of the principle lords have no fewer than a thousand slaves, who are themselves principle merchants, who have also many slaves below them, and they many others; they are inherited and traded. Free men there, being too weak against the government, seek to become the slaves of those who tyrannize the government.
+</p>
+<p> Note that in these despotic states, where one is already under political slavery , civil slavery is more tolerable than elsewhere: each is content enough to have his subsistence and his life. Thus the condition of the slave is hardly more to bear than the condition of the subject: the two conditions are adjacent. However although in these countries slavery is, as it were, founded on natural causes, it is no less true that slavery is against nature.
+</p>
+<p> In all Muslim states servitude is rewarded by the laziness which is allowed to the slaves that serve for pleasure. It is this laziness which renders the seraglios of the Orient places of delights for even those against whom they are made. Nations that fear only work can find their happiness in these tranquil places; but one sees that there even the goal of the establishment of slavery is betrayed. These last reflections are from de l’Esprit des lois.
+</p>
+<p> We conclude that slavery founded by force, by violence, and in certain climates by an excess of servitude, cannot maintain itself in the world except by the same means.</p>`,
+		wArt: `Slavery is, in the strictest sense of the term, any system in which principles of property law are applied to people, allowing individuals to own, buy and sell other individuals, as a de jure form of property.[1] A slave is unable to withdraw unilaterally from such an arrangement and works without remuneration. Many scholars now use the term chattel slavery to refer to this specific sense of legalised, de jure slavery. In a broader sense, however, the word slavery may also refer to any situation in which an individual is de facto forced to work against his or her will. Scholars also use the more generic terms such as unfree labour or forced labour, to refer to such situations.[2] However, and especially under slavery in broader senses of the word, slaves may have some rights and protections according to laws or customs.
+
+Slavery began to exist before written history, in many cultures.[3] A person could become a slave from the time of their birth, capture, or purchase.
+
+While slavery was institutionally recognized by most societies, it has now been outlawed in all recognized countries,[4][5] the last being Mauritania in 2007. Nevertheless, there are still more slaves today than at any previous point in history:[6] an estimated 45 million people remain enslaved worldwide.[7] The most common form of the slave trade is now commonly referred to as human trafficking. Chattel slavery is also still practiced by the Islamic State of Iraq and the Levant. In other areas, slavery (or unfree labour) continues through practices such as debt bondage, serfdom, domestic servants kept in captivity, certain adoptions in which children are forced to work as slaves, child soldiers, and forced marriage.[8]
+
+Contents  [hide] 
+1	Terminology
+2	Types
+2.1	Chattel slavery
+2.2	Bonded labour
+2.3	Forced labour
+2.4	Forced marriage
+2.5	Dependents
+3	Contemporary slavery
+3.1	Distribution
+3.2	Economics
+3.3	Trafficking
+3.4	Examples
+4	History
+4.1	Early history
+4.2	Classical antiquity
+4.3	Middle Ages
+4.4	Modern history
+5	Abolitionism
+6	Characteristics
+6.1	Economics
+6.2	Identification
+7	Apologies
+7.1	Reparations
+8	Other uses of the term
+8.1	Wage slavery
+9	In film
+10	See also
+11	References
+12	Bibliography and further reading
+12.1	Surveys and reference
+13	External links
+13.1	Historical
+13.2	Modern
+Terminology
+The English word slave comes from Old French sclave, from the Medieval Latin sclavus, from the Byzantine Greek σκλάβος, which, in turn, comes from the ethnonym Slav, because in some early Medieval wars many Slavs were captured and enslaved.[9][10] An older interpretation connected it to the Greek verb skyleúo 'to strip a slain enemy'.[11]
+
+There is a dispute among historians about whether terms such as "unfree labourer" or "enslaved person", rather than "slave", should be used when describing the victims of slavery. According to those proposing a change in terminology, "slave" perpetuates the crime of slavery in language, by reducing its victims to a nonhuman noun instead of, according to Andi Cumbo-Floyd, "carry[ing] them forward as people, not the property that they were". Other historians prefer "slave" because the term is familiar and shorter, or because it accurately reflects the inhumanity of slavery, with "person" implying a degree of autonomy that slavery does not allow for.[12]
+
+Types
+
+Photograph of a slave boy in Zanzibar. 'An Arab master's punishment for a slight offense.' c. 1890.
+Chattel slavery
+Chattel slavery, also called traditional slavery, is so named because people are treated as the chattel (personal property) of the owner and are bought and sold as commodities. Although it dominated many societies in the past, this form of slavery has been formally abolished and is very rare today. Even when it can be said to survive, it is not upheld by the legal system of any internationally recognized government.[13]
+
+Bonded labour
+Main article: Debt bondage
+Indenture, otherwise known as bonded labour or debt bondage is a form of unfree labour under which a person pledges himself or herself against a loan.[14] The services required to repay the debt, and their duration, may be undefined.[14] Debt bondage can be passed on from generation to generation, with children required to pay off their parents' debt.[14] It is the most widespread form of slavery today.[2] Debt bondage is most prevalent in South Asia.[15]
+
+
+A Chinese Nationalist soldier, age 10, member of a Chinese division from the X Force, boarding planes in Burma bound for China, May 1944.
+Forced labour
+Main article: Unfree labour
+See also: Human trafficking, Child labour, and Military use of children
+Forced labour, or unfree labour, is sometimes used to refer to when an individual is forced to work against his or her will, under threat of violence or other punishment[2] but the generic term unfree labour is also used to describe chattel slavery, as well as any other situation in which a person is obliged to work against his or her will and a person's ability to work productively is under the complete control of another person. This may also include institutions not commonly classified as slavery, such as serfdom, conscription and penal labour. While some unfree labourers, such as serfs, have substantive, de jure legal or traditional rights, they also have no ability to terminate the arrangements under which they work, are frequently subject to forms of coercion, such as threats of violence, and experience restrictions on their activities and movement outside their place of work.
+
+Human trafficking primarily involves women and children forced into prostitution.[16] and is the fastest growing form of forced labour,[2] with Thailand, Cambodia, India, Brazil and Mexico having been identified as leading hotspots of commercial sexual exploitation of children.[17]
+
+In 2007, Human Rights Watch estimated that 200,000 to 300,000 children served as soldiers in current conflicts.[18]
+
+Forced marriage
+Main article: Forced marriage
+See also: Marriage by abduction and Child marriage
+A forced marriage may be regarded as a form of slavery by one or more of the parties involved in the marriage, as well as by people observing the marriage. People forced into marriage can be required to engage in sexual activity or to perform domestic duties or other work without any personal control. The customs of bride price and dowry that exist in many parts of the world can lead to buying and selling people into marriage.[19][20] Forced marriage continues to be practiced in parts of the world including some parts of Asia and Africa. Forced marriages may also occur in immigrant communities in Europe, the United States, Canada and Australia.[21][22][23][24] Marriage by abduction occurs in many places in the world today, with a national average of 69% of marriages in Ethiopia being through abduction.[25]
+
+The International Labour Organization defines child and forced marriage as forms of modern-day slavery.[26]
+
+Dependents
+The word "slave" has also been used to refer to a legal state of dependency to somebody else.[27][28] In many cases, such as in ancient Persia, the situation and lives of such slaves could be better than those of other common citizens.[29]
+
+Contemporary slavery
+See also: Slavery in Mauritania, Contemporary slavery, Child slavery, Trafficking of children, and Illegal immigration § Slavery
+
+Modern incidence of slavery, as a percentage of the population, by country. Estimates from the Walk Free Foundation. Estimates by other sources may be higher.
+
+Child brickyard labourers in Nepal: Thousands of children work as bonded labourers in Asia, particularly in the Indian subcontinent.[30]
+Even though slavery is now outlawed in every country,[31] the number of slaves today is estimated as between 12 million[32] and 29.8 million.[33] Several estimates of the number of slaves in the world have been provided.[34] According to a broad definition of slavery used by Kevin Bales of Free the Slaves (FTS), an advocacy group linked with Anti-Slavery International, there were 27 million people in slavery in 1999, spread all over the world.[35] In 2005, the International Labour Organization provided an estimate of 12.3 million forced labourers.[36] Siddharth Kara has also provided an estimate of 28.4 million slaves at the end of 2006 divided into three categories: bonded labour/debt bondage (18.1 million), forced labour (7.6 million), and trafficked slaves (2.7 million).[37] Kara provides a dynamic model to calculate the number of slaves in the world each year, with an estimated 29.2 million at the end of 2009. According to a 2003 report by Human Rights Watch, an estimated 15 million children in debt bondage in India work in slavery-like conditions to pay off their family's debts.[38][39]
+
+Distribution
+A report by the Walk Free Foundation in 2013,[40] found India had the highest number of slaves, nearly 14 million, followed by China (2.9 million), Pakistan (2.1 million), Nigeria, Ethiopia, Russia, Thailand, Democratic Republic of Congo, Myanmar and Bangladesh; while the countries with the highest of proportion of slaves were Mauritania, Haiti, Pakistan, India and Nepal.[41]
+
+In June 2013, U.S. State Department released a report on slavery, it placed Russia, China, Uzbekistan in the worst offenders category, Cuba, Iran, North Korea, Sudan, Syria, and Zimbabwe were also at the lowest level. The list also included Algeria, Libya, Saudi Arabia and Kuwait among a total of 21 countries.[42][43]
+
+Economics
+While American slaves in 1809 were sold for around $40,000 (in inflation adjusted dollars), a slave nowadays can be bought for just $90, making replacement more economical than providing long term care.[44] Slavery is a multibillion-dollar industry with estimates of up to $35 billion generated annually.[45]
+
+Trafficking
+Main article: Human trafficking
+
+A world map showing countries by prevalence of female trafficking
+Trafficking in human beings (also called human trafficking) is one method of obtaining slaves.[46] Victims are typically recruited through deceit or trickery (such as a false job offer, false migration offer, or false marriage offer), sale by family members, recruitment by former slaves, or outright abduction. Victims are forced into a "debt slavery" situation by coercion, deception, fraud, intimidation, isolation, threat, physical force, debt bondage or even force-feeding with drugs of abuse to control their victims.[47] "Annually, according to U.S. government-sponsored research completed in 2006, approximately 800,000 people are trafficked across national borders, which does not include millions trafficked within their own countries. Approximately 80 percent of transnational victims are women and girls and up to 50 percent are minors, reports the U.S. State Department in a 2008 study.[48]
+
+While the majority of trafficking victims are women, and sometimes children, who are forced into prostitution (in which case the practice is called sex trafficking), victims also include men, women and children who are forced into manual labour.[49] Due to the illegal nature of human trafficking, its exact extent is unknown. A U.S. government report published in 2005, estimates that 600,000 to 800,000 people worldwide are trafficked across borders each year. This figure does not include those who are trafficked internally.[49] Another research effort revealed that between 1.5 million and 1.8 million individuals are trafficked either internally or internationally each year, 500,000 to 600,000 of whom are sex trafficking victims.[37]
+
+Examples
+[icon]	This section needs expansion. You can help by adding to it. (March 2017)
+Examples of modern slavery are numerous. Child slavery has commonly been used in the production of cash crops and mining.
+
+Asia
+In 2008, the Nepalese government abolished the Haliya system, under which 20,000 people were forced to provide free farm labour.[50]
+
+Though slavery was officially abolished in Qing China in 1910,[51] the practice continues unofficially in some regions of the country.[52][53][54] In June and July 2007, 550 people who had been enslaved by brick manufacturers in Shanxi and Henan were freed by the Chinese government.[55] Among those rescued were 69 children.[56] In response, the Chinese government assembled a force of 35,000 police to check northern Chinese brick kilns for slaves, sent dozens of kiln supervisors to prison, punished 95 officials in Shanxi province for dereliction of duty, and sentenced one kiln foreman to death for killing an enslaved worker.[55]
+
+The North Korean government[57] operates six large political prison camps,[58] where political prisoners and their families (around 200,000 people)[59] in lifelong detention[60] are subjected to hard slave labour,[61] torture and inhumane treatment.[62]
+
+In November 2006, the International Labour Organization announced it will be seeking "to prosecute members of the ruling Myanmar junta for crimes against humanity" over the continuous unfree labour of its citizens by the military at the International Court of Justice.[63][64] According to the International Labor Organization (ILO), an estimated 800,000 people are subject to forced labour in Myanmar.[65]
+
+South America and Caribbean
+In 2008, in Brazil about 5,000 slaves were rescued by government authorities as part of an initiative to eradicate slavery, which was reported as ongoing in 2010.[66] Poverty has forced at least 225,000 Haitian children to work as restavecs (unpaid household servants); the United Nations considers this to be a form of slavery.[67]
+
+Middle East
+Some tribal sheiks in Iraq still keep blacks, called Abd, which means servant or slave in Arabic, as slaves.[68]
+
+According to media reports from late 2014 the Islamic State of Iraq and the Levant (ISIL) was selling Yazidi and Christian women as slaves.[69][70][71] According to Haleh Esfandiari of the Woodrow Wilson International Center for Scholars, after ISIL militants have captured an area "[t]hey usually take the older women to a makeshift slave market and try to sell them."[72] In mid-October 2014, the UN estimated that 5,000 to 7,000 Yazidi women and children were abducted by ISIL and sold into slavery.[73][74] In the digital magazine Dabiq, ISIL claimed religious justification for enslaving Yazidi women whom they consider to be from a heretical sect. ISIL claimed that the Yazidi are idol worshipers and their enslavement part of the old shariah practice of spoils of war.[75][76][77][78][79] According to The Wall Street Journal, ISIL appeals to apocalyptic beliefs and claims "justification by a Hadith that they interpret as portraying the revival of slavery as a precursor to the end of the world".[80]
+
+Africa
+Main article: Slavery in contemporary Africa
+
+Tuareg society is traditionally feudal, ranging from nobles, through vassals, to dark-skinned slaves.[81]
+
+Burning of a Village in Africa, and Capture of its Inhabitants (p. 12, February 1859, XVI)[82]
+In Mauritania, the last country to abolish slavery (in 1981),[83] it is estimated that up to 600,000 men, women and children, or 20% of the population, are enslaved with many used as bonded labour.[84][85][86] Slavery in Mauritania was criminalized in August 2007.[87] (although slavery as a practice was legally banned in 1981, it was not a crime to own a slave until 2007).[88] Although many slaves have escaped or have been freed since 2007, as of 2012, only one slave-owner had been sentenced to serve time in prison.[89]
+
+An article in the Middle East Quarterly in 1999 reported that slavery is endemic in Sudan.[90] Estimates of abductions during the Second Sudanese Civil War range from 14,000 to 200,000 people.[91]
+
+In Niger, slavery is also a current phenomenon. A Nigerien study has found that more than 800,000 people are enslaved, almost 8% of the population.[92][93][94] Niger installed anti slavery provision in 2003.[95][96] In a landmark ruling in 2008, the ECOWAS Community Court of Justice declared that the Republic of Niger failed to protect Hadijatou Mani Koraou from slavery, and awarded Mani CFA 10,000,000 (approximately US$20,000) in reparations.[97]
+
+Many pygmies in the Republic of Congo and Democratic Republic of Congo belong from birth to Bantus in a system of slavery.[98][99]
+
+According to the U.S. State Department, more than 109,000 children were working on cocoa farms alone in Ivory Coast in "the worst forms of child labour" in 2002.[100]
+
+On the night of 14–15 April 2014, a group of militants attacked the Government Girls Secondary School in Chibok, Nigeria. They broke into the school, pretending to be guards,[101] telling the girls to get out and come with them.[102] A large number of students were taken away in trucks, possibly into the Konduga area of the Sambisa Forest where Boko Haram were known to have fortified camps.[102] Houses in Chibok were also burned down in the incident.[103] According to police, approximately 276 children were taken in the attack, of whom 53 had escaped as of 2 May.[104] Other reports said that 329 girls were kidnapped, 53 had escaped and 276 were still missing.[105][106][107] The students have been forced to convert to Islam[108] and into marriage with members of Boko Haram, with a reputed "bride price" of ₦2,000 each ($12.50/£7.50).[109][110] Many of the students were taken to the neighbouring countries of Chad and Cameroon, with sightings reported of the students crossing borders with the militants, and sightings of the students by villagers living in the Sambisa Forest, which is considered a refuge for Boko Haram.[110][111]
+
+On May 5, 2014 a video in which Boko Haram leader Abubakar Shekau claimed responsibility for the kidnappings emerged. Shekau claimed that "Allah instructed me to sell them...I will carry out his instructions"[112] and "[s]lavery is allowed in my religion, and I shall capture people and make them slaves."[113] He said the girls should not have been in school and instead should have been married since girls as young as nine are suitable for marriage.[112][113]
+
+History
+Main article: History of slavery
+
+Slaves working in a mine, Ancient Greece
+
+Slaves in chains, relief found at Smyrna (present day İzmir, Turkey), 200 AD
+Early history
+Evidence of slavery predates written records, and has existed in many cultures.[3] Slavery is rare among hunter-gatherer populations because it requires economic surpluses and a high population density to be viable. This, although it has existed among unusually resource-rich hunter gatherers, such as the American Indian peoples of the salmon-rich rivers of the Pacific Northwest Coast, slavery became widespread only with the invention of agriculture during the Neolithic Revolution about 11,000 years ago.[114]
+
+In the earliest known records, slavery is treated as an established institution. The Code of Hammurabi (c. 1760 BC), for example, prescribed death for anyone who helped a slave escape or who sheltered a fugitive.[115] The Bible mentions slavery as an established institution.[3]
+
+Slavery was known in almost every ancient civilization and society including Sumer, Ancient Egypt, Ancient China, the Akkadian Empire, Assyria, Ancient India, Ancient Greece, the Roman Empire, the Hebrew kingdoms of the ancient Levant, and the pre-Columbian civilizations of the Americas.[3] Such institutions included debt-slavery, punishment for crime, the enslavement of prisoners of war, child abandonment, and the birth of slave children to slaves.[116]
+
+Classical antiquity
+Main articles: Slavery in ancient Greece and Slavery in ancient Rome
+
+The work of the Mercedarians was in ransoming Christian slaves held in Muslim hands (1637).
+Records of slavery in Ancient Greece date as far back as Mycenaean Greece. It is certain that Classical Athens had the largest slave population, with as many as 80,000 in the 6th and 5th centuries BC;[117] two to four-fifths of the population were slaves.[118] As the Roman Republic expanded outward, entire populations were enslaved, thus creating an ample supply from all over Europe and the Mediterranean. Greeks, Illyrians, Berbers, Germans, Britons, Thracians, Gauls, Jews, Arabs, and many more were slaves used not only for labour, but also for amusement (e.g. gladiators and sex slaves). This oppression by an elite minority eventually led to slave revolts (see Roman Servile Wars); the Third Servile War led by Spartacus (a Thracian) being the most famous and bitter.
+
+By the late Republican era, slavery had become a vital economic pillar in the wealth of Rome, as well as a very significant part of Roman society.[119] It is estimated that 25% or more of the population of Ancient Rome was enslaved, although the actual percentage is debated by scholars, and varied from region to region.[120][121] Slaves represented 15–25% of Italy's population,[122] mostly captives in war[122] especially from Gaul[123] and Epirus. Estimates of the number of slaves in the Roman Empire suggest that the majority of slaves were scattered throughout the provinces outside of Italy.[122] Generally, slaves in Italy were indigenous Italians,[124] with a minority of foreigners (including both slaves and freedmen) born outside of Italy estimated at 5% of the total in the capital at its peak, where their number was largest. Those from outside of Europe were predominantly of Greek descent, while the Jewish ones never fully assimilated into Roman society, remaining an identifiable minority. These slaves (especially the foreigners) had higher death rates and lower birth rates than natives, and were sometimes even subjected to mass expulsions.[125] The average recorded age at death for the slaves of the city of Rome was extraordinarily low: seventeen and a half years (17.2 for males; 17.9 for females).[126][page needed]
+
+Middle Ages
+Medieval and Early Modern Europe
+Main articles: Slavery in medieval Europe and Barbary slave trade
+See also: Serfdom
+
+Adalbert of Prague accuses the Jews of the Christian slave trade against Boleslaus II, Duke of Bohemia, relief of Gniezno Doors
+Large-scale trading in slaves was mainly confined to the South and East of early medieval Europe: the Byzantine Empire and the Muslim world were the destinations, while pagan Central and Eastern Europe (along with the Caucasus and Tartary) were important sources. Viking, Arab, Greek, and Radhanite Jewish merchants were all involved in the slave trade during the Early Middle Ages.[127][128][129] The trade in European slaves reached a peak in the 10th century following the Zanj rebellion which dampened the use of African slaves in the Arab world.[130][131]
+
+Medieval Spain and Portugal were the scene of almost constant Muslim invasion of the predominantly Christian area. Periodic raiding expeditions were sent from Al-Andalus to ravage the Iberian Christian kingdoms, bringing back booty and slaves. In raid against Lisbon, Portugal in 1189, for example, the Almohad caliph Yaqub al-Mansur took 3,000 female and child captives, while his governor of Córdoba, in a subsequent attack upon Silves, Portugal in 1191, took 3,000 Christian slaves.[132] From the 11th to the 19th century, North African Barbary Pirates engaged in Razzias, raids on European coastal towns, to capture Christian slaves to sell at slave markets in places such as Algeria and Morocco.[133][134]
+
+
+Depiction of socage on the royal demesne in feudal England, ca. 1310. Socage is an aspect of serfdom, not usually included under the term "slavery".
+In Britain, slavery continued to be practiced following the fall of Rome and sections of Hywel the Good's laws dealt with slaves in medieval Wales. The trade particularly picked up after the Viking invasions, with major markets at Chester[135] and Bristol[136] supplied by Danish, Mercian, and Welsh raiding of one another's borderlands. At the time of the Domesday Book, nearly 10% of the English population were slaves.[137] Slavery in early medieval Europe was so common that the Roman Catholic Church repeatedly prohibited it — or at least the export of Christian slaves to non-Christian lands was prohibited at e.g. the Council of Koblenz (922), the Council of London (1102) aimed mainly at the sale of English slaves to Ireland[138] and having no legal standing), and the Council of Armagh (1171). In 1452, Pope Nicholas V issued the papal bull Dum Diversas, granting the kings of Spain and Portugal the right to reduce any "Saracens (antiquated term referring to Muslims), pagans and any other unbelievers" to perpetual slavery, legitimizing the slave trade as a result of war.[139] The approval of slavery under these conditions was reaffirmed and extended in his Romanus Pontifex bull of 1455. However, Pope Paul III forbade enslavement of the Native Americans in 1537 in his papal bull Sublimus Dei.[140] Dominican friars who arrived at the Spanish settlement at Santo Domingo strongly denounced the enslavement of the local Native Americans. Along with other priests, they opposed their treatment as unjust and illegal in an audience with the Spanish king and in the subsequent royal commission.[141]
+
+
+Crimean Tatar raiders enslaved more than 1 million Eastern Europeans.[142]
+The Byzantine-Ottoman wars and the Ottoman wars in Europe brought large numbers of slaves into the Islamic world.[143] To staff its bureaucracy, the Ottoman Empire established a janissary system which seized hundreds of thousands of Christian boys through the devşirme system. They were well cared for but were legally slaves owned by the government and were not allowed to marry. They were never bought or sold. The Empire gave them significant administrative and military roles. The system began about 1365; there were 135,000 janissaries in 1826, when the system ended.[144] After the Battle of Lepanto, 12,000 Christian galley slaves were recaptured and freed from the Ottoman fleet.[145] Eastern Europe suffered a series of Tatar invasions, the goal of which was to loot and capture slaves into jasyr.[146] Seventy-five Crimean Tatar raids were recorded into Poland–Lithuania between 1474 and 1569.[147]
+
+Approximately 10–20% of the rural population of Carolingian Europe consisted of slaves.[148] Slavery largely disappeared from Western Europe by the later Middle Ages.[149] The slave trade became illegal in England in 1102,[150] but England went on to become very active in the lucrative Atlantic slave trade from the seventeenth to the early nineteenth century. In Scandinavia, thralldom was abolished in the mid-14th century.[151] Slavery persisted longer in Eastern Europe. Slavery in Poland was forbidden in the 15th century; in Lithuania, slavery was formally abolished in 1588; they were replaced by the second serfdom. In Kievan Rus and Muscovy, slaves were usually classified as kholops.
+
+China
+In the process of the Mongols invasion of China proper, many Han Chinese were enslaved by the Mongols. According to Japanese historian Sugiyama Masaaki (杉山正明) and Funada Yoshiyuki (舩田善之), there were also certain number of Mongolian slaves owned by Han Chinese during the Yuan dynasty. Moreover, there is no evidence that Han Chinese, who were considered people of the bottom of Yuan society by some research, were suffered a particularly cruel abuse. In the early Qing dynasty, many Han Chinese were enslaved by the Manchurian rulers, some of them found themselves in positions of power and influence in Manchu administrations and owned their own Han Chinese slaves.[152][153][154]
+
+Arab slave trade
+Main article: Arab slave trade
+
+13th century slave market in Yemen. Yemen officially abolished slavery in 1962.[155]
+In early Islamic states of the Western Sudan (present-day West Africa), including Ghana (750–1076), Mali (1235–1645), Segou (1712–1861), and Songhai (1275–1591), about a third of the population was enslaved.[156]
+
+Slaves were purchased or captured on the frontiers of the Islamic world and then imported to the major centres, where there were slave markets from which they were widely distributed.[157][158][159] In the 9th and 10th centuries, the black Zanj slaves may have constituted at least a half of the total population of lower Iraq.[156] At the same time, many slaves in the region were also imported from Central Asia and the Caucasus.[156] Many slaves were taken in the wars with the Christian nations of medieval Europe.
+
+Africa
+Slavery was also widespread in Africa, with both internal and external slave trade.[160]
+
+Modern history
+Europe
+See also: Crimean-Nogai raids into East Slavic lands
+
+An 1852 Wallachian poster advertising an auction of Roma slaves in Bucharest
+
+«The White Slave» (Eberle, 1913)
+Until the late 18th century, the Crimean Khanate (a Muslim Tatar state) maintained a massive slave trade with the Ottoman Empire and the Middle East,[146] exporting about 2 million slaves from Poland-Lithuania and Russia over the period 1500–1700.[161]
+
+During the Second World War (1939–1945) Nazi Germany effectively enslaved about 12 million people, both those considered undesirable and citizens of countries they conquered, with the avowed intention of treating these untermenschen as a permanent slave class of inferior beings who could be worked until they died but who possessed neither the rights nor the legal status of members of the Aryan race.[162]
+
+Ottoman Empire
+Main articles: Zanj, Arab slave trade, Barbary slave trade, and Devshirme
+The Ottoman Empire owned and traded slaves on a massive scale. Many slaves were the created by conquest and the suppression of rebellions, in the aftermath of which, entire populations were sometimes enslaved and sold across the Empire, reducing the risk of future rebellion. The Ottomans also purchased slaves from traders who brought slaves into the Empire from Europe and Africa.
+
+Africa
+Main article: Slavery in Africa
+
+The main routes that were used to transport slaves across medieval Africa.
+In Algiers, the capital of Algeria, captured Christians and Europeans were forced into slavery. Raids by Barbary pirates on coastal villages and ships extending from Italy to Iceland, enslaved an estimated 1 million to 1¼ million Europeans between the 16th and 19th centuries.[163] This eventually led to the bombardment of Algiers by an Anglo-Dutch fleet in 1816.[164][165]
+
+
+Slave traders in Gorée, Senegal, 18th century
+Half the population of the Sokoto caliphate of the 19th century (based in the future northern Nigeria) were slaves.[156] The Swahili-Arab slave trade reached its height about 160 years ago, when, for example, approximately 20,000 slaves were considered to be carried yearly from Nkhotakota on Lake Malawi to Kilwa.[166] Roughly half the population of Madagascar was enslaved.[156][167]
+
+According to the Encyclopedia of African History, "It is estimated that by the 1890s the largest slave population of the world, about 2 million people, was concentrated in the territories of the Sokoto Caliphate. The use of slave labour was extensive, especially in agriculture."[168][169] The Anti-Slavery Society estimated there were 2 million slaves in Ethiopia in the early 1930s out of an estimated population of 8 to 16 million.[170]
+
+
+Arab slave traders and their captives along the Ruvuma river (in today's Tanzania and Mozambique).
+Hugh Clapperton in 1824 believed that half the population of Kano were enslaved people.[171] W. A. Veenhoven wrote: "The German doctor, Gustav Nachtigal, an eye-witness, believed that for every slave who arrived at a market three or four died on the way ... Keltie (The Partition of Africa, London, 1920) believes that for every slave the Arabs brought to the coast at least six died on the way or during the slavers' raid. Livingstone puts the figure as high as ten to one."[172]
+
+One of the most famous slave traders on the eastern Zanj (Bantu) coast was Tippu Tip, himself the grandson of a slave. The prazeros were slave-traders along the Zambezi. North of the Zambezi, the waYao and Makua people played a similar role as professional slave-raiders and -traders. Still further north were the Nyamwezi slave-traders.[173]
+
+Asia
+See also: History of slavery in Asia
+
+A contract from the Tang dynasty that records the purchase of a 15-year-old slave for six bolts of plain silk and five Chinese coins.
+In Constantinople, about one-fifth of the population consisted of slaves.[156] The city was a major centre of the slave trade in the 15th and later centuries. By 1475 most of the slaves were provided by Tatar raids on Slavic villages.[174] It has been estimated that some 200,000 slaves—mainly Circassians—were imported into the Ottoman Empire between 1800 and 1909.[175] As late as 1908, women slaves were still sold in the Ottoman Empire.[176] A slave market for captured Russian and Persian slaves was centred in the Central Asian khanate of Khiva.[177] In the early 1840s, the population of the Uzbek states of Bukhara and Khiva included about 900,000 slaves.[175] Darrel P. Kaiser wrote, "Kazakh-Kirghiz tribesmen kidnapped 1573 settlers from colonies [German settlements in Russia] in 1774 alone and only half were successfully ransomed. The rest were killed or enslaved."[178]
+
+According to Sir Henry Bartle Frere (who sat on the Viceroy's Council), there were an estimated 8 or 9 million slaves in India in 1841. About 15% of the population of Malabar were slaves. Slavery was abolished in British India by the Indian Slavery Act V. of 1843.[3]
+
+In East Asia, the Imperial government formally abolished slavery in China in 1906, and the law became effective in 1910.[179] The Nangzan in Tibetan history were, according to Chinese sources, hereditary household slaves.[180]
+
+In the Joseon period of Korea, members of the slave class were known as nobi. The nobi were socially indistinct from freemen other than the ruling yangban class, and some possessed property rights, legal entities and civil rights. Hence, some scholars argue that it's inappropriate to call them "slaves",[181] while some scholars describe them as serfs.[182][183] The nobi population could fluctuate up to about one-third of the population, but on average the nobi made up about 10% of the total population.[184] In 1801, the vast majority of government nobi were emancipated,[185] and by 1858 the nobi population stood at about 1.5 percent of the total population of Korea.[186] The hereditary nobi system was officially abolished around 1886–87 and the rest of the nobi system was abolished with the Gabo Reform of 1894,[186] but traces remained until 1930.
+
+In late 16th century Japan, slavery as such was officially banned, but forms of contract and indentured labour persisted alongside the period penal codes' forced labour.[187]
+
+The hill tribe people in Indochina were "hunted incessantly and carried off as slaves by the Siamese (Thai), the Anamites (Vietnamese), and the Cambodians".[188] A Siamese military campaign in Laos in 1876 was described by a British observer as having been "transformed into slave-hunting raids on a large scale".[189] The census, taken in 1879, showed that 6% of the population in the Malay sultanate of Perak were slaves.[175] Enslaved people made up about two-thirds of the population in part of North Borneo in the 1880s.[175]
+
+Throughout the 1930s and 1940s the Yi people (also known as Nuosu) of China terrorized Sichuan to rob and enslave non-Nuosu including Han people. The descendants of the Han Chinese slaves are the White Yi (白彝) and they outnumber the Black Yi (黑彝) aristocracy by ten to one.[190] As much as tens of thousands of Han slaves were incorporated into Nuosu society every year. The Han slaves and their offspring were used for manual labor.[191] There is a saying goes like: "the worst insult to a Nuosu is to call him a "Han" (with the implication being that "your ancestors were slaves")".[192]
+
+Americas
+Further information: Atlantic slave trade, Encomienda, Mita (Inca), Slavery in Brazil, and Slavery in the United States
+
+The Brazilian slave-hunter, 1823, by Johann Moritz Rugendas
+Slavery in the Americas had a contentious history, and played a major role in the history and evolution of some countries, triggering at least one revolution and one civil war, as well as numerous rebellions. The Aztecs had slaves.[193] Other Amerindians, such as the Inca of the Andes, the Tupinambá of Brazil, the Creek of Georgia, and the Comanche of Texas, also owned slaves.[3]
+
+The maritime town of Lagos was the first slave market created in Portugal (one of the earliest colonizers of the Americas) for the sale of imported African slaves—the Mercado de Escravos, opened in 1444.[194][195] In 1441, the first slaves were brought to Portugal from northern Mauritania.[195]
+
+In 1519, Mexico's first Afro-Mexican slave was brought by Hernán Cortés.
+
+By 1552, black African slaves made up 10% of the population of Lisbon.[196][197] In the second half of the 16th century, the Crown gave up the monopoly on slave trade and the focus of European trade in African slaves shifted from import to Europe to slave transports directly to tropical colonies in the Americas—in the case of Portugal, especially Brazil.[195] In the 15th century one-third of the slaves were resold to the African market in exchange of gold.[198]
+
+In order to establish itself as an American empire, Spain had to fight against the relatively powerful civilizations of the New World. The Spanish conquest of the indigenous peoples in the Americas included using the Natives as forced labour. The Spanish colonies were the first Europeans to use African slaves in the New World on islands such as Cuba and Hispaniola, see Atlantic slave trade.[199]
+
+
+The public flogging of a slave in Rio de Janeiro, Brazil. From Jean Baptiste Debret, Voyage Pittoresque et Historique au Brésil (1834–1839).
+Bartolomé de Las Casas a 16th-century Dominican friar and Spanish historian participated in campaigns in Cuba (at Bayamo and Camagüey) and was present at the massacre of Hatuey; his observation of that massacre led him to fight for a social movement away from the use of natives as slaves and towards the importation of African Blacks as slaves. Also, the alarming decline in the native population had spurred the first royal laws protecting the native population (Laws of Burgos, 1512–1513).
+
+The first African slaves arrived in Hispaniola in 1501.[200] In 1518, Charles I of Spain agreed to ship slaves directly from Africa. England played a prominent role in the Atlantic slave trade. The "slave triangle" was pioneered by Francis Drake and his associates. In 1640 a Virginia court sentenced John Punch to slavery, forcing him to serve his master, Hugh Gwyn, for the remainder of his life. This was the first legal sanctioning of slavery in the English colonies.[201][202] In 1655, A black man, Anthony Johnson of Virginia, was granted ownership of John Casor as the result of a civil case.[203]
+
+The Henrietta Marie was probably built in France sometime in the 17th century and carried a crew of about eighteen men. The ship came into English possession late in the 17th century, possibly as a war prize during the War of the Grand Alliance. It was put to use in the Atlantic slave trade, making at least two voyages carrying Africans to slavery in the West Indies. On its first voyage, in 1697–1698, the ship carried more than 200 people from Africa that were sold as slaves in Barbados. In 1699 the Henrietta Marie sailed from England on the first leg of the triangular trade route with a load of trade goods, including iron and copper bars, pewter utensils, glass beads, cloth and brandy. The ship sailed under license from the Royal African Company (which held a monopoly on English trade with Africa), in exchange for ten percent of the profits of the voyage. It is known to have traded for African captives at New Calabar on the Guinea Coast. The ship then sailed on the second leg of its voyage, from Africa to the West Indies, and in May 1701 landed 191 Africans for sale in Port Royal, Jamaica. The Henrietta Marie then loaded a cargo of sugar, cotton, dyewoods (indigo) and ginger to take back to England on the third leg of the triangular route. After leaving Port Royal on 18 May 1701, the ship headed for the Yucatán Channel to pass around the western end of Cuba (thus avoiding the pirates infesting the passage between Cuba and Hispaniola) and catch the Gulf Stream, the preferred route for all ships leaving the Caribbean to return to Europe. A month later, the Henrietta Marie wrecked on New Ground Reef near the Marquesas Keys, approximately 35 miles (56 kilometres) west of Key West. All aboard were lost.[204]
+
+
+Planting the sugar cane, British colony of Antigua, 1823
+Pirates often targeted slavers. For example, the 300 ton English frigate Concord launched in 1710 but was captured by the French one year later. She was modified to hold more cargo, including slaves, and renamed La Concorde de Nantes. Sailing as a slave ship, she was captured by the pirate Captain Benjamin Hornigold on November 28, 1717, near the island of Martinique. Hornigold turned her over to one of his men, Edward Teach (later known as Blackbeard), and made him her captain. Teach then renamed her the Queen Anne's Revenge.[205] By 1750, slavery was a legal institution in all of the 13 American colonies,[206][207] and the profits of the slave trade and of West Indian plantations amounted to 5% of the British economy at the time of the Industrial Revolution.[208]
+
+The trans-Atlantic slave trade peaked in the late 18th century, when the largest number of slaves were captured on raiding expeditions into the interior of West Africa. These expeditions were typically carried out by African kingdoms, such as the Oyo empire (Yoruba), the Ashanti Empire,[209] the kingdom of Dahomey,[210] and the Aro Confederacy.[211] Europeans rarely entered the interior of Africa, due to fierce African resistance. The slaves were brought to coastal outposts where they were traded for goods. A significant portion of African Americans in North America are descended from Mandinka people.[212] Through a series of conflicts, primarily with the Fulani Jihad States, about half of the Senegambian Mandinka were converted to Islam while as many as a third were sold into slavery to the Americas through capture in conflict.[212]
+
+
+Slaves on a Virginia plantation (The Old Plantation, c. 1790)
+
+Mid-19th century portrait of an older New Orleans woman with her child slave servant
+An estimated 12 million Africans arrived in the Americas from the 16th to the 19th centuries.[213] Of these, an estimated 645,000 were brought to what is now the United States. The usual estimate is that about 15% of slaves died during the voyage, with mortality rates considerably higher in Africa itself in the process of capturing and transporting indigenous peoples to the ships.[214]
+
+Many Europeans who arrived in North America during the 17th and 18th centuries came under contract as indentured servants.[215] The transformation from indentured servitude to slavery was a gradual process in Virginia. The earliest legal documentation of such a shift was in 1640 where a negro, John Punch, was sentenced to lifetime slavery for attempting to run away. This case also marked the disparate treatment of Africans as held by the Virginia County Court, as two white runaways received far lesser sentences.[216] After 1640, planters started to ignore the expiration of indentured contracts and kept their servants as slaves for life. This was demonstrated by the case Johnson v. Parker, where the court ruled that John Casor, an indentured servant, be returned to Johnson who claimed that Casor belonged to him for his life.[217][218] According to the 1860 U. S. census, 393,975 individuals, representing 8% of all US families, owned 3,950,528 slaves.[219] One-third of Southern families owned slaves.[220]
+
+
+Funeral at slave plantation, Suriname. Colored lithograph printed circa 1840–1850, digitally restored.
+The largest number of slaves were shipped to Brazil.[221] In the Spanish viceroyalty of New Granada, corresponding mainly to modern Panama, Colombia, and Venezuela, the free black population in 1789 was 420,000, whereas African slaves numbered only 20,000. Free blacks also outnumbered slaves in Brazil. By contrast, in Cuba, free blacks made up only 15% in 1827; and in the French colony of Saint-Domingue (present-day Haiti) it was a mere 5% in 1789.[222]
+
+Author Charles Rappleye argued that:
+
+In the West Indies in particular, but also in North and South America, slavery was the engine that drove the mercantile empires of Europe. It appeared, in the eighteenth century, as universal and immutable as human nature.[223]
+
+
+Lady in litter being carried by her slaves, province of São Paulo in Brazil, ca.1860.
+Although the trans-Atlantic slave trade ended shortly after the American Revolution, slavery remained a central economic institution in the Southern states of the United States, from where slavery expanded with the westward movement of population.[224] Historian Peter Kolchin wrote, "By breaking up existing families and forcing slaves to relocate far from everyone and everything they knew" this migration "replicated (if on a reduced level) many of [the] horrors" of the Atlantic slave trade.[225]
+
+Historian Ira Berlin called this forced migration the Second Middle Passage. Characterizing it as the "central event" in the life of a slave between the American Revolution and the Civil War, Berlin wrote that whether they were uprooted themselves or simply lived in fear that they or their families would be involuntarily moved, "the massive deportation traumatized black people, both slave and free.."[226]
+
+By 1860, 500,000 slaves had grown to 4 million. As long as slavery expanded, it remained profitable and powerful and was unlikely to disappear. Although complete statistics are lacking, it is estimated that 1,000,000 slaves moved west from the Old South between 1790 and 1860.[227]
+
+Most of the slaves were moved from Maryland, Virginia, and the Carolinas. Michael Tadman, in a 1989 book Speculators and Slaves: Masters, Traders, and Slaves in the Old South, indicates that 60–70% of interregional migrations were the result of the sale of slaves. In 1820, a child in the Upper South had a 30% chance to be sold south by 1860.[227]
+
+In Puerto Rico, African slavery was finally abolished on March 22, 1873.
+
+
+Page Boy with slave collar, Dutch 17th-century painting
+Middle East
+Main article: Arab slave trade
+See also: Slavery (Ottoman Empire), Islamic views on slavery, and Slavery on the Barbary Coast
+
+Ottoman wars in Europe resulted in many captive Christians being carried deep into Muslim territory.
+According to Robert Davis, between 1 million and 1.25 million Europeans were captured by Barbary pirates and sold as slaves in North Africa and Ottoman Empire between the 16th and 19th centuries.[228][229] There was also an extensive trade in Christian slaves in the Black Sea region for several centuries until the Crimean Khanate was destroyed by the Russian Empire in 1783.[230] In the 1570s close to 20,000 slaves a year were being sold in the Crimean port of Kaffa.[231] The slaves were captured in southern Russia, Poland-Lithuania, Moldavia, Wallachia, and Circassia by Tatar horsemen.[232] Some researchers estimate that altogether more than 3 million people were captured and enslaved during the time of the Crimean Khanate.[233][234]
+
+
+Persian slave in the Khanate of Khiva, 19th century
+
+British captain witnessing the miseries of the Christian slaves in Algiers, 1815
+
+The Arab enslavement of the Dinka people.
+The Arab slave trade lasted more than a millennium.[235] As recently as the early 1960s, Saudi Arabia's slave population was estimated at 300,000.[236] Along with Yemen, the Saudis abolished slavery only in 1962.[237] Historically, slaves in the Arab World came from many different regions, including Sub-Saharan Africa (mainly Zanj),[238] the Caucasus (mainly Circassians),[239] Central Asia (mainly Tartars), and Central and Eastern Europe (mainly Saqaliba).[240]
+
+Under Omani Arabs Zanzibar became East Africa's main slave port, with as many as 50,000 enslaved Africans passing through every year during the 19th century.[241][242] Some historians estimate that between 11 and 18 million African slaves crossed the Red Sea, Indian Ocean, and Sahara Desert from 650 to 1900 AD.[3][243] Eduard Rüppell described the losses of Sudanese slaves being transported on foot to Egypt: "after the Daftardar bey's 1822 campaign in the southern Nuba mountains, nearly 40,000 slaves were captured. However, through bad treatment, disease and desert travel barely 5000 made it to Egypt.."[244]
+
+The Moors, starting in the 8th century, also raided coastal areas around the Mediterranean and Atlantic Ocean, and became known as the Barbary pirates.[245] It is estimated that they captured 1.25 million white slaves from Western Europe and North America between the 16th and 19th centuries.[246][247] The mortality rate was very high. For instance, plague killed a third to two-thirds of the 30,000 occupants of the slave pens in Algiers in 1662.[228]
+
+Abolitionism
+Main article: Abolitionism
+See also: Abolition of slavery timeline
+[show] v t e
+Slave Trade suppression
+ 
+The painting of the 1840 Anti-Slavery Society Convention at Exeter Hall. Move your cursor to identify delegates or click the icon to enlarge.[248]
+Slavery has existed, in one form or another, through recorded human history—as have, in various periods, movements to free large or distinct groups of slaves.
+
+Ashoka, who ruled the Maurya Empire from 269–232 BCE, abolished the slave trade but not slavery.[249] The Qin dynasty, which ruled China from 221 to 206 BC, abolished slavery and discouraged serfdom. However, many of its laws were overturned when the dynasty was overthrown.[250] Slavery was again abolished, by Wang Mang, in China in 17 C.E but was reinstituted after his assassination.[251]
+
+The Spanish colonization of the Americas sparked a discussion about the right to enslave Native Americans. A prominent critic of slavery in the Spanish New World colonies was Bartolomé de las Casas, who opposed the enslavement of Native Americans, and later also of Africans in America.
+
+One of the first protests against slavery came from German and Dutch Quakers in Pennsylvania in 1688.[252] One of the most significant milestones in the campaign to abolish slavery throughout the world occurred in England in 1772, with British judge Lord Mansfield, whose opinion in Somersett's Case was widely taken to have held that slavery was illegal in England. This judgement also laid down the principle that slavery contracted in other jurisdictions could not be enforced in England.[253] In 1777, Vermont, at the time an independent nation, became the first portion of what would become the United States to abolish slavery.[252] France abolished slavery in 1794.[252]
+
+
+Joseph Jenkins Roberts, born in Virginia, was the first president of Liberia, which was founded in 1822 for freed American slaves.
+British Member of Parliament William Wilberforce led the anti-slavery movement in the United Kingdom, although the groundwork was an anti-slavery essay by Thomas Clarkson. Wilberforce was also urged by his close friend, Prime Minister William Pitt the Younger, to make the issue his own, and was also given support by reformed Evangelical John Newton. The Slave Trade Act was passed by the British Parliament on March 25, 1807, making the slave trade illegal throughout the British Empire,[254] Wilberforce also campaigned for abolition of slavery in the British Empire, which he lived to see in the Slavery Abolition Act 1833. After the 1807 act abolishing the slave trade was passed, these campaigners switched to encouraging other countries to follow suit, notably France and the British colonies. Between 1808 and 1860, the British West Africa Squadron seized approximately 1,600 slave ships and freed 150,000 Africans who were aboard.[255] Action was also taken against African leaders who refused to agree to British treaties to outlaw the trade, for example against "the usurping King of Lagos", deposed in 1851. Anti-slavery treaties were signed with over 50 African rulers.[256]
+
+In 1839, the world's oldest international human rights organization, Anti-Slavery International, was formed in Britain by Joseph Sturge, which campaigned to outlaw slavery in other countries.[257] There were celebrations in 2007 to commemorate the 200th anniversary of the abolition of the slave trade in the United Kingdom through the work of the British Anti-Slavery Society.
+
+In the United States, abolitionist pressure produced a series of small steps towards emancipation. After January 1, 1808, the importation of slaves into the United States was prohibited,[258] but not the internal slave trade, nor involvement in the international slave trade externally. Legal slavery persisted; and those slaves already in the U.S. were legally emancipated only in 1863. Many American abolitionists took an active role in opposing slavery by supporting the Underground Railroad. Violent clashes between anti-slavery and pro-slavery Americans included Bleeding Kansas, a series of political and armed disputes in 1854–1861 as to whether Kansas would join the United States as a slave or free state. By 1860, the total number of slaves reached almost four million, and the American Civil War, beginning in 1861, led to the end of slavery in the United States.[259] In 1863, Lincoln issued the Emancipation Proclamation, which freed slaves held in the Confederate States; the 13th Amendment to the U. S. Constitution prohibited most forms of slavery throughout the country.
+
+
+Photographed in 1863 – Gordon aka Peter, a man who was enslaved in Louisiana.[260] This famous photo was distributed by abolitionists as evidence of the cruelty of slavery.[261]
+In the case of freed slaves of the United States, many became sharecroppers and indentured servants. In this manner, some became tied to the very parcel of land into which they had been born a slave having little freedom or economic opportunity due to Jim Crow laws which perpetuated discrimination, limited education, promoted persecution without due process and resulted in continued poverty. Fear of reprisals such as unjust incarcerations and lynchings deterred upward mobility further.
+
+In the 1860s, David Livingstone's reports of atrocities within the Arab slave trade in Africa stirred up the interest of the British public, reviving the flagging abolitionist movement. The Royal Navy throughout the 1870s attempted to suppress "this abominable Eastern trade", at Zanzibar in particular. In 1905, the French abolished indigenous slavery in most of French West Africa.[262]
+
+On December 10, 1948, the United Nations General Assembly adopted the Universal Declaration of Human Rights, which declared freedom from slavery is an internationally recognized human right. Article 4 of the Universal Declaration of Human Rights states:
+
+No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.[263]
+
+In 2014, for the first time in history, major leaders of many religions, Buddhist, Anglican, Catholic, and Orthodox Christian, Hindu, Jewish, and Muslim, met to sign a shared commitment against modern-day slavery; the declaration they signed calls for the elimination of slavery and human trafficking by the year 2020.[264] The signatories were: Pope Francis, Mātā Amṛtānandamayī, Bhikkhuni Thich Nu Chân Không (representing Zen Master Thích Nhất Hạnh), Datuk K Sri Dhammaratana, Chief High Priest of Malaysia, Rabbi Abraham Skorka, Rabbi David Rosen, Abbas Abdalla Abbas Soliman, Undersecretary of State of Al Azhar Alsharif (representing Mohamed Ahmed El-Tayeb, Grand Imam of Al-Azhar), Grand Ayatollah Mohammad Taqi al-Modarresi, Sheikh Naziyah Razzaq Jaafar, Special advisor of Grand Ayatollah (representing Grand Ayatollah Sheikh Basheer Hussain al Najafi), Sheikh Omar Abboud, Justin Welby, Archbishop of Canterbury, and Metropolitan Emmanuel of France (representing Ecumenical Patriarch Bartholomew.)[264]
+
+Groups such as the American Anti-Slavery Group, Anti-Slavery International, Free the Slaves, the Anti-Slavery Society, and the Norwegian Anti-Slavery Society continue to campaign to eliminate slavery.
+
+Characteristics
+Economics
+
+Gustave Boulanger's painting The Slave Market
+Economists have attempted to model the circumstances under which slavery (and variants such as serfdom) appear and disappear. One observation is that slavery becomes more desirable for landowners where land is abundant but labour is scarce, such that rent is depressed and paid workers can demand high wages. If the opposite holds true, then it becomes more costly for landowners to have guards for the slaves than to employ paid workers who can only demand low wages due to the amount of competition.[265] Thus, first slavery and then serfdom gradually decreased in Europe as the population grew, but were reintroduced in the Americas and in Russia as large areas of new land with few people became available.[266] In his books, Time on the Cross and Without Consent or Contract: the Rise and Fall of American Slavery, Robert Fogel maintains that slavery was in fact a profitable method of production, especially on bigger plantations growing cotton that fetched high prices in the world market. It gave whites in the South higher average incomes than those in the North, but most of the money was spent on buying slaves and plantations.
+
+
+Slave being whipped in Brazil, during the heyday of gold exploration in Minas Gerais (1770).
+Slavery is more common when the labour done is relatively simple and thus easy to supervise, such as large-scale growing of a single crop. It is much more difficult and costly to check that slaves are doing their best and with good quality when they are doing complex tasks. Therefore, slavery was seen as the most efficient method of production for large-scale crops like sugar and cotton, whose output was based on economies of scale. This enabled a gang system of labour to be prominent on large plantations where field hands were monitored and worked with factory-like precision. Each work gang was based on an internal division of labour that not only assigned every member of the gang to a precise task but simultaneously made his or her performance dependent on the actions of the others. The hoe hands chopped out the weeds that surrounded the cotton plants as well as excessive sprouts. The plow gangs followed behind, stirring the soil near the rows of cotton plants and tossing it back around the plants. Thus, the gang system worked like an early version of the assembly line later to be found in factories.[267]
+
+Critics since the 18th century have argued that slavery tends to retard technological advancement, since the focus is on increasing the number of slaves doing simple tasks rather than upgrading the efficiency of labour. Because of this, theoretical knowledge and learning in Greece—and later in Rome—was not applied to ease physical labour or improve manufacturing.[268]
+
+Adam Smith made the argument that free labour was economically better than slave labour, and argued further that slavery in Europe ended during the Middle Ages, and then only after both the church and state were separate, independent and strong institutions,[269] that it is nearly impossible to end slavery in a free, democratic and republican forms of governments since many of its legislators or political figures were slave owners, and would not punish themselves, and that slaves would be better able to gain their freedom when there was centralized government, or a central authority like a king or the church.[270] Similar arguments appear later in the works of Auguste Comte, especially when it comes to Adam Smith's belief in the separation of powers or what Comte called the "separation of the spiritual and the temporal" during the Middle Ages and the end of slavery, and Smith's criticism of masters, past and present. As Smith stated in the Lectures on Jurisprudence, "The great power of the clergy thus concurring with that of the king set the slaves at liberty. But it was absolutely necessary both that the authority of the king and of the clergy should be great. Where ever any one of these was wanting, slavery still continues.."
+
+
+The inspection and sale of a slave
+Slaves can be an attractive investment because the slave-owner only needs to pay for sustenance and enforcement. This is sometimes lower than the wage-cost of free labourers, because free workers earn more than sustenance, in these cases slaves have positive price. When the cost of sustenance and enforcement exceeds the wage rate, slave-owning would no longer be profitable, and owners would simply release their slaves. Slaves are thus a more attractive investment in high-wage environments, and environments where enforcement is cheap, and less attractive in environments where the wage-rate is low and enforcement is expensive.[271]
+
+Free workers also earn compensating differentials, whereby they are paid more for doing unpleasant work. Neither sustenance nor enforcement costs rise with the unpleasantness of the work, however, so slaves' costs do not rise by the same amount. As such, slaves are more attractive for unpleasant work, and less for pleasant work. Because the unpleasantness of the work is not internalised, being born by the slave rather than the owner, it is a negative externality and leads to over-use of slaves in these situations.[271]
+
+The weighted average global sales price of a slave is calculated to be approximately $340, with a high of $1,895 for the average trafficked sex slave, and a low of $40 to $50 for debt bondage slaves in part of Asia and Africa.[37] Worldwide slavery is a criminal offense but slave owners can get very high returns for their risk. According to researcher Siddharth Kara, the profits generated worldwide by all forms of slavery in 2007 were $91.2 billion. That is second only to drug trafficking in terms of global criminal enterprises. The weighted average annual profits generated by a slave in 2007 was $3,175, with a low of an average $950 for bonded labour and $29,210 for a trafficked sex slave.[37] Approximately 40% of slave profits each year are generated by trafficked sex slaves, representing slightly more than 4% of the world's 29 million slaves.[37]
+
+Robert E. Wright has developed a model that helps to predict when firms (individuals, companies) will be more likely to use slaves rather than wage workers, indentured servants, family members, or other types of labourers.[272]
+
+Identification
+Throughout history, slaves were clothed in a distinctive fashion, particularly with respect to footwear or rather the lack thereof. This was both due to economic reasons as well as a distinguishing feature, especially in South Africa and South America. For example, the Cape Town slave code stated that "Slaves must go barefoot and must carry passes."[273] This was the case in the majority of states that abolished slavery later in history, as most images from the respective historical period suggest that slaves were barefoot.[274] To quote Brother Riemer (1779): "[the slaves] are, even in their most beautiful suit, obliged to go barefoot. Slaves were forbidden to wear shoes. This was a prime mark of distinction between the free and the bonded and no exceptions were permitted."[275]
+
+As shoes have been considered badges of freedom since biblical times "But the father said to his servants, Bring forth the best robe, and put [it] on him; and put a ring on his hand, and shoes on [his] feet (Luke 15:22)" this aspect has been an informal law wherever slavery existed. A barefoot person could therefore be clearly identified as a slave upon first sight. In certain societies this rule is valid to this day, as with the Tuareg slavery which is still unofficially practiced, and their slaves have to go barefoot.[276]
+
+Apologies
+On May 21, 2001, the National Assembly of France passed the Taubira law, recognizing slavery as a crime against humanity. Apologies on behalf of African nations, for their role in trading their countrymen into slavery, remain an open issue since slavery was practiced in Africa even before the first Europeans arrived and the Atlantic slave trade was performed with a high degree of involvement of several African societies. The black slave market was supplied by well-established slave trade networks controlled by local African societies and individuals.[277] Indeed, as already mentioned in this article, slavery persists in several areas of West Africa until the present day.
+
+There is adequate evidence citing case after case of African control of segments of the trade. Several African nations such as the Calabar and other southern parts of Nigeria had economies depended solely on the trade. African peoples such as the Imbangala of Angola and the Nyamwezi of Tanzania would serve as middlemen or roving bands warring with other African nations to capture Africans for Europeans.[278]
+
+Several historians have made important contributions to the global understanding of the African side of the Atlantic slave trade. By arguing that African merchants determined the assemblage of trade goods accepted in exchange for slaves, many historians argue for African agency and ultimately a shared responsibility for the slave trade.[279]
+
+In 1999, President Mathieu Kerekou of Benin (formerly the Kingdom of Dahomey) issued a national apology for the central role Africans played in the Atlantic slave trade.[280] Luc Gnacadja, minister of environment and housing for Benin, later said: "The slave trade is a shame, and we do repent for it."[281] Researchers estimate that 3 million slaves were exported out of the Slave Coast bordering the Bight of Benin.[281] President Jerry Rawlings of Ghana also apologized for his country's involvement in the slave trade.[280]
+
+The issue of an apology is linked to reparations for slavery and is still being pursued by a number of entities across the world. For example, the Jamaican Reparations Movement approved its declaration and action Plan.
+
+In September 2006, it was reported that the UK government might issue a "statement of regret" over slavery.[282] This was followed by a "public statement of sorrow" from Tony Blair on November 27, 2006,[283] and a formal apology on March 14, 2007.[284]
+
+On February 25, 2007, the Commonwealth of Virginia resolved to 'profoundly regret' and apologize for its role in the institution of slavery. Unique and the first of its kind in the U. S., the apology was unanimously passed in both Houses as Virginia approached the 400th anniversary of the founding of Jamestown, where the first slaves were imported into North America in 1619.[285]
+
+Liverpool, which was a large slave trading port, apologized in 1999. On August 24, 2007, Mayor Ken Livingstone of London, United Kingdom, apologized publicly for Britain's role in colonial slave trade. "You can look across there to see the institutions that still have the benefit of the wealth they created from slavery," he said, pointing towards the financial district. He claimed that London was still tainted by the horrors of slavery. Specifically, London outfitted, financed, and insured many of the ships, which helped fund the building of London's docks. Jesse Jackson praised Livingstone, and added that reparations should be made, one of his common arguments.[286]
+
+On July 30, 2008, the United States House of Representatives passed a resolution apologizing for American slavery and subsequent discriminatory laws.[287] In June 2009, the US Senate passed a resolution apologizing to African-Americans for the "fundamental injustice, cruelty, brutality, and inhumanity of slavery".[288] The news was welcomed by President Barack Obama, the nation's first President of African descent.[289] Some of President Obama's ancestors were slave owners.[290]
+
+In 2010, Libyan leader Muammar Gaddafi apologized for Arab involvement in the slave trade, saying: "I regret the behavior of the Arabs… They brought African children to North Africa, they made them slaves, they sold them like animals, and they took them as slaves and traded them in a shameful way."[291]
+
+Reparations
+Main article: Reparations for slavery
+refer to caption
+Monument to slaves in Zanzibar
+There have been movements to achieve reparations for those formerly held as slaves, or sometimes their descendants. Claims for reparations for being held in slavery are handled as a civil law matter in almost every country. This is often decried as a serious problem, since former slaves' relative lack of money means they often have limited access to a potentially expensive and futile legal process. Mandatory systems of fines and reparations paid to an as yet undetermined group of claimants from fines, paid by unspecified parties, and collected by authorities have been proposed by advocates to alleviate this "civil court problem.."Since in almost all cases there are no living ex-slaves or living ex-slave owners these movements have gained little traction. In nearly all cases the judicial system has ruled that the statute of limitations on these possible claims has long since expired.
+
+Other uses of the term
+The word slavery is often used as a pejorative to describe any activity in which one is coerced into performing.
+
+Proponents of animal rights apply the term slavery to the condition of some or all human-owned animals, arguing that their status is comparable to that of human slaves.[292]
+
+Some argue that military drafts and other forms of coerced government labour constitute state-operated slavery.[293][294] Some libertarians and anarcho-capitalists view government taxation as a form of slavery.[295]
+
+Some Antipsychiatry proponents apply the term slavery to the involuntary psychiatric patient. There are no unbiased physical tests for mental illness, and the psychiatric patient must follow the orders of his/her psychiatrist. Drapetomania was a psychiatric diagnosis for a slave who did not want to be a slave. Thomas Szasz wrote a book titled "Psychiatric Slavery",[296] published in 1998 and a book titled " Liberation by Oppression: A Comparative Study of Slavery and Psychiatry",[297] published in 2003.
+
+Wage slavery
+Main articles: Labour economics § Wage slavery, and Wage labour
+Some socialists, view total and immediate wage dependence as a form of slavery.[298] The labour market, as institutionalised under today's market economic systems, has been criticised,[299] especially by both mainstream socialists and anarcho-syndicalists,[300][301][302] who utilise the term wage slavery[303][304] as a pejorative for wage labour. Socialists draw parallels between the trade of labour as a commodity and slavery. Cicero is also known to have suggested such parallels.[305]
+
+For Marxists, labour-as-commodity, which is how they regard wage labour,[306] provides an absolutely fundamental point of attack against capitalism.[307] "It can be persuasively argued," noted one concerned philosopher[who?], "that the conception of the worker's labour as a commodity confirms Marx's stigmatization of the wage system of private capitalism as 'wage-slavery;' that is, as an instrument of the capitalist's for reducing the worker's condition to that of a slave, if not below it."[308][citation needed]
+
+In film
+Main article: List of films featuring slavery
+Film has been the most influential medium in the presentation of the history of slavery to the general public around the world.[309] The American film industry has had a complex relationship with slavery and until recent decades often avoided the topic. Films such as Birth of a Nation (1915)[310] and Gone with the Wind (1939) became controversial because they gave a favourable depiction. The last favourable treatment was Song of the South from Disney in 1946. In 1940 The Santa Fe Trail gave a liberal but ambiguous interpretation of John Brown's attacks on slavery—the film does not know what to do with slavery.[311] The Civil Rights Movement in the 1950s made defiant slaves into heroes.[312] The question of slavery in American memory necessarily involves its depictions in feature films.[313]
+
+
+Poster for the film Spartacus
+Most Hollywood films used American settings, although Spartacus (1960), dealt with an actual revolt in the Roman Empire known as the Third Servile War. It failed and all the rebels were executed, but their spirit lived on according to the film.[314] The Last Supper (La última cena in Spanish) was a 1976 film directed by Cuban Tomás Gutiérrez Alea about the teaching of Christianity to slaves in Cuba, and emphasizes the role of ritual and revolt. Burn! takes place on the imaginary Portuguese island of Queimada (where the locals speak Spanish) and it merges historical events that took place in Brazil, Cuba, Santo Domingo, Jamaica, and elsewhere. Spartacus stays surprisingly close to the historical record.[315]
+
+Historians agree that films have largely shaped historical memories, but they debate issues of accuracy, plausibility, moralism, sensationalism, how facts are stretched in search of broader truths, and suitability for the classroom.[316][317] Berlin argues that critics complain if the treatment emphasizes historical brutality, or if it glosses over the harshness to highlight the emotional impact of slavery.`
+	},{
 		title: "Woman",
 		eYear: 1756,
 		wYear: 2017,
