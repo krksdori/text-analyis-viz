@@ -116,10 +116,10 @@ canvas {
 
 
 #menu-wrapper {
+	margin: 20px;
 }
 
 #menu {
-/*	background-color: lightgrey;*/
 	font-size: 60px;
 	font-family: AtlasType-Reg;
 	cursor: pointer;
@@ -127,24 +127,20 @@ canvas {
 	z-index: 30;
 }
 
-/* unvisited link */
 #menu a:link {
     color: black;
     text-decoration: none;
 }
 
-/* visited link */
 #menu a:visited {
     color: black;
 }
 
-/* mouse over link */
 #menu a:hover {
     color: blue;
     font-family: AtlasType-Italic;
 }
 
-/* selected link */
 #menu a:active {
     color: blue;
     font-family: AtlasType-Italic;
@@ -152,6 +148,82 @@ canvas {
 
 #selectArtcileText {
 	font-family: AtlasType-Reg;
+}
+
+#about-button {
+	font-family: AtlasType-Reg;
+	position: absolute;
+	top: 45px;
+}
+
+#about-button:hover{
+	color: blue;
+    font-family: AtlasType-Italic;
+    cursor: pointer;
+}
+
+#about-page-wrap{
+	position: fixed;
+	color: white;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,255,0.9);
+    overflow: scroll;
+   /* z-index: 10;*/
+}
+
+#about-text {
+	padding-left: 20px;
+	padding-right: 400px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	/*background-color: red;*/
+	overflow: scroll !important;
+	position:relative;
+	font-size: 23px;
+    line-height: 32px;
+}
+
+#about-text a:link {
+	text-decoration: none;
+	border-bottom: 2px solid rgb(255, 255, 255);
+	color: white;
+}
+
+#about-text a:visited {
+	color: white;
+	border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/*.underline:hover {
+	color: red
+}*/
+
+#about-text a:hover {
+	color: black;
+	/*WHY*/
+	border-bottom: 1px solid rgb(0, 0, 255); 
+}
+
+#about-text a:active {
+	color: white;
+	border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#x-button {
+	font-size: 30px;
+	position: fixed;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+
+}
+
+#x-button:hover {
+	color: black;
+
 }
 
 #header {
@@ -240,12 +312,13 @@ canvas {
 	font-family: AtlasType-Italic;
 }
 
+
 /*.underline {
-  border-bottom: 1px solid rgb(0, 0, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
   display: inline-block;
-  line-height: 0.93;
-}
-*/
+  line-height: 0.99;
+}*/
+
 
 .hidden{
 	display: none;
