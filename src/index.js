@@ -69,7 +69,7 @@ function menuClickExecute(link, index){
 
 		// mainF(eArticle,eConn,"#encyText","#encyLog","ency");
 		// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
-		// canvasLines();//should run after animation is done, but bug runs several times after, for some reason
+		canvasLines();
 
 		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").text("Encyclopédie – " + currentTitle);
 		var $wikiTitleDiv = $('<div>').addClass("wiki-header-title header-title reset").text("Wikipedia – " + currentTitle);
@@ -186,7 +186,7 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 
 	var time = 0;
 	var index = 0;
-	var lelele = true;
+	var switchOnce = true;
 
 	function animateText(){
 		time = 0;
@@ -201,17 +201,16 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 				}
 			} else {
 				clearInterval(timer);
-				if (lelele) {
-					temp();
+				if (switchOnce) {
+					runAfterAnim();
 				}
 				
-				lelele = false;
+				switchOnce = false;
 
-				function temp(){ ///everything afer animation goes here
+				function runAfterAnim(){ ///everything afer animation goes here
 					mainF(eArticle,eConn,"#encyText","#encyLog","ency");
 					mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
-					canvasLines();
-					
+					// canvasLines();					
 				}
 			}
 		}, 20);
@@ -266,23 +265,9 @@ $(".text").scroll(function() {
 
 
 // import './canvas.js';
+
 ////////////////////LINES//////////////////////////
 //-----------------------------------------------//
-
-$("#wrap").mousemove(function( event ) {
-	$( ".hl" ).hover(
-	  function() {
-	    var classes = $(this).attr("class");
-   		var lastClass = classes.split(" ").pop();
-	    activeHover = lastClass;
-
-	  }, function() {
-	    activeHover = null;
-	  }
-	);
-
-	console.log(activeHover);
-});
 
 function canvasLines() {
     var canvas = document.getElementById('canvas'),
@@ -300,62 +285,82 @@ function canvasLines() {
     resizeCanvas();
 
     function drawStuff() {
-    	
-		$("#wrap").mousemove(function( event ) {
 
-			for (var i = 0; i < numConn; i++) {
-				conch(i,"ency");
-				conch(i,"wiki");
+		$(".text").scroll(function() {	
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+		});
+
+		$("#wrap").mousemove(function( event ) {
+			$( ".hl" ).hover(function() {
+			    var classes = $(this).attr("class");
+		   		var lastClass = classes.split(" ").pop();
+			    activeHover = lastClass;
+			}, function() {
+			    activeHover = null;
 			}
+		);
+
+		if (activeHover == null) {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+		}
+
+		// $(".text").scroll(function() {	
+		// 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+		// });
+
+		// console.log(activeHover);
+
+		for (var i = 0; i < numConn; i++) {
+			runLines(i,"ency");
+			runLines(i,"wiki");
+		}
 			
 
-			function conch(i, encyOrWiki){
-				if (activeHover == encyOrWiki+"hl"+i) {
-					displayLines(i,"blue", encyOrWiki);
-				}
+		function runLines(i, encyOrWiki){
+			if (activeHover == encyOrWiki+"hl"+i) {
+				displayLines(i,"blue", encyOrWiki);
+			}
+		}
+
+		function displayLines(index, color, encyOrWiki){
+			var activeConnIndex;
+
+			if (encyOrWiki == "ency") {
+				activeConnIndex = encyConnIndex;
+			} else {
+				activeConnIndex = wikiConnIndex;
 			}
 
-			function displayLines(index, color, encyOrWiki){
-				var activeConnIndex;
+			var compX = 26;
+			var compY = 60;
 
-				if (encyOrWiki == "ency") {
-					activeConnIndex = encyConnIndex;
+			if (activeHover !== null) {
+				var positions1=[];
+				var positions2=[];
 
-				} else {
-					activeConnIndex = wikiConnIndex;
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+				function getPosDrawLine(index,span1,span2){
+					positions1[index] = $("#"+encyOrWiki+span1).position();
+					positions2[index] = $("#"+encyOrWiki+span2).position();
+
+					ctx.strokeStyle = color;
+					ctx.lineWidth=1;
+					ctx.beginPath();
+					ctx.moveTo(positions1[index].left+compX,positions1[index].top+compY);
+					ctx.lineTo(positions2[index].left+compX,positions2[index].top+compY);
+					ctx.closePath();
+					ctx.stroke();
 				}
 
-				var compX = 26;
-				var compY = 60;
-				if (activeHover !== null) {
-					var positions1=[];
-					var positions2=[];
 
-					ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-					function getPosDrawLine(index,span1,span2){
-						positions1[index] = $("#"+encyOrWiki+span1).position();
-						positions2[index] = $("#"+encyOrWiki+span2).position();
-
-						ctx.strokeStyle = color;
-						ctx.lineWidth=1;
-						ctx.beginPath();
-						ctx.moveTo(positions1[index].left+compX,positions1[index].top+compY);
-						ctx.lineTo(positions2[index].left+compX,positions2[index].top+compY);
-						ctx.closePath();
-						ctx.stroke();
-					}
-
-
-					for (var i = 0; i < (activeConnIndex[index].length)/2; i++) {
-						getPosDrawLine(i,activeConnIndex[index][i*2],activeConnIndex[index][i*2+1]);
-					}
+				for (var i = 0; i < (activeConnIndex[index].length)/2; i++) {
+					getPosDrawLine(i,activeConnIndex[index][i*2],activeConnIndex[index][i*2+1]);
+				}
 
 					
-				} else {
-					ctx.clearRect(0, 0, canvas.width, canvas.height);
-				}
 			}
-		});
+		}
+	});
     }
 }
