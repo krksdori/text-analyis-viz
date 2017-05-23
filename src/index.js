@@ -59,7 +59,7 @@ function menuClickExecute(link, index){
 
 		// mainF(eArticle,eConn,"#encyText","#encyLog","ency");
 		// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
-		canvasLines();//should run after animation is done, but bug runs several times after, for some reason
+		// canvasLines();//should run after animation is done, but bug runs several times after, for some reason
 
 		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").text("Encyclopédie – " + currentTitle);
 		var $wikiTitleDiv = $('<div>').addClass("wiki-header-title header-title reset").text("Wikipedia – " + currentTitle);
@@ -176,6 +176,7 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 
 	var time = 0;
 	var index = 0;
+	var lelele = true;
 
 	function animateText(){
 		time = 0;
@@ -190,14 +191,25 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 				}
 			} else {
 				clearInterval(timer);
-				mainF(eArticle,eConn,"#encyText","#encyLog","ency");
-				mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
-				// canvasLines();
+				if (lelele) {
+					temp();
+				}
+				
+				lelele = false;
+
+				function temp(){ ///everything afer animation goes here
+					mainF(eArticle,eConn,"#encyText","#encyLog","ency");
+					mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
+					canvasLines();
+					
+				}
 			}
 		}, 20);
 	}
 	animateText();
 }
+
+
 
 function pad(number) {
      return (number < 10 ? '0' : '') + number;
