@@ -120,21 +120,29 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 		}
 	}
 
+
+
 	for (let j = 0; j < numConn; j++) {
 		for (let i = 0; i < wordArray.length; i++) {
 			findConn(i,j,conn[j*2],conn[(j*2)+1]);
 		}
-
 		$("#"+wikiOrEncy+"ConnCount"+j).text(`${pad(count[j])}`);
 	}
+	
 
 	for (var i = 0; i < wordArray.length; i++) {
 		wordCount += wordArray[i].length;
 	}
 
 	$("#wordCount"+wikiOrEncy).text(`Word count: ${wordCount}`);
-	
-	$("#percentages"+wikiOrEncy).text(`%: ${getPercentage(count)}`);
+
+	console.log("wtf"); //WTF
+
+	var percArray = getPercentage(count);
+
+	for (let i = 0; i < numConn; i++) {
+		$("#"+wikiOrEncy+"Perc"+i).text(`${pad(percArray[i])}%`);
+	}
 }
 
 function appendArt(art,conn,div,logDiv,wikiOrEncy){
@@ -158,7 +166,12 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 
 	//append connection log
 	for (var i = 0; i < 10; i++) {
-		$("#"+logDiv).append(`<span id='${wikiOrEncy}ConnCount${i}'>00</span>&nbsp;<span class='logcon hl ${wikiOrEncy}hl${i}'>${conn[i*2]} - ${conn[(i*2)+1]}</span><br>`);
+		$("#"+logDiv).append(`
+			<span id='${wikiOrEncy}Perc${i}'>00%</span>&nbsp;
+			<span id='${wikiOrEncy}ConnCount${i}'>00</span>&nbsp;
+			<span class='logcon hl ${wikiOrEncy}hl${i}'>
+				${conn[i*2]} - ${conn[(i*2)+1]}
+			</span><br>`);
 	}
 
 	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>`);
@@ -166,7 +179,6 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 	$("#"+logDiv).append(`<br><span id="source${wikiOrEncy} class="source"></span>`);
 
 	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>
-		<span id="percentages${wikiOrEncy}"></span>
 		<br><br><span id="source${wikiOrEncy}" class="source"></span>`);
 	
 	$("#"+div).empty();
@@ -216,12 +228,6 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 		}, 20);
 	}
 	animateText();
-}
-
-
-
-function pad(number) {
-     return (number < 10 ? '0' : '') + number;
 }
 
 function getPercentage(arr){
