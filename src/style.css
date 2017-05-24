@@ -357,6 +357,10 @@ canvas {
   line-height: 0.99;
 }*/
 
+.hl{
+	transition: 4s;
+}
+
 
 .hidden{
 	display: none;
