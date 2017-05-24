@@ -6,6 +6,7 @@
 </head>
 <body>
 <canvas id="canvas"></canvas>
+<!-- <canvas class="hidden" id="canvas-info"></canvas> -->
 <div id="page-wrapper">
 
 	<div id="menu-wrapper">
@@ -17,23 +18,46 @@
 	<div id="about-page-wrap" class="hidden">
 		<div id="about-text">
 			<p>About the project:</p>
-			<p>Daniel Hernández Jr. is an American politician, who was elected to the Arizona House of Representatives in the 2016 elections.[1] A member of the Arizona Democratic Party, he will serve alongside Rosanna Gabaldón in Legislative District 2.</p>
-			<p>A graduate of the University of Arizona, Hernández had his first job after graduating as an intern in the office of congresswoman Gabrielle Giffords.[2] Less than one week into that job, Giffords was injured in the 2011 Tucson shooting, at which Hernández was credited with saving her life.[2] Later that year, he was elected to the board of the Sunnyside Unified School District, on which he served until running for the state legislature.</p>
-			<p>He is openly gay.</p>
-			<p>Hernandez endorsed a 2016 ballot measure to legalize recreation marijuana in Arizona.</p>
-			<p>Born in Caracas, Hernández played Spanish lower league and amateur football until the age of 25, competing mainly in the Community of Madrid. During that time, he represented CF Rayo Majadahonda, CD Guadalajara, CU Collado Villalba, Real Madrid C, Rayo Vallecano B, Real Jaén, Valencia CF Mestalla and Real Murcia, delivering a Man of the match performance on 26 October 2010 in a 0–0 home draw against Real Madrid for the season's Copa del Rey (1–5 aggregate loss);[1][2] additionally, he represented SD Huesca in Segunda División in the first part of the 2009–10 campaign, but his input consisted of two domestic cup appearances.</p>
+			<p>What we collectively define as truth is slowly but constantly changing. Any work, literary, artistic or otherwise, encapsulates the specific paradigm under which it was created. Diderot and d’Alembert’s Encyclopédie not only gathered vast amounts of information, but inevitably imprinted its unique world view, ideals and beliefs. Likewise, present-day Wikipedia is an embodiment of contemporary ideals and how we currently perceive the world.</p>
+			<p>We are interested in how paradigms change over time and how deeply they can influence the way we think and the content we create. In order to compare the content of the Encyclopédie and Wikipedia, we created an algorithm which analyses the texts and finds the most common word connections in the text. In order to retain the context in which words are being used we only gathered word connections within sentences, as opposed to analysing the text as a whole.</p>
 			<br>
 			<br>
-			<p>About our text analysis algorithm</p>
+			<p>About our text analysis algorithm:</p>
 			<p>Daniel Hernández Morillo, (1 August 1856, Salcabamba - 23 October 1932, Lima) was a Peruvian painter in the Academic style who spent most of his working life in Paris. He also served as the first Director of the Escuela Nacional de Bellas Artes.</p>
-			<p>His mother was Peruvian and his father was from Spain. He was brought to Lima at the age of four and began his artistic education at fourteen, in the studios of Italian-born Leonardo Barbieri (1818-1896), who had worked as a portrait painter and daguerrotypist in California during the Gold Rush.</p>
+			<div id="explanation-container">
+				<br>
+				<p class="step">step 1</p>
+				<p class="sentence">The sun is shining. The ducks are swimming in the pond.</p>
+				<br>
+				<p class="step">step 2</p>
+				<p class="sentence"><span class="gray-word">The</span> sun <span class="gray-word">is</span> shining. <span class="gray-word">The</span> ducks <span class="gray-word">are</span> swimming <span class="gray-word">in</span> <span class="gray-word">the</span> pond.</p>
+				<br>
+				<p class="step">step 3</p>
+				<img id="curve-1" class="curve" src="imgs/curve.svg" alt="curve">
+				<img id="curve-2" class="curve" src="imgs/curve.svg" alt="curve">
+				<img id="curve-3" class="curve" src="imgs/curve.svg" alt="curve">
+				<p class="sentence"><span class="gray-word">The</span> <span id="sun">sun</span> <span class="gray-word">is</span> <span id="shining">shining</span>. <span class="gray-word">The</span> <span id="ducks">ducks</span> <span class="gray-word">are</span> <span id="swimming">swimming</span> <span class="gray-word">in</span> <span class="gray-word">the</span> <span id="pond">pond</span>.</p>
+				<img id="curve-4" class="curve" src="imgs/curve-updown-2.svg" alt="curve">
+				<div class="website-div hidden" id="susana-div">http://carvalho-bernau.com/</div>
+				<div class="website-div hidden" id="kai-div">http://carvalho-bernau.com/</div>
+				<div class="website-div hidden" id="daniel-div">http://danielh.info</div>
+				<div class="website-div hidden" id="dora-div">http://www.dorakerekes.info</div>
+				<br>
+				<p class="step">results:</p>
+				<p class="pairs">sun &harr; shining</p>
+				<p class="pairs">ducks &harr; swimming</p>
+				<p class="pairs">ducks &harr; pond</p>
+				<p class="pairs">swimming &harr; pond</p>
+			</div>
 			<br>
 			<br>
-			<p>Credits:</p>
-			<p>Concept &#38; Development by <a href="http://www.cant-handle-this.danielh.info/">Daniel Hernández</a> &#38; <a href="http://www.dorakerekes.info/">Dora Kerekes</a></p>
-			<p>Supervised by Niels Schrader and Lauren Alexander</p>
-			<p>Theory component tutoring by Maarten Cornel</p>
-			<p>Special thanks to <a href="http://carvalho-bernau.com/">Susana Carvalho</a> and <a href="http://carvalho-bernau.com/">Kai Bernau</a> for providing us their Atlas typeface family</p>
+			<div id="credits">
+				<p>Credits:</p>
+				<p>Concept &#38; Development by <span id="daniel">Daniel Hernández</span> &#38; <span id="dora">Dóra Kerekes</span></p>
+				<p>Supervised by Niels Schrader and Lauren Alexander</p>
+				<p>Theory component tutoring by Maarten Cornel</p>
+				<p>Special thanks to <span id="susana">Susana Carvalho</span> and <span id="kai">Kai Bernau</span> for providing us their Atlas typeface family</p>
+			</div>
 		</div>
 		<div id="x-button">&#10005;</div>	
 	</div>

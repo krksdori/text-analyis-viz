@@ -26,12 +26,85 @@ $( "#back-button" ).click(function() {
 
 $( "#about-button" ).click(function() {
 	$("#about-page-wrap").removeClass("hidden");
+	$("#canvas-info").removeClass("hidden");
+	// infoLines();
 	
 });
 
-$('#x-button').click(function(){
+$('#x-button').click(function() {
 	$("#about-page-wrap").addClass("hidden");
+	$("#canvas-info").addClass("hidden");
 });
+
+
+$("#daniel").click(function() { //this is kinda stupid to repeat but i can't come up with it now how to write it nicely
+    var $target = $('#daniel-div'),
+        $toggle = $(this);
+    var pos = $(this).position();
+
+     $('#daniel-div').css({
+        position: "absolute",
+        top: (pos.top - 50) + "px",
+         left: pos.left  + "px"
+    });
+
+    $target.slideToggle( 300, function () {
+        $toggle.text(($target.is(':visible') ? 'Daniel Hernández' : 'Daniel Hernández'));
+    });
+});
+
+
+$("#dora").click(function() { //this is kinda stupid to repeat but i can't come up with it now how to write it nicely
+    var $target = $('#dora-div'),
+        $toggle = $(this);
+    var pos = $(this).position();
+
+     $('#dora-div').css({
+        position: "absolute",
+        top: (pos.top - 50) + "px",
+         left: pos.left  + "px"
+    });
+
+    $target.slideToggle( 300, function () {
+        $toggle.text(($target.is(':visible') ? 'Dóra Kerekes' : 'Dóra Kerekes'));
+    });
+});
+
+
+$("#kai").click(function() { //this is kinda stupid to repeat but i can't come up with it now how to write it nicely
+    var $target = $('#kai-div'),
+        $toggle = $(this);
+    var pos = $(this).position();
+
+     $('#kai-div').css({
+        position: "absolute",
+        top: (pos.top - 50) + "px",
+         left: pos.left  + "px"
+    });
+
+    $target.slideToggle( 300, function () {
+        $toggle.text(($target.is(':visible') ? 'Kai Bernau' : 'Kai Bernau'));
+    });
+});
+
+
+$("#susana").click(function() { //this is kinda stupid to repeat but i can't come up with it now how to write it nicely
+    var $target = $('#susana-div'),
+        $toggle = $(this);
+    var pos = $(this).position();
+
+     $('#susana-div').css({
+        position: "absolute",
+        top: (pos.top - 50) + "px",
+         left: pos.left  + "px"
+    });
+
+    $target.slideToggle( 300, function () {
+        $toggle.text(($target.is(':visible') ? 'Susana Carvalho' : 'Susana Carvalho'));
+    });
+});
+
+
 
 var eArticle;
 var wArticle;
@@ -347,3 +420,31 @@ function canvasLines() {
 		});
     }
 }
+
+
+// function infoLines() {
+//     var canvas = document.getElementById('canvas-info'),
+//     	ctx = canvas.getContext('2d');
+//     	console.log('this works');
+
+//     window.addEventListener('resize', resizeCanvas, false);
+
+//     function resizeCanvas() {
+//             canvas.width = window.innerWidth;
+//             canvas.height = window.innerHeight;
+//             // drawStuff(); 
+            
+//     }
+
+//    	ctx.beginPath();
+// 	ctx.moveTo(15, 30);
+// 	ctx.quadraticCurveTo(30, 5, 45, 30);
+// 	// ctx.strokeStyle = '#ff0000';
+// 	ctx.stroke()
+
+
+// 	if ($('#about-page-wrap').hasClass( "hidden" )){
+// 		console.log("stop");
+// 	}
+
+// }
