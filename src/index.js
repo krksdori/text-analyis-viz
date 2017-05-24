@@ -161,6 +161,7 @@ function menuClickExecute(link, index){
 function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	let lowerCaseArt = art.toLowerCase();
 	let splArt = lowerCaseArt.split(".");
+	console.log(splArt);
 	let wordArray = [];
 	let count = [];
 	let wordCount = 0;
