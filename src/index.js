@@ -163,8 +163,8 @@ function menuClickExecute(link, index){
 		appendArt(eArticle,eConn,"encyText","encyLog","ency");
 		appendArt(wArticle,wConn,"wikiText","wikiLog","wiki");
 
-		// mainF(eArticle,eConn,"#encyText","#encyLog","ency");
-		// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
+		mainF(eArticle,eConn,"#encyText","#encyLog","ency");
+		mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
 		canvasLines();
 
 		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").text("Encyclopédie – " + currentTitle);
@@ -195,7 +195,6 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	for (let i = 0; i < splArt.length; i++) {
 		wordArray.push(splArt[i].split(" "));
 	}
-
 	function findConn(index,searchNo,search1,search2){
 		let indof0 = wordArray[index].indexOf(search1);
 		let indof1 = wordArray[index].indexOf(search2);
@@ -254,6 +253,7 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 	for (let i = 0; i < sentences.length; i++) {
 	   wordArray.push(sentences[i].split(" "));
 	 }
+	 // console.log(wordArray);
 
 	var count = 0;
 	for (var i = 0; i < wordArray.length; i++) {
@@ -292,6 +292,18 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 	// 	}
 	// }
 
+	var combinedTxt = "";
+
+	for (let j = 0; j < wordArray.length; j++) {
+		for (let i = 0; i < wordArray[j].length; i++) {
+	    	combinedTxt += `<span id='${wikiOrEncy}${j}_${i}'>${wordArray[j][i]}</span> `;
+		}
+	}
+
+	$("#"+div).append(combinedTxt);
+
+	console.log(combinedTxt);
+
 	var time = 0;
 	var index = 0;
 	var switchOnce = true;
@@ -316,14 +328,14 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 				switchOnce = false;
 
 				function runAfterAnim(){ ///everything afer animation goes here
-					mainF(eArticle,eConn,"#encyText","#encyLog","ency");
-					mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
+					// mainF(eArticle,eConn,"#encyText","#encyLog","ency");
+					// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
 					// canvasLines();					
 				}
 			}
 		}, 20);
 	}
-	animateText();
+	// animateText();
 }
 
 function getPercentage(arr){
