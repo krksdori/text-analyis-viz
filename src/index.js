@@ -141,10 +141,7 @@ let encyConnIndex = [];
 let wikiConnIndex = [];
 
 
-for (var i = 0; i < numConn; i++) {
-	encyConnIndex[i]=[];
-	wikiConnIndex[i]=[];
-}
+
 
 function menuClickExecute(link, index){
 	$( "#link"+link ).click(function() {
@@ -182,6 +179,16 @@ function menuClickExecute(link, index){
 }
 
 function mainF(art,conn,textDest,logDest, wikiOrEncy){
+	if (wikiOrEncy == "ency") {
+		for (var i = 0; i < numConn; i++) {
+			encyConnIndex[i]=[];
+		}
+	} else {
+		for (var i = 0; i < numConn; i++) {
+			wikiConnIndex[i]=[];
+		}
+	}
+
 	let lowerCaseArt = art.toLowerCase();
 	let splArt = lowerCaseArt.split(".");
 	console.log(splArt);
