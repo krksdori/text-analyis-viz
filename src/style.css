@@ -102,13 +102,21 @@ canvas {
 
 .logcon {
 	font-family: AtlasGrotesk-Reg;
+}
 
+.logcon:hover {
+	font-family: AtlasGrotesk-Med;
 }
 
 #encyLog {
 }
 
 #wikiLog {
+}
+
+#page-wrapper{
+/*	position: fixed;
+	overflow: scroll;*/
 }
 
 
@@ -122,6 +130,7 @@ canvas {
 	cursor: pointer;
 	text-align: center;
 	z-index: 30;
+/*	overflow: scroll;*/
 }
 
 #menu a:link {
@@ -145,11 +154,13 @@ canvas {
 
 #selectArtcileText {
 	font-family: AtlasType-Reg;
+	top: 20px;
+	position: fixed;
 }
 
 #about-button {
 	font-family: AtlasType-Reg;
-	position: absolute;
+	position: fixed;
 	top: 45px;
 }
 
