@@ -36,19 +36,15 @@ body {
 h2 {
 	font-size: 12pt;
 	font-family: AtlasGrotesk-Med;
-	color:blue;
 }
 
 h3 {
 	font-size: 14pt;
 	font-family: AtlasGrotesk-Med;
-	color:red;
 }
 
 h4 {
 	font-size: 16pt;
-	color:green;
-
 }
 
 canvas {
@@ -324,7 +320,7 @@ canvas {
 	font-size: 16pt;
 	width: 400px;
 	position: fixed;
-	padding-top: 15px;
+	/*padding-top: 15px;*/
 }
 
 .artYear {
@@ -347,7 +343,7 @@ canvas {
 	right: calc(5% + 2px);
 	cursor: pointer;
 	z-index: 3;
-	padding-top: 15px;
+	/*padding-top: 15px;*/
 }
 
 #back-button:hover {
