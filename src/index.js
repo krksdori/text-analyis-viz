@@ -157,8 +157,8 @@ function menuClickExecute(link, index){
 		var wYear = articles[index].wYear;
 		var eYear = articles[index].eYear;
 
-		appendArt(eArticle,eConn,"encyText","encyLog","ency");
-		appendArt(wArticle,wConn,"wikiText","wikiLog","wiki");
+		appendArt(eArticle,eConn,"encyText","encyLog","ency", index);
+		appendArt(wArticle,wConn,"wikiText","wikiLog","wiki", index);
 
 		mainF(eArticle,eConn,"#encyText","#encyLog","ency");
 		mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
@@ -248,7 +248,7 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	}
 }
 
-function appendArt(art,conn,div,logDiv,wikiOrEncy){
+function appendArt(art,conn,div,logDiv,wikiOrEncy, index){
 	var article = art;
 	var sentences = article.split(".");
 
@@ -288,9 +288,9 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 	$("#"+div).empty();
 
 	if (wikiOrEncy == "wiki") {
-		$("#source"+wikiOrEncy).html(`<a href="${articles[0].wSource}">Source</a>`);
+		$("#source"+wikiOrEncy).html(`Source:<br>${articles[index].wSource}`);
 	}else{
-		$("#source"+wikiOrEncy).html(`<a href="${articles[0].eSource}">Source</a>`);
+		$("#source"+wikiOrEncy).html(`Source:<br>${articles[index].eSource}`);
 	} /////////////FIXFIXFIXFIXFIXFIXFIXFIXFIXFIX
  
  	// old append without animation
