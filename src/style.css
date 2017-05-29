@@ -193,6 +193,7 @@ canvas {
 	position:relative;
 	font-size: 23px;
     line-height: 32px;
+    max-width: 750px;
 }
 
 #credits span {
@@ -231,27 +232,27 @@ canvas {
 }
 
 #curve-1 {
-	width: 8vw;
+	width: 130px;
 	bottom: 795px;
-	left: 80px;
+	left: 75px;
 }
 
 #curve-2 {
-	width: 8vw;
+	width: 130px;
 	bottom: 795px;
 	left: 320px;
 }
 
 #curve-3 {
-	width: 8vw;
+	width: 130px;
 	bottom: 795px;
 	left: 480px;
 }
 
 #curve-4 {
-	width: 20vw;
+	width: 300px;
 	bottom: 705px;
-	left: 300px;/*
+	left: 308px;/*
 	height: 2vh;*/
 }
 
@@ -344,7 +345,8 @@ canvas {
 
 
 .wiki-header-title {
-	left: calc(51% + 4px);
+	left: calc(50% + 18px);
+	/*left: 50%;*/
 }
 
 ::-webkit-scrollbar { 

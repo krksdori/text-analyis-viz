@@ -308,7 +308,7 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy){
 		}
 	}
 
-	$("#"+div).append(combinedTxt);
+	$("#"+div).append(combinedTxt+"<br><br><br><br><br><br>");
 
 	console.log(combinedTxt);
 
