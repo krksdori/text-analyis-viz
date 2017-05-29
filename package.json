@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack/dev.config.js",
-    "build": "mkdir -p dist && rm dist/* && webpack -p --progress --profile --colors --config ./webpack/prod.config.js"
+    "build-wrong": "mkdir -p dist && rm dist/* && webpack -p --progress --profile --colors --config ./webpack/prod.config.js",
+    "build": "webpack -p --progress --profile --colors --config ./webpack/prod.config.js"
   },
   "keywords": [],
   "author": "",

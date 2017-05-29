@@ -4,11 +4,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     devtool: false,
     entry: {
-        'dist/mindmap': './src/mindmap/index.js',
+        'dist': './src/index.js',
     },
     output: {
         path: './',
-        filename: '[name].js',
+        filename: 'dist/[name].js',
     },
     module:{
         rules:[
