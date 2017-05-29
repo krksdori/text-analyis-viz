@@ -54,8 +54,8 @@ export default [
 	wYear: 2017,
 	eSource: "Vol. 5 (1755), pp. 146–147",
 	wSource: "Wikipedia (28.05.2017)",
-	eConn: [],
-	wConn: [],
+	eConn: ["rights","work","author","work","literary","work","first","country","work","country","publisher","work","privilege","printing","rights","publisher","ownership","work","approval","privilege"],
+	wConn: ["copyright","work","berne","convention","united","states","copyright","holder","work","copyright","copyright","use","copyright","convention","copyright","laws","article","copyright","states","copy"],
 	eArt: `
 	<p> Copyright, a term in Publishing and bookselling , is the ownership that a publisher exercises over a literary work, whether manuscript or printed, and which he holds from the author himself or from one or more men of letters that the author has authorized or in a case where the work was created and first printed in a foreign country, and the publisher believes that he is the first to print it in his own country. It is called copyright because the author retains, or is presumed to retain, the original of his work and to deliver only a copy of it to the publisher from which to print. The author cedes his rights over his work; the publisher receives only a copy of the work; from this arises the habit of speaking of copyright which means, correctly, the right of ownership of the work . The term was devised to refer to the first case; it was then adopted to refer to the second, to which it is equally applicable: as for the third, it is by extension that one calls copyright the rights that the publisher acquires over a work previous published in a foreign country which he believes he is the first to print in his own country; however, until the present, this extension was justified [only] by custom. The right was always regarded as incontestable by publishers in all countries; for all that, it has sometimes been contested. In order to give a clear and comprehensible explanation of the right, and in what it consists, we shall describe separately the different ways in which a publisher becomes, or is able to become, the owner of a literary work. We shall also describe the privileges that sovereigns award for the printing of books because those who have contested the copyright of publishers have sometimes based their attacks on the limited duration of these privileges.</p>
     <p> The publisher’s rights that he holds from the author over a literary work are the same as the author’s rights over his own work and these seem to be incontestable. If there is on earth any state of freedom it is assuredly that of men of letters: if Nature contains anything whose ownership cannot be disputed with those who possess it, it must be these products of the mind. For about a hundred years after the invention of printing all authors or their appointed representatives in France were free to print without the need to obtain any authorisation; there were abuses [of this freedom] and, to remedy these, our kings established laws to govern printing with the object of maintaining unsullied in the kingdom religion, customs and public peace. These laws require that any work to be printed must carry approval and a licence or privilege from the king see Approval, Censor, Registration of printing privileges, Privilege (Printing Privilege; Privilege, Printing). The Approval is purely regulatory, the Privilege is a act both of justice and of protection by which the sovereign guarantees the right of printing and sale of a work to its the owner and forbids it to all others within his realms. This exclusion is no doubt an act of grace from the prince but it changes nothing about the nature of ownership: on the contrary it is founded on the justice of putting the [only the] proprietor in a position to reap the fruits of his labour and his outlay.</p>
@@ -967,7 +967,92 @@ export default [
 	<p> From this solitary state we have passed to man in society and have proposed certain general principles according to which the ruling powers could derive more advantages. This article is entitled Man (Political science).</p>
 	<p> One could have increased infinitely the glimpses one has of man. His curiosity, his work, his needs relate him to all aspects of nature. There is nothing that cannot be linked to him. This is proven by the various articles in this work where one will see man either trying to know what surrounds him or striving to make use of his environment.</p>
 	`,
-	wArt:``
+	wArt:`
+	<p>A man is a male human. The term man is usually reserved for an adult male, with the term boy being the usual term for a male child or adolescent. However, the term man is also sometimes used to identify a male human, regardless of age, as in phrases such as "men's basketball".</p>
+
+	<p>Like most other male mammals, a man's genome typically inherits an X chromosome from his mother and a Y chromosome from his father. The male fetus produces larger amounts of androgens and smaller amounts of estrogens than a female fetus. This difference in the relative amounts of these sex steroids is largely responsible for the physiological differences that distinguish men from women. During puberty, hormones which stimulate androgen production result in the development of secondary sexual characteristics, thus exhibiting greater differences between the sexes. However, there are exceptions to the above for some transgender and intersex men.</p>
+	<br>
+	<br>
+	<h4>Etymology</h4>
+	<br>
+	<p>The English term "man" is derived from a Proto-Indo-European root *man- (see Sanskrit/Avestan manu-, Slavic mǫž "man, male").[1] More directly, the word derives from Old English mann. The Old English form had a default meaning of "adult male" (which was the exclusive meaning of wer), though it could also signify a person of unspecified gender. The closely related Old English pronoun man was used just as it is in Modern German to designate "one" (e. g., in the saying man muss mit den Wölfen heulen).[2] The Old English form is derived from Proto-Germanic *mannz, "human being, person", which is also the etymon of German Mann "man, husband" and man "one" (pronoun), Old Norse maðr, and Gothic manna. According to Tacitus, the mythological progenitor of the Germanic tribes was called Mannus. *Manus in Indo-European mythology was the first man, see Mannus, Manu (Hinduism).</p>
+	<br>
+	<br>
+	<h4>Age and terminology</h4>
+	<br>
+	<p>The term manhood is used to describe the period in a human male's life after he has transitioned from boyhood, having passed through puberty, usually having attained male secondary sexual characteristics, and symbolises a male's coming of age. The word man is used to mean any adult male. In English-speaking countries, many other words can also be used to mean an adult male such as guy, dude, buddy, bloke, fellow, chap and sometimes boy or lad. The term manhood is associated with masculinity and virility, which refer to male qualities and male gender roles.</p>
+	<br>
+	<br>
+	<h4>Biology and sex</h4>
+	<br>
+	<p>Humans exhibit sexual dimorphism in many characteristics, many of which have no direct link to reproductive ability, although most of these characteristics do have a role in sexual attraction. Most expressions of sexual dimorphism in humans are found in height, weight, and body structure, though there are always examples that do not follow the overall pattern. For example, men tend to be taller than women, but there are many people of both sexes who are in the mid-height range for the species.</p>
+	<p>• Some examples of male secondary sexual characteristics in humans, those acquired as boys become men or even later in life, are:</p>
+	<p>• more pubic hair</p>
+	<p>• more facial hair</p>
+	<p>• larger hands and feet</p>
+	<p>• broader shoulders and chest</p>
+	<p>• larger skull and bone structure</p>
+	<p>• larger brain mass and volume</p>
+	<p>• greater muscle mass</p>
+	<p>• a more prominent Adam's apple and deeper voice</p>
+	<p>• greater height</p>
+	<p>• a higher tibia:femur ratio (a longer shinbone in comparison to the thighbone)</p>
+	<br>
+	<br>
+	<h3>Sexual characteristics</h3>
+	<br>
+	<p>In mankind, the sex of an individual is generally determined at the time of fertilization by the genetic material carried in the sperm cell. If a sperm cell carrying an X chromosome fertilizes the egg, the offspring will typically be female (XX); if a sperm cell carrying a Y chromosome fertilizes the egg, the offspring will typically be male (XY). Persons whose anatomy or chromosomal makeup differ from this pattern are referred to as intersex.</p>
+	<p>This is referred to as the XY sex-determination system and is typical of most mammals, but quite a few other sex-determination systems exist, including some that are non-genetic.</p>
+	<p>The term primary sexual characteristics denotes the kind of gamete the gonad produces: the ovary produces egg cells in the female, and the testis produces sperm cells in the male. The term secondary sexual characteristics denotes all other sexual distinctions that play indirect roles in uniting sperm and eggs. Secondary sexual characteristics include everything from the specialized male and female features of the genital tract, to the brilliant plumage of male birds or facial hair of humans, to behavioral features such as courtship.</p>
+	<br>
+	<br>
+	<h3>Gender</h3>
+	<br>
+	<p>Biological factors are not sufficient determinants of whether a person considers themselves a man or is considered a man. Intersex individuals, who have physical or genetic features considered to be mixed or atypical for one sex or the other, may use other criteria in making a clear determination. There are also transgender and transsexual men, who were assigned as female at birth, but identify as men; there are varying social, legal and individual definitions with regard to these issues. (See transman.)</p>
+	<br>
+	<br>
+	<h3>Reproductive system</h3>
+	<br>
+	<p>Human male reproductive anatomy and surroundings.</p>
+	<p>The male sex organs are part of the reproductive system, consisting of the penis, testicles, vas deferens, and the prostate gland. The male reproductive system's function is to produce semen which carries sperm and thus genetic information that can unite with an egg within a woman. Since sperm that enters a woman's uterus and then fallopian tubes goes on to fertilize an egg which develops into a fetus or child, the male reproductive system plays no necessary role during the gestation. The concept of fatherhood and family exists in human societies. The study of male reproduction and associated organs is called andrology.</p>
+	<br>
+	<br>
+	<h3>Sex hormones</h3>
+	<br>
+	<p>In mammals, the hormones that influence sexual differentiation and development are androgens (mainly testosterone), which stimulate later development of the ovary. In the sexually undifferentiated embryo, testosterone stimulates the development of the Wolffian ducts, the penis, and closure of the labioscrotal folds into the scrotum. Another significant hormone in sexual differentiation is the Anti-müllerian hormone, which inhibits development of the Müllerian ducts.</p>
+	<br>
+	<br>
+	<h3>Illnesses</h3>
+	<br>
+	<p>In general, men suffer from many of the same illnesses as women. In comparison to women, men suffer from slightly more illnesses.[citation needed] Male life expectancy is slightly lower than female life expectancy, although the difference has narrowed in recent years.</p>
+	<p>For males during puberty, testosterone, along with gonadotropins released by the pituitary gland, stimulates spermatogenesis, along with the full sexual distinction of a human male from a human female, while women are acted upon by estrogens and progesterones to produce their sexual distinction from the human male.</p>
+	<br>
+	<br>
+	<h4>Masculinity</h4>
+	<br>
+	<p>The examples and perspective in this article may not represent a worldwide view of the subject. You may improve this article, discuss the issue on the talk page, or create a new article, as appropriate. (December 2010) (Learn how and when to remove this template message)</p>
+	<p>Michelangelo's David is the classical image of youthful male beauty in Western art.</p>
+	<p>Masculinity has its roots in genetics (see gender).[4][5] Therefore, while masculinity looks different in different cultures, there are common aspects to its definition across cultures.[6] Sometimes gender scholars will use the phrase "hegemonic masculinity" to distinguish the most dominant form of masculinity from other variants. In the mid-twentieth century United States, for example, John Wayne might embody one form of masculinity, while Albert Einstein might be seen as masculine, but not in the same "hegemonic" fashion.</p>
+	<p>Anthropology has shown that masculinity itself has social status, just like wealth, race and social class. In western culture, for example, greater masculinity usually brings greater social status. Many English words such as virtue and virile (from the Indo-European root vir meaning man) reflect this.[7][8] An association with physical or moral strength is implied. Masculinity is associated more commonly with adult men than with boys.</p>
+	<p>A great deal is now known about the development of masculine characteristics. The process of sexual differentiation specific to the reproductive system of Homo sapiens produces a female by default. The SRY gene on the Y chromosome, however, interferes with the default process, causing a chain of events that, all things being equal, leads to testes formation, androgen production, and a range of both pre-natal and post-natal hormonal effects covered by the terms masculinization or virilization. Because masculinization redirects biological processes from the default female route, it is more precisely called defeminization.</p>
+	<p>There is an extensive debate about how children develop gender identities.</p>
+	<p>In many cultures displaying characteristics not typical to one's gender may become a social problem for the individual. Among men, the exhibition of feminine behavior may be considered a sign of homosexuality, while the same is for a woman who exhibits masculine behavior. Within sociology such labeling and conditioning is known as gender assumptions and is a part of socialization to better match a culture's mores. The corresponding social condemnation of excessive masculinity may be expressed in terms such as "machismo" or "testosterone poisoning."</p>
+	<p>The relative importance of the roles of socialization and genetics in the development of masculinity continues to be debated. While social conditioning obviously plays a role, it can also be observed that certain aspects of the masculine identity exist in almost all human cultures.</p>
+	<p>The historical development of gender role is addressed by such fields as behavioral genetics, evolutionary psychology, human ecology and sociobiology. All human cultures seem to encourage the development of gender roles, through literature, costume and song. Some examples of this might include the epics of Homer, the King Arthur tales in English, the normative commentaries of Confucius or biographical studies of Muhammad. More specialized treatments of masculinity may be found in works such as the Bhagavad Gita or bushido's Hagakure.</p>
+	<br>
+	<br>
+	<h4>Culture and gender roles</h4>
+	<br>
+	<p>Well into prehistoric culture, men are believed to have assumed a variety of social and cultural roles which are likely similar across many groups of humans. In hunter-gatherer societies, men were often if not exclusively responsible for all large game killed, the capture and raising of most or all domesticated animals, the building of permanent shelters, the defense of villages, and other tasks where the male physique and strong spatial-cognition were most useful.[citation needed] Some anthropologists believe that it may have been men who led the Neolithic Revolution and became the first pre-historical ranchers, as a possible result of their intimate knowledge of animal life.[citation needed]</p>
+	<p>Throughout history, the roles of men have changed greatly. As societies have moved away from agriculture as a primary source of jobs, the emphasis on male physical ability has waned. Traditional gender roles for working men typically involved jobs emphasizing moderate to hard manual labor (see Blue-collar worker), often with no hope for increase in wage or position. For poorer men among the working classes, the need to support their families, especially during periods of industrial change and economic decline, forced them to stay in dangerous jobs working long arduous hours, often without retirement. Many industrialized countries have seen a shift to jobs which are less physically demanding, with a general reduction in the percentage of manual labor needed in the work force (see White-collar worker). The male goal in these circumstances is often of pursuing a quality education and securing a dependable, often office-environment, source of income.</p>
+	<p>The Men's Movement is in part a struggle for the recognition of equality of opportunity with women, and for equal rights irrespective of gender, even if special relations and conditions are willingly incurred under the form of partnership involved in marriage. The difficulties of obtaining this recognition are due to the habits and customs recent history has produced. Through a combination of economic changes and the efforts of the feminist movement in recent decades, men in some societies now compete with women for jobs that traditionally excluded women. Some larger corporations have instituted tracking systems to try to ensure that jobs are filled based on merit and not just on traditional gender selection. Assumptions and expectations based on sex roles both benefit and harm men in Western society (as they do women, but in different ways) in the workplace as well as on the topics of education, violence, health care, politics, and fatherhood - to name a few. Research has identified anti-male sexism in some areas which can result in what appear to be unfair advantages given to women.[citation needed]</p>
+	<p>The Parsons model was used to contrast and illustrate extreme positions on gender roles. Model A describes total separation of male and female roles, while Model B describes the complete dissolution of barriers between gender roles.[9] The examples are based on the context of the culture and infrastructure of the United States. However, these extreme positions are rarely found in reality; actual behavior of individuals is usually somewhere between these poles. The most common 'model' followed in real life in the United States and Great Britain is the 'model of double burden'.[clarification needed]</p>
+	<br>
+	<br>
+	<h3>Exclusively male roles</h3>
+	<br>
+	<p>Some positions and titles are reserved for men only. For example, the position of Pope and Bishop in the Roman Catholic Church. Also the priesthood is exclusively male in the Catholic Church and also some other religious traditions. Men are often given priority for the position of monarch (King in the case of a man) of a country, as it usually passes to the eldest male child upon succession.</p>
+	`
 
 }, {
 	title: "Monarchy",
