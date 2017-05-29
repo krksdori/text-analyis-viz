@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: AtlasGrotesk-Med-Ita;
+    src: url(./fonts/AtlasGrotesk-RegularItalic.otf);
+}
+
+@font-face {
     font-family: AtlasType-Reg;
     src: url(./fonts/Atlas-Typewriter-Regular.otf);
 }
@@ -98,6 +103,7 @@ canvas {
 	padding: 21px;
 	flex: 2;
 	cursor: pointer;
+	line-height: 17px;
 }
 
 .logcon {
@@ -121,20 +127,22 @@ canvas {
 
 
 #menu-wrapper {
-	margin: 20px;
+	padding: 20px;
 }
 
 #menu {
-	font-size: 60px;
-	font-family: AtlasType-Reg;
+	font-size: 100px;
+	font-family: AtlasGrotesk-Reg;
 	cursor: pointer;
 	text-align: center;
 	z-index: 30;
+	line-height: 110px;
+	/*background-color: black;*/
 /*	overflow: scroll;*/
 }
 
 #menu a:link {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -144,12 +152,12 @@ canvas {
 
 #menu a:hover {
     color: blue;
-    font-family: AtlasType-Italic;
+    font-family: AtlasGrotesk-Med-Ita;
 }
 
 #menu a:active {
     color: blue;
-    font-family: AtlasType-Italic;
+    font-family: AtlasGrotesk-Med-Ita;
 }
 
 #selectArtcileText {
@@ -193,6 +201,7 @@ canvas {
 	position:relative;
 	font-size: 23px;
     line-height: 32px;
+    max-width: 750px;
 }
 
 #credits span {
@@ -231,27 +240,27 @@ canvas {
 }
 
 #curve-1 {
-	width: 8vw;
+	width: 130px;
 	bottom: 795px;
-	left: 80px;
+	left: 75px;
 }
 
 #curve-2 {
-	width: 8vw;
+	width: 130px;
 	bottom: 795px;
 	left: 320px;
 }
 
 #curve-3 {
-	width: 8vw;
+	width: 130px;
 	bottom: 795px;
 	left: 480px;
 }
 
 #curve-4 {
-	width: 20vw;
+	width: 300px;
 	bottom: 705px;
-	left: 300px;/*
+	left: 308px;/*
 	height: 2vh;*/
 }
 
@@ -344,7 +353,8 @@ canvas {
 
 
 .wiki-header-title {
-	left: calc(51% + 4px);
+	left: calc(50% + 18px);
+	/*left: 50%;*/
 }
 
 ::-webkit-scrollbar { 
@@ -369,7 +379,9 @@ canvas {
 }*/
 
 .hl{
-	transition: 4s;
+	transition: 3s;
+	padding: 1px;
+	padding-top: 2px;
 }
 
 
@@ -379,7 +391,7 @@ canvas {
 
 
 .encyhl0{
-	background-color: rgb(229,229,229);
+	background-color: rgb(198, 198, 198);
 	color: black;
 }
 
@@ -439,8 +451,8 @@ canvas {
 }
 
 .wikihl0{
-	background-color: rgb(255,140,0);
-	color: black;
+	background-color: rgba(0,0,255,0.9);
+	color: white;
 }
 
 .wikihl1{
@@ -455,7 +467,7 @@ canvas {
 
 .wikihl3{
 	background-color: rgb(255,69,0);
-	color: black;
+	color: white;
 }
 
 .wikihl4{
@@ -465,7 +477,7 @@ canvas {
 
 .wikihl5{
 	background-color: rgb(211,0,255);
-	color: black;
+	color: white;
 }
 
 .wikihl6{
@@ -485,7 +497,7 @@ canvas {
 
 .wikihl9{
 	background-color: rgb(255,20,147);
-	color: black;
+	color: white;
 }
 
 .wikihl10{
