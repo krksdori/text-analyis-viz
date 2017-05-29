@@ -33,13 +33,22 @@ body {
 	margin: 0px;
 }
 
-h1 {
-	font-size: 20px;
+h2 {
+	font-size: 12pt;
+	font-family: AtlasGrotesk-Med;
+	color:blue;
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 14pt;
 	font-family: AtlasGrotesk-Med;
+	color:red;
+}
+
+h4 {
+	font-size: 16pt;
+	color:green;
+
 }
 
 canvas {
@@ -85,9 +94,7 @@ canvas {
 	color: black;
 	flex: 4;
 }
- h2{
- 	font-size: 20px;
- }
+
 
 #wikiText {
 
@@ -314,7 +321,7 @@ canvas {
 
 .header-title {
 	font-family: AtlasType-Medium;
-	font-size: 20px;
+	font-size: 16pt;
 	width: 400px;
 	position: fixed;
 	padding-top: 15px;
