@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: AtlasGrotesk-Med-Ita;
+    src: url(./fonts/AtlasGrotesk-RegularItalic.otf);
+}
+
+@font-face {
     font-family: AtlasType-Reg;
     src: url(./fonts/Atlas-Typewriter-Regular.otf);
 }
@@ -98,6 +103,7 @@ canvas {
 	padding: 21px;
 	flex: 2;
 	cursor: pointer;
+	line-height: 17px;
 }
 
 .logcon {
@@ -121,20 +127,22 @@ canvas {
 
 
 #menu-wrapper {
-	margin: 20px;
+	padding: 20px;
 }
 
 #menu {
-	font-size: 60px;
-	font-family: AtlasType-Reg;
+	font-size: 100px;
+	font-family: AtlasGrotesk-Reg;
 	cursor: pointer;
 	text-align: center;
 	z-index: 30;
+	line-height: 110px;
+	/*background-color: black;*/
 /*	overflow: scroll;*/
 }
 
 #menu a:link {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -144,12 +152,12 @@ canvas {
 
 #menu a:hover {
     color: blue;
-    font-family: AtlasType-Italic;
+    font-family: AtlasGrotesk-Med-Ita;
 }
 
 #menu a:active {
     color: blue;
-    font-family: AtlasType-Italic;
+    font-family: AtlasGrotesk-Med-Ita;
 }
 
 #selectArtcileText {
@@ -371,7 +379,9 @@ canvas {
 }*/
 
 .hl{
-	transition: 4s;
+	transition: 3s;
+	padding: 1px;
+	padding-top: 2px;
 }
 
 
@@ -381,7 +391,7 @@ canvas {
 
 
 .encyhl0{
-	background-color: rgb(229,229,229);
+	background-color: rgb(198, 198, 198);
 	color: black;
 }
 
@@ -441,8 +451,8 @@ canvas {
 }
 
 .wikihl0{
-	background-color: rgb(255,140,0);
-	color: black;
+	background-color: rgba(0,0,255,0.9);
+	color: white;
 }
 
 .wikihl1{
@@ -457,7 +467,7 @@ canvas {
 
 .wikihl3{
 	background-color: rgb(255,69,0);
-	color: black;
+	color: white;
 }
 
 .wikihl4{
@@ -467,7 +477,7 @@ canvas {
 
 .wikihl5{
 	background-color: rgb(211,0,255);
-	color: black;
+	color: white;
 }
 
 .wikihl6{
@@ -487,7 +497,7 @@ canvas {
 
 .wikihl9{
 	background-color: rgb(255,20,147);
-	color: black;
+	color: white;
 }
 
 .wikihl10{
