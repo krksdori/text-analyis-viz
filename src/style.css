@@ -143,7 +143,7 @@ canvas {
 	/*cursor: pointer;*/
 	/*text-align: center;*/
 	z-index: 30;
-	margin-top: 100px;
+	margin-top:80px;
 	/*line-height: 110px;*/
 	/*background-color: black;*/
 /*	overflow: scroll;*/
@@ -151,10 +151,11 @@ canvas {
 
 .menuLetter{
 	/*border: 1px dashed red;*/
-	width: 20%;
-	height: 350px;
+	width: 16.66666%;
+	height: 398px;
 	float: left;
 	padding-right: 20px;
+	/*padding-bottom: 80px;*/
 	/*display: inline-grid;*/
 }
 

@@ -63,7 +63,6 @@ for (var i = 0; i < articles.length; i++) {
 	}
 	menuClickExecute(articles[i].title, i);
 }
-
 ///////////////////////
 
 
