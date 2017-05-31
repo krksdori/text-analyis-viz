@@ -2266,6 +2266,46 @@ export default [
 	<p> Academic historians have often fought against the politicization of the textbooks, sometimes with success.</p>
 	<p> In 21st-century Germany, the history curriculum is controlled by the 16 states, and is characterized not by superpatriotism but rather by an "almost pacifistic and deliberately unpatriotic undertone" and reflects "principles formulated by international organizations such as UNESCO or the Council of Europe, thus oriented towards human rights, democracy and peace." The result is that "German textbooks usually downplay national pride and ambitions and aim to develop an understanding of citizenship centred on democracy, progress, human rights, peace, tolerance and Europeanness."</p>`
 },{
+	title: "Japan",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Language",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "London",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Magic",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
 	title: "Man",
 	eYear: 1765,
 	wYear: 2017,
@@ -2346,6 +2386,16 @@ export default [
 	<h3>Exclusively male roles</h3>
 	<p>Some positions and titles are reserved for men only. For example, the position of Pope and Bishop in the Roman Catholic Church. Also the priesthood is exclusively male in the Catholic Church and also some other religious traditions. Men are often given priority for the position of monarch (King in the case of a man) of a country, as it usually passes to the eldest male child upon succession.</p>
 	`	
+},{
+	title: "Mexico City",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
 },{
 	title: "Monarchy",
 	eYear: 1765,
@@ -2718,6 +2768,36 @@ export default [
 	<p> A number of studies have been conducted on the empirics of morality in various countries, and the overall relationship between faith and crime is unclear. A 2001 review of studies on this topic found "The existing evidence surrounding the effect of religion on crime is varied, contested, and inconclusive, and currently no persuasive answer exists as to the empirical relationship between religion and crime." Phil Zuckerman's 2008 book, Society without God, notes that Denmark and Sweden, "which are probably the least religious countries in the world, and possibly in the history of the world", enjoy "among the lowest violent crime rates in the world  the lowest levels of corruption in the world".</p>
 	<p> Dozens of studies have been conducted on this topic since the twentieth century. A 2005 study by Gregory S. Paul published in the Journal of Religion and Society stated that, "In general, higher rates of belief in and worship of a creator correlate with higher rates of homicide, juvenile and early adult mortality, STD infection rates, teen pregnancy, and abortion in the prosperous democracies," and "In all secular developing democracies a centuries long-term trend has seen homicide rates drop to historical lows" with the exceptions being the United States (with a high religiosity level) and "theistic" Portugal. In a response, Gary Jensen builds on and refines Paul's study. His conclusion is that a "complex relationship" exists between religiosity and homicide "with some dimensions of religiosity encouraging homicide and other dimensions discouraging it". On April 26, 2012, the results of a study which tested their subjects' pro-social sentiments were published in the Social Psychological and Personality Science journal in which non-religious people had higher scores showing that they were more inclined to show generosity in random acts of kindness, such as lending their possessions and offering a seat on a crowded bus or train. Religious people also had lower scores when it came to seeing how much compassion motivated participants to be charitable in other ways, such as in giving money or food to a homeless person and to non-believers.</p>`
 },{
+	title: "Morocco",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Nation",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Negro",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
 	title: "Nobility",
 	eYear: 1765,
 	wYear: 2017,
@@ -2948,6 +3028,76 @@ export default [
 	<p> According to the Israel Central Bureau of Statistics, as of 2015, the total population of Israel was 8.5 million people, of which 75% were Jews, 21% Arabs, and 4% "others." Of the Jewish group, 76% were Sabras (born in Israel); the rest were olim (immigrants) — 16% from Europe, the former Soviet republics, and the Americas, and 8% from Asia and Africa, including the Arab countries.</p>
 	<p> According to the Palestinian Central Bureau of Statistics evaluations, in 2015 the Palestinian population of the West Bank was approximately 2.9 million and that of the Gaza Strip was 1.8 million. Gaza's population is expected to increase to 2.1 million people in 2020, leading to a density of more than 5,800 people per square kilometre.</p>
 	<p> Both Israeli and Palestinian statistics include Arab residents of East Jerusalem in their reports. According to these estimates the total population in the region of Palestine, as defined as Israel and the Palestinian territories, stands approximately 12.8 million.</p>`
+},{
+	title: "Philosophy",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Portugal",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Printing Type",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Psychology",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Quran",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Reason",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Refugee",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
 },{
 	title: "Religion",
 	eYear: 1765,
@@ -3210,6 +3360,16 @@ export default [
 	<br>
 	<h3> Animal sacrifice</h3>
 	<p> Done by some (but not all) religions, animal sacrifice is the ritual killing and offering of an animal to appease or maintain favour with a deity. It has been banned in India.</p>`
+},{
+	title: "Senses",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
 },{
 	title: "Science",
 	eYear: 1765,
@@ -3632,6 +3792,26 @@ export default [
 	<p> Most Hollywood films used American settings, although Spartacus (1960), dealt with an actual revolt in the Roman Empire known as the Third Servile War. It failed and all the rebels were executed, but their spirit lived on according to the film. The Last Supper (La última cena in Spanish) was a 1976 film directed by Cuban Tomás Gutiérrez Alea about the teaching of Christianity to slaves in Cuba, and emphasizes the role of ritual and revolt. Burn! takes place on the imaginary Portuguese island of Queimada (where the locals speak Spanish) and it merges historical events that took place in Brazil, Cuba, Santo Domingo, Jamaica, and elsewhere. Spartacus stays surprisingly close to the historical record.</p>
 	<p> Historians agree that films have largely shaped historical memories, but they debate issues of accuracy, plausibility, moralism, sensationalism, how facts are stretched in search of broader truths, and suitability for the classroom. Berlin argues that critics complain if the treatment emphasizes historical brutality, or if it glosses over the harshness to highlight the emotional impact of slavery.</p>`
 },{
+	title: "Spain",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Suicide",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
 	title: "Theocracy",
 	eYear: 1765,
 	wYear: 2017,
@@ -3846,6 +4026,56 @@ export default [
 		<p> Charles Bradlaugh believed theology prevented human beings achieving liberty.[75] Bradlaugh noted theologians of his time stated that modern scientific research contradicted sacred scriptures therefore the scriptures must be wrong.[76]</p>
 		<p> Robert G. Ingersoll stated that when theologians had power the majority of people lived in hovels while a privileged few had palaces and cathedrals. In Ingersoll's opinion science rather than theology improved people's lives. Ingersoll maintained further that trained theologians reason no better than a person who assumes the devil must exist because pictures resemble the devil so exactly.[77]</p>
 		<p> Mark Twain stated that several mutually incompatible religions claimed to be the true religion and that people cut the throats of others for following a different theology.[78]</p>`
+},{
+	title: "Tobacco",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Ukraine",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "University",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Wisdom",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
+},{
+	title: "Witchcraft",
+	eYear: 1765,
+	wYear: 2017,
+	eSource: "...",
+	wSource: "Wikipedia (17.05.2017)",
+	eConn: [],
+	wConn: [],
+	eArt: ``,
+	wArt: ``
 },{
 	title: "Woman",
 	eYear: 1756,
