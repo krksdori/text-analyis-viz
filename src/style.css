@@ -93,10 +93,12 @@ canvas {
 	overflow: scroll;
 	line-height: 15pt;
 	font-size: 12pt;
-	color: black;
 	flex: 4;
 }
 
+.word{
+	display: none;
+}
 
 #wikiText {
 

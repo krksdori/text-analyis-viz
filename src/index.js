@@ -221,7 +221,7 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 
 	let lowerCaseArt = art.toLowerCase();
 	let splArt = lowerCaseArt.split(".");
-	console.log(splArt);
+	// console.log(splArt);
 	let wordArray = [];
 	let count = [];
 	let wordCount = 0;
@@ -331,32 +331,65 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy, index){
 	// }
 
 	var combinedTxt = "";
+	var mainIndex = 0;
 
 	for (let j = 0; j < wordArray.length; j++) {
 		for (let i = 0; i < wordArray[j].length; i++) {
-	    	combinedTxt += `<span id='${wikiOrEncy}${j}_${i}'>${wordArray[j][i]}</span> `;
+			mainIndex ++;
+	    	combinedTxt += `<span id="${wikiOrEncy}${j}_${i}" class="word">${wordArray[j][i]}</span> `;
+	    	//${wikiOrEncy}MainIndex${mainIndex}
 		}
 	}
-
+ 
 	$("#"+div).append(combinedTxt);
 
-	console.log(combinedTxt);
+	// console.log(combinedTxt);
 
 	var time = 0;
 	var index = 0;
 	var switchOnce = true;
+
+	// function animateText(){
+	// 	time = 0;
+	// 	var timer = setInterval(function(){
+	// 		if (index <= wordArray.length-1){
+	// 			if (time <= wordArray[index].length-1) {
+	// 				$("#"+div).append(`<span id='${wikiOrEncy}${index}_${time}'>${wordArray[index][time]}</span> `);
+	// 				time++;
+	// 			} else {
+	// 				index+=1;
+	// 				animateText();
+	// 			}
+	// 		} else {
+	// 			clearInterval(timer);
+	// 			if (switchOnce) {
+	// 				runAfterAnim();
+	// 			}
+				
+	// 			switchOnce = false;
+
+	// 			function runAfterAnim(){ ///everything afer animation goes here
+	// 				// mainF(eArticle,eConn,"#encyText","#encyLog","ency");
+	// 				// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
+	// 				// canvasLines();					
+	// 			}
+	// 		}
+	// 	}, 20);
+	// }
 
 	function animateText(){
 		time = 0;
 		var timer = setInterval(function(){
 			if (index <= wordArray.length-1){
 				if (time <= wordArray[index].length-1) {
-					$("#"+div).append(`<span id='${wikiOrEncy}${index}_${time}'>${wordArray[index][time]}</span> `);
+				// 	$("#"+div).append(`<span id='${wikiOrEncy}${index}_${time}'>${wordArray[index][time]}</span> `);
+					$(`#${wikiOrEncy}${index}_${time}`).css("display","inline");
 					time++;
 				} else {
 					index+=1;
 					animateText();
 				}
+				// console.log(time);
 			} else {
 				clearInterval(timer);
 				if (switchOnce) {
@@ -371,9 +404,10 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy, index){
 					// canvasLines();					
 				}
 			}
-		}, 20);
+		}, 30);
 	}
-	// animateText();
+
+	animateText();
 }
 
 function getPercentage(arr){
