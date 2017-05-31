@@ -35,10 +35,37 @@ $("#menu-wrapper").show();
 
 
 
+//////////////MENU
+var abc = [];
+
 for (var i = 0; i < articles.length; i++) {
-	$("#menu").append("<a id='link"+articles[i].title+"' href='#'>"+articles[i].title+"</a><br>");
+	abc.push(articles[i].title.charAt(0));
+}
+
+var uniqueAbc = [];
+$.each(abc, function(i, el){
+    if($.inArray(el, uniqueAbc) === -1) uniqueAbc.push(el);
+});
+
+for (var i = 0; i < uniqueAbc.length; i++) {
+	$("#menu").append(`
+		<div id="menuLetter_${uniqueAbc[i]}" class="menuLetter">
+			${uniqueAbc[i]}<hr>
+		</div>`
+	);
+}
+
+for (var i = 0; i < articles.length; i++) {
+	for (var j = 0; j < uniqueAbc.length; j++) {
+		if (articles[i].title.charAt(0) == uniqueAbc[j]) {
+			$(`#menuLetter_${uniqueAbc[j]}`).append(`<a id='link${articles[i].title}' href='#'>${articles[i].title}</a><hr>`);
+		}
+	}
 	menuClickExecute(articles[i].title, i);
 }
+
+///////////////////////
+
 
 $( "#back-button" ).click(function() {
 	$(".reset").empty();
