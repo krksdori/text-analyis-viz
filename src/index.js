@@ -182,6 +182,7 @@ function menuClickExecute(link, index){
 
 		var wYear = articles[index].wYear;
 		var eYear = articles[index].eYear;
+		var tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
 		appendArt(eArticle,eConn,"encyText","encyLog","ency", index);
 		appendArt(wArticle,wConn,"wikiText","wikiLog","wiki", index);
@@ -190,16 +191,19 @@ function menuClickExecute(link, index){
 		mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
 		canvasLines();
 
-		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").text("Encyclopédie – " + currentTitle);
-		var $wikiTitleDiv = $('<div>').addClass("wiki-header-title header-title reset").text("Wikipedia – " + currentTitle);
+		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").html(`Encyclopédie – ${currentTitle}${tab}${eYear}`);
+		var $wikiTitleDiv = $('<div>').addClass("wiki-header-title header-title reset").html(`Wikipedia – ${currentTitle}${tab}${wYear}`);
 
-		var $wYearDiv = $('<div>').addClass("wikiYear artYear header-title reset").text(wYear);
-		var $eYearDiv = $('<div>').addClass("encyYear artYear header-title reset").text(eYear);
+		// var $wYearDiv = $('<div>').addClass("wikiYear artYear header-title reset").text(wYear);
+		// var $eYearDiv = $('<div>').addClass("encyYear artYear header-title reset").text(eYear);
 
     	$('#header').append($encyTitleDiv);
     	$('#header').append($wikiTitleDiv);
-    	$('#header').append($wYearDiv);
-    	$('#header').append($eYearDiv);
+    	// $('#header').append($wYearDiv);
+    	// $('#header').append($eYearDiv);
+    	// $('#ency-header-title').append(`${eYear} elelel`);
+    	// $('#wiki-header-title').append(`${wYear} asdasd`);
+
 
 	});
 }

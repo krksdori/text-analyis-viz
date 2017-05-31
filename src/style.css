@@ -230,16 +230,19 @@ p{
 }
 
 #about-text {
-	padding-left: 20px;
-	padding-right: 610px;
-	padding-top: 10px;
+	padding: 20px;
+	/*padding-right: 610px;*/
 	padding-bottom: 20px;
 	/*background-color: red;*/
 	overflow: scroll !important;
 	position:relative;
-	font-size: 23px;
+	font-size: 20px;
     line-height: 32px;
     max-width: 750px;
+}
+
+.sentence{
+	font-size: 23px;
 }
 
 #credits span {
@@ -279,25 +282,25 @@ p{
 
 #curve-1 {
 	width: 130px;
-	bottom: 795px;
+	bottom: 720px;
 	left: 75px;
 }
 
 #curve-2 {
 	width: 130px;
-	bottom: 795px;
+	bottom: 720px;
 	left: 320px;
 }
 
 #curve-3 {
 	width: 130px;
-	bottom: 795px;
+	bottom: 720px;
 	left: 480px;
 }
 
 #curve-4 {
 	width: 300px;
-	bottom: 705px;
+	bottom: 635px;
 	left: 308px;/*
 	height: 2vh;*/
 }
@@ -374,6 +377,7 @@ p{
 }
 
 #back-button {
+	font-family: AtlasGrotesk-Reg;
 	color: black;
 	font-size: 17px;
 	position: absolute;
