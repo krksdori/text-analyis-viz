@@ -204,7 +204,8 @@ p{
 }
 
 #about-button {
-	font-family: AtlasType-Reg;
+	font-family: AtlasGrotesk-Reg;
+	font-size: 20px;
 	position: fixed;
 	top: 20px;
 	text-align: right;
@@ -214,7 +215,7 @@ p{
 
 #about-button:hover{
 	color: blue;
-    font-family: AtlasType-Italic;
+    font-family: AtlasGrotesk-Med-Ita;
     cursor: pointer;
 }
 
@@ -381,7 +382,7 @@ p{
 #back-button {
 	font-family: AtlasGrotesk-Reg;
 	color: black;
-	font-size: 17px;
+	font-size: 18px;
 	position: absolute;
 	right: 20px;
 	cursor: pointer;
