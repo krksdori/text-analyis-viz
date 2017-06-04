@@ -33,6 +33,18 @@ body {
 	margin: 0px;
 }
 
+hr {
+    border: none;
+    height: 2px;
+    color: black;
+    background-color: black;
+}
+
+p {
+	margin-top: 0px;
+}
+
+
 h2 {
 	font-size: 12pt;
 	font-family: AtlasGrotesk-Med;
@@ -64,6 +76,7 @@ canvas {
 
 
 #start-page-animation {
+	z-index: 3;
 	background-color: black;
 	color: white;
 	min-width: 100%;
@@ -177,52 +190,53 @@ canvas {
 #wikiLog {
 }
 
-#page-wrapper{
-/*	position: fixed;
-	overflow: scroll;*/
+#page-wrapper {
+	background-color: red;
 }
 
+#frontpage-header {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	top: 0px;
+	right: 0px;
+	height: 64px;
+	align-content: center;
+    display: flex;
+    align-items: center;
+    -webkit-flex-flow: row wrap;
+    padding: 20px;
+    background-color: white;
+    transition: box-shadow 250ms ease;
+}
 
 #menu-wrapper {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 20px;
+	display: block;
+	padding-top: 80px;
+	overflow: scroll;
+	position: fixed; 
+	height: 100%;
 }
 
 #menu {
 	font-size: 20px;
 	font-family: AtlasGrotesk-Reg;
-	/*cursor: pointer;*/
-	/*text-align: center;*/
 	z-index: 30;
-	margin-top:80px;
-	/*line-height: 110px;*/
-	/*background-color: black;*/
-/*	overflow: scroll;*/
+	overflow: scroll; 
+	height: auto;
+	width: auto;
 }
 
-.menuLetter{
-	/*border: 1px dashed red;*/
+.menuLetter {
 	width: 16.66666%;
 	height: 398px;
 	float: left;
 	padding-right: 20px;
-	/*padding-bottom: 80px;*/
-	/*display: inline-grid;*/
+	overflow: auto;
 }
-
-hr {
-    border: none;
-    height: 2px;
-    color: black;
-    background-color: black;
-}
-
-p{
-	margin-top: 0px;
-}
-
-
 
 #menu a:link {
     color: black;
@@ -243,7 +257,7 @@ p{
     font-family: AtlasGrotesk-Med-Ita;
 }
 
-#selectArtcileText {
+#page-title-text {
 	font-family: AtlasGrotesk-Reg;
 	top: 20px;
 	position: fixed;
@@ -263,7 +277,7 @@ p{
 #about-button:hover{
 	color: blue;
     font-family: AtlasGrotesk-Med-Ita;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 #about-page-wrap{
@@ -281,9 +295,7 @@ p{
 
 #about-text {
 	padding: 20px;
-	/*padding-right: 610px;*/
 	padding-bottom: 20px;
-	/*background-color: red;*/
 	overflow: scroll !important;
 	position:relative;
 	font-size: 20px;
@@ -358,8 +370,6 @@ p{
 .website-div {
 	position: absolute;
 	font-size: 15px;
-/*	padding-top: 2px;
-	padding-bottom: 2px;*/
 	padding-right: 8px;
 	padding-left: 8px;
 	background-color: lightgray;
@@ -367,21 +377,12 @@ p{
 	color: blue;
 }
 
-#daniel-div{
-/*	background-color: green;
-	color:red;*/
-}
-
-/*.underline:hover {
-	color: red
-}*/
-
 
 #x-button {
 	font-size: 30px;
 	position: fixed;
-	top: 5px;
-	right: 10px;
+	top: 20px;
+	right: 20px;
 	cursor: pointer;
 }
 
@@ -401,8 +402,8 @@ p{
     -webkit-flex-flow: row wrap;
     padding: 20px;
     transition: box-shadow 250ms ease;
-
 }
+
 
 .header-title {
 	font-family: AtlasGrotesk-Reg;

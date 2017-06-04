@@ -389,8 +389,7 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy, index){
 
 	$("#"+logDiv).append(`<br><span id="source${wikiOrEncy} class="source"></span>`);
 
-	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span>
-		<br><br><span id="source${wikiOrEncy}" class="source"></span>`);
+	$("#"+logDiv).append(`<br><span id="wordCount${wikiOrEncy}"></span><span id="source${wikiOrEncy}" class="source"></span>`);
 	
 	$("#"+div).empty();
 
@@ -464,6 +463,7 @@ function getPercentage(arr){
 	}
 	return percentages;
 }
+
 function pad(n){
 	return(n < 10 ? '0' : '') + n;
 }
@@ -476,12 +476,24 @@ $(".text").scroll(function() {
     var $header = $("#header");
     var articlesHolderHeight = $(".text").height();
 
-    if ( encyHeight>= 1 || wikiHeight>= 1) {
+    if ( encyHeight >= 1 || wikiHeight >= 1) {
         $header.addClass('shadow');
     } else {
         $header.removeClass('shadow'); 
     }
 });
+
+$("#menu-wrapper").scroll(function() {	
+    var y = $(this).scrollTop();
+    console.log(y);
+    var $frontpageHeader = $("#frontpage-header");
+    if (y >= 1) {
+        $frontpageHeader.addClass('shadow');
+    } else {
+        $frontpageHeader.removeClass('shadow'); 
+    }
+});
+
 
 
 // import './canvas.js';
