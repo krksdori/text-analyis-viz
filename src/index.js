@@ -288,7 +288,7 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy, index){
 
 	let wordArray = [];
 
-	for (let i = 0; i < sentences.length; i++) {
+	for (let i = 0; i < sentences.length-1; i++) {
 	   wordArray.push(sentences[i].split(" "));
 	 }
 	 // console.log(wordArray);
