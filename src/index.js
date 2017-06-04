@@ -517,12 +517,19 @@ function canvasLines() {
     resizeCanvas();
 
     function drawStuff() {
+    	let encyColors = ["rgb(198, 198, 198)","rgb(254,228,204)","rgb(204,252,203)","rgb(243,252,202)","rgb(243,204,249)","rgb(206,253,243)","rgb(254,206,205)","rgb(204,203,252)","rgb(252,244,205)","rgb(207,236,253)","lightgray","lime"]
+    	let wikiColors = ["rgba(0,0,255,0.9)","rgb(0,255,194)","rgb(218,255,0)","rgb(255,69,0)","rgb(255,255,0)","rgb(211,0,255)","rgb(255,206,0)","rgb(0,191,255)","rgb(7,255,0)","rgb(255,20,147)","rgb(218,255,0)","#93FF6E"];
 
 		$(".text").scroll(function() {	
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			// ctx.fillStyle= "rgb(30,30,30)";
+			// ctx.rect(0, 0, canvas.width, canvas.height);
 		});
 
 		$("#wrap").mousemove(function( event ) {
+			if (activeHover == null){
+				$(".hl").css("box-shadow","0 3px 10px rgba(0,0,0,0.0)")
+			}
 			$( ".hl" ).hover(function() {
 			    var classes = $(this).attr("class");
 		   		var lastClass = classes.split(" ").pop();
@@ -534,17 +541,20 @@ function canvasLines() {
 
 		if (activeHover == null) {
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			ctx.fillStyle= "rgb(30,30,30)";
+			ctx.rect(0, 0, canvas.width, canvas.height);
+
 		}
 
 		for (var i = 0; i < numConn; i++) {
-			runLines(i,"ency");
-			runLines(i,"wiki");
+			runLines(i,"ency", encyColors[i]);
+			runLines(i,"wiki", wikiColors[i]);
 		}
 			
-
-		function runLines(i, encyOrWiki){
+		var activeColors = wikiColors;
+		function runLines(i, encyOrWiki, colorScheme){
 			if (activeHover == encyOrWiki+"hl"+i) {
-				displayLines(i,"blue", encyOrWiki);
+				displayLines(i,colorScheme, encyOrWiki);
 			}
 		}
 
@@ -559,10 +569,15 @@ function canvasLines() {
 
 			var compX = 26;
 			var compY = 60;
+			var temp = "";
 
 			if (activeHover !== null) {
 				var positions1=[];
 				var positions2=[];
+
+				console.log(activeHover);
+
+				$("."+activeHover).css("box-shadow","1px 3px 5px rgba(0,0,0,0.25)");
 
 				ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -586,6 +601,7 @@ function canvasLines() {
 					
 			}
 		}
+
 	});
     }
 }

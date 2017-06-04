@@ -133,6 +133,14 @@ canvas {
 	-moz-transition: opacity 2.2s ease;
 }
 
+.shadow2 {
+	/*box-shadow: 0 3px 10px rgba(0,0,0,0.6);*/
+	/*-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.6);*/
+	/*-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.6);*/
+	/*border-bottom: 1px solid white;*/
+	/*transition: .2s ease;*/
+}
+
 #wrap {
 	display: flex;
 	flex-direction: row;
@@ -446,7 +454,7 @@ canvas {
 }
 
 .hl{
-	transition: 3s;
+	/*transition: 3s;*/
 	padding: 1px;
 	padding-top: 2px;
 }
