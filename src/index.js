@@ -178,6 +178,7 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	for (let i = 0; i < splArt.length; i++) {
 		wordArray.push(splArt[i].split(" "));
 	}
+	
 	function findConn(index,searchNo,search1,search2){
 		let indof0 = wordArray[index].indexOf(search1);
 		let indof1 = wordArray[index].indexOf(search2);
