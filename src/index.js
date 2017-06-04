@@ -18,6 +18,69 @@ $(document).ready(function () {
     $(this).keypress(function (e) {
         idleTime = 0;
     });
+
+    var possibleLetters = ["A", "a", "B", "b", "C","c", "D", "d", "E", "e", "F", "f", "G", "g", "H", "h", "I", "i", "J", "j", "K", "k", "L", "l", "M", "m", "N", "n", "O", "o", "P", "p", "Q", "q", "R", "r", "S", "s", "T", "t", "U", "u", "V", "v", "W", "w", "X", "x", "Y", "y", "Z", "z", "0","1","2","3","4","5","6","7","8","9","0"];
+
+	var changingArray = ["C", "h", "a", "n", "g", "i", "n", "g", " ", "P", "a", "r", "a", "d", "i", "g", "m", "s"];
+
+	var intervalCounter;
+
+	init();
+
+	setTimeout(function() {
+		animate();
+		animateStop();
+	}, 0);
+
+	function init() {
+
+		$("#start-page-animation").removeClass("hide").addClass("show");
+		$("#title").removeClass("hide").addClass("show");
+
+		changingArray.forEach(function(letter, i){
+			var randomLetter = possibleLetters[parseInt(Math.random()*possibleLetters.length)];
+			var $wordChanging = $('<span>').addClass('letter').text(randomLetter).attr("data-index", i);
+    		$("#title").append($wordChanging);
+    	});
+	}
+
+	function animate() {
+		setInterval(function() {
+			changingArray.forEach(function(letter, i){
+				var obj = $( ".letter[data-index='"+i+"']" );
+				if(obj.hasClass("done") == false) {
+					var randomLetter = possibleLetters[parseInt(Math.random()*possibleLetters.length)];
+					obj.text(randomLetter);
+				}
+    		});
+
+			// check if animation is over
+			var countDone = 0;
+			changingArray.forEach(function(letter, i){
+				if($( ".letter[data-index='"+i+"']" ).hasClass("done")) {
+					countDone++;
+				}
+				if(countDone == changingArray.length) {
+					clearInterval(intervalCounter);
+					setTimeout(function() {
+							$("#start-page-animation").removeClass("show").addClass("hide");
+							$("#title").removeClass("show").addClass("hide");
+					}, 2000);
+				}
+			});
+
+		}, 100);
+	}
+
+	function animateStop() {
+		intervalCounter = setInterval(function() {
+			changingArray.forEach(function(letter, i){
+				if(Math.random() > 0.5) {
+					$( ".letter[data-index='"+i+"']" ).addClass("done").text(letter);	
+				}
+    		});
+		}, 200);
+	}
 });
 
 function timerIncrement() {
