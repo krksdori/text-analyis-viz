@@ -62,10 +62,53 @@ canvas {
 	z-index: -1;
 }
 
-/*#canvas-info {
-	z-index: 3;
-}*/
 
+#start-page-animation {
+	background-color: black;
+	color: white;
+	min-width: 100%;
+	min-height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	-webkit-transition: opacity 2s, transform 2s; /* Safari */
+    transition: opacity 2s, transform 2s;
+    pointer-events: none;
+}
+
+#start-page-animation.show {
+	opacity: 1;
+
+}
+
+#start-page-animation.hide {
+	opacity: 0;
+}
+
+#title {
+	color: white;
+	font-family: AtlasGrotesk-Reg;
+	font-size: 80pt;
+	max-width: 100%;
+	text-align: center;
+	padding-top: 280px;
+	-webkit-transition: opacity 2s, transform 2s; /* Safari */
+    transition: opacity 2s, transform 2s;
+}
+
+#title.show {
+	opacity: 1;
+	-ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari */
+    transform: scale(1);
+}
+
+#title.hide {
+	opacity: 0;
+	-ms-transform: scale(0.98); /* IE 9 */
+    -webkit-transform: scale(0.98); /* Safari */
+    transform: scale(0.98);
+}
 
 .shadow {
 	box-shadow: 0 3px 10px rgba(0,0,0,0.6);
