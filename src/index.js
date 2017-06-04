@@ -86,72 +86,27 @@ $('#x-button').click(function() {
 });
 
 
-$("#daniel").click(function() { //this is kinda stupid to repeat but i can't come up with it now how to write it nicely
-    var $target = $('#daniel-div'),
-        $toggle = $(this);
-    var pos = $(this).position();
 
-     $('#daniel-div').css({
-        position: "absolute",
-        top: (pos.top - 50) + "px",
-         left: pos.left  + "px"
-    });
+function showURL(div, div2){
+	$(div).click(function() {
+	    var $target = $(div2),
+	        $toggle = $(this);
+	    var pos = $(this).position();
 
-    $target.slideToggle( 300, function () {
-        $toggle.text(($target.is(':visible') ? 'Daniel Hernández' : 'Daniel Hernández'));
-    });
-});
+	     $(div2).css({
+	        position: "absolute",
+	        top: (pos.top - 50) + "px",
+	         left: pos.left  + "px"
+	    });
 
+	    $target.slideToggle( 300, function () {});
+	});
+}
 
-$("#dora").click(function() { //this is kinda stupid to repeat but i can't come up with it now how to write it nicely
-    var $target = $('#dora-div'),
-        $toggle = $(this);
-    var pos = $(this).position();
-
-     $('#dora-div').css({
-        position: "absolute",
-        top: (pos.top - 50) + "px",
-         left: pos.left  + "px"
-    });
-
-    $target.slideToggle( 300, function () {
-        $toggle.text(($target.is(':visible') ? 'Dóra Kerekes' : 'Dóra Kerekes'));
-    });
-});
-
-
-$("#kai").click(function() { //this is kinda stupid to repeat but i can't come up with it now how to write it nicely
-    var $target = $('#kai-div'),
-        $toggle = $(this);
-    var pos = $(this).position();
-
-     $('#kai-div').css({
-        position: "absolute",
-        top: (pos.top - 50) + "px",
-         left: pos.left  + "px"
-    });
-
-    $target.slideToggle( 300, function () {
-        $toggle.text(($target.is(':visible') ? 'Kai Bernau' : 'Kai Bernau'));
-    });
-});
-
-
-$("#susana").click(function() { //this is kinda stupid to repeat but i can't come up with it now how to write it nicely
-    var $target = $('#susana-div'),
-        $toggle = $(this);
-    var pos = $(this).position();
-
-     $('#susana-div').css({
-        position: "absolute",
-        top: (pos.top - 50) + "px",
-         left: pos.left  + "px"
-    });
-
-    $target.slideToggle( 300, function () {
-        $toggle.text(($target.is(':visible') ? 'Susana Carvalho' : 'Susana Carvalho'));
-    });
-});
+showURL("#daniel", "#daniel-div");
+showURL("#dora", "#dora-div");
+showURL("#kai", "#kai-div");
+showURL("#susana", "#susana-div");
 
 
 
@@ -194,17 +149,8 @@ function menuClickExecute(link, index){
 		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").html(`Encyclopédie – ${currentTitle}${tab}${eYear}`);
 		var $wikiTitleDiv = $('<div>').addClass("wiki-header-title header-title reset").html(`Wikipedia – ${currentTitle}${tab}${wYear}`);
 
-		// var $wYearDiv = $('<div>').addClass("wikiYear artYear header-title reset").text(wYear);
-		// var $eYearDiv = $('<div>').addClass("encyYear artYear header-title reset").text(eYear);
-
     	$('#header').append($encyTitleDiv);
     	$('#header').append($wikiTitleDiv);
-    	// $('#header').append($wYearDiv);
-    	// $('#header').append($eYearDiv);
-    	// $('#ency-header-title').append(`${eYear} elelel`);
-    	// $('#wiki-header-title').append(`${wYear} asdasd`);
-
-
 	});
 }
 
@@ -221,7 +167,6 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 
 	let lowerCaseArt = art.toLowerCase();
 	let splArt = lowerCaseArt.split(".");
-	// console.log(splArt);
 	let wordArray = [];
 	let count = [];
 	let wordCount = 0;
@@ -254,7 +199,6 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	}
 
 
-
 	for (let j = 0; j < numConn; j++) {
 		for (let i = 0; i < wordArray.length; i++) {
 			findConn(i,j,conn[j*2],conn[(j*2)+1]);
@@ -269,7 +213,7 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 
 	$("#wordCount"+wikiOrEncy).text(`Word count: ${wordCount}`);
 
-	console.log("wtf"); //WTF
+	// console.log("wtf");
 
 	var percArray = getPercentage(count);
 
@@ -291,7 +235,6 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy, index){
 	for (let i = 0; i < sentences.length-1; i++) {
 	   wordArray.push(sentences[i].split(" "));
 	 }
-	 // console.log(wordArray);
 
 	var count = 0;
 	for (var i = 0; i < wordArray.length; i++) {
@@ -321,7 +264,7 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy, index){
 		$("#source"+wikiOrEncy).html(`Source:<br>${articles[index].wSource}`);
 	}else{
 		$("#source"+wikiOrEncy).html(`Source:<br>${articles[index].eSource}`);
-	} /////////////FIXFIXFIXFIXFIXFIXFIXFIXFIXFIX
+	}
  
  	// old append without animation
 	// for (let j = 0; j < wordArray.length; j++) {
@@ -331,65 +274,30 @@ function appendArt(art,conn,div,logDiv,wikiOrEncy, index){
 	// }
 
 	var combinedTxt = "";
-	var mainIndex = 0;
 
 	for (let j = 0; j < wordArray.length; j++) {
 		for (let i = 0; i < wordArray[j].length; i++) {
-			mainIndex ++;
 	    	combinedTxt += `<span id="${wikiOrEncy}${j}_${i}" class="word">${wordArray[j][i]}</span> `;
-	    	//${wikiOrEncy}MainIndex${mainIndex}
 		}
 	}
  
 	$("#"+div).append(combinedTxt);
 
-	// console.log(combinedTxt);
-
 	var time = 0;
 	var index = 0;
 	var switchOnce = true;
-
-	// function animateText(){
-	// 	time = 0;
-	// 	var timer = setInterval(function(){
-	// 		if (index <= wordArray.length-1){
-	// 			if (time <= wordArray[index].length-1) {
-	// 				$("#"+div).append(`<span id='${wikiOrEncy}${index}_${time}'>${wordArray[index][time]}</span> `);
-	// 				time++;
-	// 			} else {
-	// 				index+=1;
-	// 				animateText();
-	// 			}
-	// 		} else {
-	// 			clearInterval(timer);
-	// 			if (switchOnce) {
-	// 				runAfterAnim();
-	// 			}
-				
-	// 			switchOnce = false;
-
-	// 			function runAfterAnim(){ ///everything afer animation goes here
-	// 				// mainF(eArticle,eConn,"#encyText","#encyLog","ency");
-	// 				// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
-	// 				// canvasLines();					
-	// 			}
-	// 		}
-	// 	}, 20);
-	// }
 
 	function animateText(){
 		time = 0;
 		var timer = setInterval(function(){
 			if (index <= wordArray.length-1){
 				if (time <= wordArray[index].length-1) {
-				// 	$("#"+div).append(`<span id='${wikiOrEncy}${index}_${time}'>${wordArray[index][time]}</span> `);
 					$(`#${wikiOrEncy}${index}_${time}`).css("display","inline");
 					time++;
 				} else {
 					index+=1;
 					animateText();
 				}
-				// console.log(time);
 			} else {
 				clearInterval(timer);
 				if (switchOnce) {
@@ -439,14 +347,6 @@ $(".text").scroll(function() {
     } else {
         $header.removeClass('shadow'); 
     }
-
-
-
-    // if ( >= 1) {
-    //     $header.addClass('shadow');
-    // } else {
-    //     $header.removeClass('shadow'); 
-    // }
 });
 
 
@@ -489,12 +389,6 @@ function canvasLines() {
 		if (activeHover == null) {
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
 		}
-
-		// $(".text").scroll(function() {	
-		// 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-		// });
-
-		// console.log(activeHover);
 
 		for (var i = 0; i < numConn; i++) {
 			runLines(i,"ency");
@@ -550,31 +444,3 @@ function canvasLines() {
 	});
     }
 }
-
-
-// function infoLines() {
-//     var canvas = document.getElementById('canvas-info'),
-//     	ctx = canvas.getContext('2d');
-//     	console.log('this works');
-
-//     window.addEventListener('resize', resizeCanvas, false);
-
-//     function resizeCanvas() {
-//             canvas.width = window.innerWidth;
-//             canvas.height = window.innerHeight;
-//             // drawStuff(); 
-            
-//     }
-
-//    	ctx.beginPath();
-// 	ctx.moveTo(15, 30);
-// 	ctx.quadraticCurveTo(30, 5, 45, 30);
-// 	// ctx.strokeStyle = '#ff0000';
-// 	ctx.stroke()
-
-
-// 	if ($('#about-page-wrap').hasClass( "hidden" )){
-// 		console.log("stop");
-// 	}
-
-// }
