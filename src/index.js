@@ -140,10 +140,10 @@ function menuClickExecute(link, index){
 		var tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
 		appendArt(eArticle,eConn,"encyText","encyLog","ency", index);
-		appendArt(wArticle,wConn,"wikiText","wikiLog","wiki", index);
+		// appendArt(wArticle,wConn,"wikiText","wikiLog","wiki", index);
 
 		mainF(eArticle,eConn,"#encyText","#encyLog","ency");
-		mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
+		// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
 		canvasLines();
 
 		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").html(`Encyclopédie – ${currentTitle}${tab}${eYear}`);
@@ -178,10 +178,35 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	for (let i = 0; i < splArt.length; i++) {
 		wordArray.push(splArt[i].split(" "));
 	}
-	
+
+	for (var j = 0; j < wordArray.length; j++) {
+		for (var i = 0; i < wordArray[j].length; i++) {
+			wordArray[j][i] = wordArray[j][i].replace(/,/g, "");
+			wordArray[j][i] = wordArray[j][i].replace(/;/g, "");
+			wordArray[j][i] = wordArray[j][i].replace(/!/g, "");
+			console.log(wordArray[j][i]);
+		}
+	}
+
+	let infof0 = [];
+
+	function indexAll(array, match){
+	    return array.reduce(function(inds,val,i){
+	        if(val == match) inds.push(i);
+	        return inds;
+	    },[]);
+	}
+
+	// console.log(indexAll(wordArray[0], conn[0]));
+	// console.log(indexAll(wordArray[0], conn[1]));
+	// console.log(conn[0]);
+
+	console.log(wordArray[0]);
+
 	function findConn(index,searchNo,search1,search2){
 		let indof0 = wordArray[index].indexOf(search1);
 		let indof1 = wordArray[index].indexOf(search2);
+
 
 		if(indof0 !== -1 && indof1 !== -1){
 			$("#"+wikiOrEncy+index+"_"+indof0).addClass("hl " + wikiOrEncy+"hl"+searchNo);
