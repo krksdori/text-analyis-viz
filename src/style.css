@@ -68,11 +68,12 @@ canvas {
 	color: white;
 	min-width: 100%;
 	min-height: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 	-webkit-transition: opacity 2s, transform 2s; /* Safari */
     transition: opacity 2s, transform 2s;
+    pointer-events: none;
 }
 
 #start-page-animation.show {
