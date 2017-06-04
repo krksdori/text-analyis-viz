@@ -130,7 +130,7 @@ canvas {
 	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.6);
 	-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.6);
 	border-bottom: 1px solid white;
-	moz-transition: opacity 2.2s ease;
+	-moz-transition: opacity 2.2s ease;
 }
 
 #wrap {
@@ -158,14 +158,6 @@ canvas {
 	display: none;
 }
 
-#wikiText {
-
-}
-
-#encyText {
-
-}
-
 .log {
 	font-family: AtlasType-Reg;
 	font-size: 12px;
@@ -182,12 +174,6 @@ canvas {
 
 .logcon:hover {
 	font-family: AtlasGrotesk-Med;
-}
-
-#encyLog {
-}
-
-#wikiLog {
 }
 
 #page-wrapper {
@@ -364,8 +350,7 @@ canvas {
 #curve-4 {
 	width: 300px;
 	bottom: 635px;
-	left: 308px;/*
-	height: 2vh;*/
+	left: 308px;
 }
 
 .website-div {
@@ -412,11 +397,6 @@ canvas {
 	width: 400px;
 	float: left;
 	position: fixed;
-	/*top: 0;*/
-}
-
-.artYear {
-
 }
 
 .wikiYear {
@@ -429,28 +409,26 @@ canvas {
 }
 
 #back-button {
-	font-family: AtlasGrotesk-Reg;
-	color: black;
-	font-size: 18px;
 	position: absolute;
 	right: 20px;
 	cursor: pointer;
 	z-index: 3;
-	/*padding-top: 15px;*/
 }
 
-#back-button:hover {
-	color:blue;
+.ham-icon {
+    width: 28px;
+    height: 1px;
+    background-color: black;
+    margin: 6px 0;
 }
 
-.ency-header-title {
-
+#back-button:hover div {
+	background-color: blue;
+	cursor: pointer !important;
 }
-
 
 .wiki-header-title {
 	left: calc(50% + 18px);
-	/*left: 50%;*/
 }
 
 ::-webkit-scrollbar { 
@@ -467,24 +445,15 @@ canvas {
 	font-family: AtlasType-Italic;
 }
 
-
-/*.underline {
-  border-bottom: 2px solid rgb(255, 255, 255);
-  display: inline-block;
-  line-height: 0.99;
-}*/
-
 .hl{
 	transition: 3s;
 	padding: 1px;
 	padding-top: 2px;
 }
 
-
 .hidden{
 	display: none;
 }
-
 
 .encyhl0{
 	background-color: rgb(198, 198, 198);
