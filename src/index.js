@@ -517,8 +517,12 @@ function canvasLines() {
     resizeCanvas();
 
     function drawStuff() {
-    	let encyColors = ["rgb(198, 198, 198)","rgb(254,228,204)","rgb(204,252,203)","rgb(243,252,202)","rgb(243,204,249)","rgb(206,253,243)","rgb(254,206,205)","rgb(204,203,252)","rgb(252,244,205)","rgb(207,236,253)","lightgray","lime"]
-    	let wikiColors = ["rgba(0,0,255,0.9)","rgb(0,255,194)","rgb(218,255,0)","rgb(255,69,0)","rgb(255,255,0)","rgb(211,0,255)","rgb(255,206,0)","rgb(0,191,255)","rgb(7,255,0)","rgb(255,20,147)","rgb(218,255,0)","#93FF6E"];
+    	// let encyColors = ["rgb(198, 198, 198)","rgb(254,228,204)","rgb(204,252,203)","rgb(243,252,202)","rgb(243,204,249)","rgb(206,253,243)","rgb(254,206,205)","rgb(204,203,252)","rgb(252,244,205)","rgb(207,236,253)","lightgray","lime"]
+    	// let wikiColors = ["rgba(0,0,255,0.9)","rgb(0,255,194)","rgb(218,255,0)","rgb(255,69,0)","rgb(255,255,0)","rgb(211,0,255)","rgb(255,206,0)","rgb(0,191,255)","rgb(7,255,0)","rgb(255,20,147)","rgb(218,255,0)","#93FF6E"];
+
+    	let encyColors = ["rgb(142, 142, 142)","rgb(252, 196, 143)","rgb(142, 255, 140)","rgb(225, 249, 112)","rgb(234, 104, 255)","rgb(104, 255, 222)","rgb(255, 97, 94)","rgb(122, 119, 255)","rgb(242, 216, 89)","rgb(107, 200, 255)","rgb(135, 135, 135)","rgb(0, 160, 0)"]
+    	let wikiColors = ["rgb(0,0,255)","rgb(0, 206, 157)","rgb(165, 193, 0)","rgb(209, 56, 0)","rgb(178, 178, 0)","rgb(164, 0, 198)","rgb(216, 180, 26)","rgb(0,191,255)","rgb(6, 186, 1)","rgb(216, 17, 125)","rgb(185, 216, 0)","rgb(124, 216, 93)"];
+
 
 		$(".text").scroll(function() {	
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -577,7 +581,7 @@ function canvasLines() {
 
 				console.log(activeHover);
 
-				$("."+activeHover).css("box-shadow","1px 3px 5px rgba(0,0,0,0.25)");
+				$("."+activeHover).css("box-shadow","1px 3px 25px rgba(0,0,0,0.3)");
 
 				ctx.clearRect(0, 0, canvas.width, canvas.height);
 
