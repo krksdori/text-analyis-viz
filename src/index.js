@@ -7,6 +7,7 @@ import articles from './articles';
 
 ///////Refresh if 3 min inactive
 var idleTime = 0;
+
 $(document).ready(function () {
     //Increment the idle time counter every minute.
     var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
@@ -203,10 +204,10 @@ function menuClickExecute(link, index){
 		var tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
 		appendArt(eArticle,eConn,"encyText","encyLog","ency", index);
-		// appendArt(wArticle,wConn,"wikiText","wikiLog","wiki", index);
+		appendArt(wArticle,wConn,"wikiText","wikiLog","wiki", index);
 
 		mainF(eArticle,eConn,"#encyText","#encyLog","ency");
-		// mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
+		mainF(wArticle,wConn,"#wikiText","#wikiLog","wiki");
 		canvasLines();
 
 		var $encyTitleDiv = $('<div>').addClass("ency-header-title header-title reset").html(`Encyclopédie – ${currentTitle}${tab}${eYear}`);
@@ -229,10 +230,23 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	}
 
 	let lowerCaseArt = art.toLowerCase();
-	let splArt = lowerCaseArt.split(".");
+
+	function regex (str) {
+	    return str.replace(/(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|<|,|>|\?|\/|\\|_|\+|=)/g,"");
+	}
+
+	let filterPunct = regex(lowerCaseArt);
+
+	let splArt = filterPunct.split(".");
+	
 	let wordArray = [];
 	let count = [];
 	let wordCount = 0;
+	let connectedPerSntc = [];
+
+	for (var i = 0; i < numConn; i++) {
+		connectedPerSntc.push(new Array());
+	}
 
 	for (var i = 0; i < numConn; i++) {
 		count.push(0);
@@ -242,17 +256,6 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 		wordArray.push(splArt[i].split(" "));
 	}
 
-	for (var j = 0; j < wordArray.length; j++) {
-		for (var i = 0; i < wordArray[j].length; i++) {
-			wordArray[j][i] = wordArray[j][i].replace(/,/g, "");
-			wordArray[j][i] = wordArray[j][i].replace(/;/g, "");
-			wordArray[j][i] = wordArray[j][i].replace(/!/g, "");
-			console.log(wordArray[j][i]);
-		}
-	}
-
-	let infof0 = [];
-
 	function indexAll(array, match){
 	    return array.reduce(function(inds,val,i){
 	        if(val == match) inds.push(i);
@@ -260,11 +263,51 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	    },[]);
 	}
 
-	// console.log(indexAll(wordArray[0], conn[0]));
-	// console.log(indexAll(wordArray[0], conn[1]));
-	// console.log(conn[0]);
+	function improvedFindConn(sentenceIndex, searchNo, search1, search2){
+		let incr = 0;
+		let indof0 = indexAll(wordArray[sentenceIndex],conn[search1]);
+		let indof1 = indexAll(wordArray[sentenceIndex],conn[search2]);
 
-	console.log(wordArray[0]);
+		if (indof0.length !== 0 && indof1.length !== 0){
+			connectedPerSntc[searchNo].push(0);
+
+			for (var i = 0; i < indof0.length; i++) {
+				connectedPerSntc[searchNo][count[searchNo]]+=1;
+				// incr +=1;
+
+				$("#"+wikiOrEncy+sentenceIndex+"_"+indof0[i]).addClass("hl " + wikiOrEncy+"hl"+searchNo);
+				if (wikiOrEncy == "ency") {
+					encyConnIndex[searchNo].push(sentenceIndex+"_"+indof0[i]);
+				} else {
+					wikiConnIndex[searchNo].push(sentenceIndex+"_"+indof0[i]);
+				}
+				// connectedPerSntc[searchNo][sentenceIndex].push("1");
+			}
+
+			for (var i = 0; i < indof1.length; i++) {
+				connectedPerSntc[searchNo][count[searchNo]]+=1;
+				// incr +=1;
+
+			 	$("#"+wikiOrEncy+sentenceIndex+"_"+indof1[i]).addClass("hl " + wikiOrEncy+"hl"+searchNo);
+			 	if (wikiOrEncy == "ency") {
+					encyConnIndex[searchNo].push(sentenceIndex+"_"+indof1[i]);
+				} else {
+					wikiConnIndex[searchNo].push(sentenceIndex+"_"+indof1[i]);
+				}
+				// connectedPerSntc[0][sentenceIndex]=1;
+				// console.log("count "+connectedPerSntc[0])
+			}
+			count[searchNo] += 1;
+		}
+	}
+
+	for (var j = numConn-1; j >= 0; j--) {
+		for (var i = 0; i < wordArray.length; i++) {
+			// improvedFindConn(i,j,j*2,j*2+1);
+		}
+	}	
+
+	// console.log(connectedPerSntc);
 
 	function findConn(index,searchNo,search1,search2){
 		let indof0 = wordArray[index].indexOf(search1);
@@ -305,6 +348,8 @@ function mainF(art,conn,textDest,logDest, wikiOrEncy){
 	// console.log("wtf");
 
 	var percArray = getPercentage(count);
+	
+
 
 	for (let i = 0; i < numConn; i++) {
 		$("#"+wikiOrEncy+"Perc"+i).text(`${pad(percArray[i])}%`);
@@ -522,7 +567,6 @@ function canvasLines() {
 					ctx.stroke();
 				}
 
-
 				for (var i = 0; i < (activeConnIndex[index].length)/2; i++) {
 					getPosDrawLine(i,activeConnIndex[index][i*2],activeConnIndex[index][i*2+1]);
 				}
@@ -533,3 +577,7 @@ function canvasLines() {
 	});
     }
 }
+
+
+// note: improvedFindConn is working. var connectedPerSntc contains the amount of connections per sentence. now it's just a matter of applying it to getPosDrawLine, so it draws the specific number of lines stored in connectedPerSntc.
+// 	uncomment improvedFindConn and comment findConn.

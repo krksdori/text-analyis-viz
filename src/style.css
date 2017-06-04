@@ -87,11 +87,13 @@ canvas {
 
 #title {
 	color: white;
-	font-family: AtlasGrotesk-Reg;
+	font-family: AtlasType-Reg;
 	font-size: 80pt;
-	max-width: 100%;
+	width: 100%;
+	position: fixed;
+	top: calc(50% - 75px);
 	text-align: center;
-	padding-top: 280px;
+	vertical-align: middle;
 	-webkit-transition: opacity 2s, transform 2s; /* Safari */
     transition: opacity 2s, transform 2s;
 }
