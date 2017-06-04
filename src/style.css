@@ -219,6 +219,7 @@ canvas {
 	overflow: scroll;
 	position: fixed; 
 	height: 100%;
+	width: 100%;
 }
 
 #menu {
@@ -227,7 +228,7 @@ canvas {
 	z-index: 30;
 	overflow: scroll; 
 	height: auto;
-	width: auto;
+	width: 100%;
 }
 
 .menuLetter {
