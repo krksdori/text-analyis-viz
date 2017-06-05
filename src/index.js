@@ -96,6 +96,8 @@ function timerIncrement() {
 
 $("#article-page-container").hide();
 $("#menu-wrapper").show();
+$("#frontpage-header").show();
+
 
 
 
@@ -134,6 +136,7 @@ $( "#back-button" ).click(function() {
 	$(".reset").empty();
 	$("#article-page-container").hide();
 	$("#menu-wrapper").show();
+	$("#frontpage-header").show();
 });
 
 
@@ -192,6 +195,7 @@ function menuClickExecute(link, index){
 	$( "#link"+link ).click(function() {
 		$("#article-page-container").show();
 		$("#menu-wrapper").hide();
+		$("#frontpage-header").hide();
 
 		eArticle = articles[index].eArt;
 		wArticle = articles[index].wArt;
@@ -581,7 +585,7 @@ function canvasLines() {
 
 				console.log(activeHover);
 
-				$("."+activeHover).css("box-shadow","1px 3px 25px rgba(0,0,0,0.3)");
+				$("."+activeHover).css("box-shadow","1px 4px 25px rgba(0,0,0,0.4)");
 
 				ctx.clearRect(0, 0, canvas.width, canvas.height);
 
