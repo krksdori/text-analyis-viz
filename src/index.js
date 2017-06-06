@@ -536,7 +536,7 @@ function canvasLines() {
 
 		$("#wrap").mousemove(function( event ) {
 			if (activeHover == null){
-				$(".hl").css("box-shadow","0 3px 10px rgba(0,0,0,0.0)")
+				$(".hl").css("box-shadow","0 3px 8px rgba(0,0,0,0.0)")
 			}
 			$( ".hl" ).hover(function() {
 			    var classes = $(this).attr("class");
@@ -585,7 +585,7 @@ function canvasLines() {
 
 				console.log(activeHover);
 
-				$("."+activeHover).css("box-shadow","1px 4px 25px rgba(0,0,0,0.4)");
+				$("."+activeHover).css("box-shadow","1px 3px 12px rgba(0,0,0,0.4)");
 
 				ctx.clearRect(0, 0, canvas.width, canvas.height);
 

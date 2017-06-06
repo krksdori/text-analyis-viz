@@ -454,7 +454,7 @@ canvas {
 }
 
 .hl {
-	/*transition: 3s;*/
+	transition: .8s;
 	padding: 1px;
 	padding-top: 2px;
 }
