@@ -585,7 +585,7 @@ function canvasLines() {
 
 				console.log(activeHover);
 
-				$("."+activeHover).css("box-shadow","1px 3px 12px rgba(0,0,0,0.4)");
+				$("."+activeHover).css("box-shadow","1px 3px 10px rgba(0,0,0,0.4)");
 
 				ctx.clearRect(0, 0, canvas.width, canvas.height);
 

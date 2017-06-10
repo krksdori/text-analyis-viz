@@ -286,6 +286,7 @@ canvas {
     overflow: scroll;
     font-family: AtlasGrotesk-Reg;
     z-index: 2;
+    letter-spacing: -.4px;
 }
 
 #about-text {
@@ -339,25 +340,25 @@ canvas {
 
 #curve-1 {
 	width: 130px;
-	bottom: 720px;
+	bottom: 810px;
 	left: 75px;
 }
 
 #curve-2 {
 	width: 130px;
-	bottom: 720px;
+	bottom: 810px;
 	left: 320px;
 }
 
 #curve-3 {
 	width: 130px;
-	bottom: 720px;
+	bottom: 810px;
 	left: 480px;
 }
 
 #curve-4 {
 	width: 300px;
-	bottom: 635px;
+	bottom: 730px;
 	left: 308px;
 }
 
